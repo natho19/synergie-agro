@@ -114,7 +114,7 @@
                         <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                             <i class="fa fa-bars"></i>
                         </button>
-                        <a class="navbar-brand" href="index.html">
+                        <a class="navbar-brand" href="<?= esc_url(get_home_url()); ?>">
                             <img src="<?= SA_IMG_URL . 'logo-mix.png'; ?>" class="logo" alt="Logo">
                         </a>
                     </div>
@@ -123,121 +123,27 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-
                     <img src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
+
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
-                    
+
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
+                        <li><a href="#" class="dropdown-toggle active">Accueil</a></li>
+                        <li><a href="http://localhost:81/synergie-agro/a-propos/" class="dropdown-toggle">A propos</a></li>
+                        <li><a href="#" class="dropdown-toggle">Domaines d'intervention</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle active" data-toggle="dropdown" >Home</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Réalisations</a>
                             <ul class="dropdown-menu">
-                                <li><a href="index.html">Home Agriculture</a></li>
-                                <li><a href="index-2.html">Home Farming</a></li>
-                                <li><a href="index-3.html">Agriculture Shop</a></li>
+                                <li><a href="#">Nos réalisations</a></li>
+                                <li><a href="#">Projets futurs</a></li>
                             </ul>
                         </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Pages</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="about-us.html">About Us</a></li>
-                                <li><a href="farmers.html">Team</a></li>
-                                <li><a href="farmer-details.html">Team Details</a></li>
-                                <li><a href="contact.html">Contact Us</a></li>
-                                <li><a href="404.html">Error Page</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="project.html" class="dropdown-toggle" data-toggle="dropdown" >Projects</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="project.html">Project</a></li>
-                                <li><a href="project-details.html">Project Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Services</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="services.html">Services Version One</a></li>
-                                <li><a href="services-2.html">Services Version Two</a></li>
-                                <li><a href="services-details.html">Services Details</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Blog</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="blog-standard.html">Blog Standard</a></li>
-                                <li><a href="blog-with-sidebar.html">Blog With Sidebar</a></li>
-                                <li><a href="blog-2-colum.html">Blog Grid Two Colum</a></li>
-                                <li><a href="blog-3-colum.html">Blog Grid Three Colum</a></li>
-                                <li><a href="blog-single.html">Blog Single</a></li>
-                                <li><a href="blog-single-with-sidebar.html">Blog Single With Sidebar</a></li>
-                            </ul>
-                        </li>
-                        <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown" >Shop</a>
-                            <ul class="dropdown-menu">
-                                <li><a href="shop.html">Shop Product</a></li>
-                                <li><a href="shop-single.html">Shop Single</a></li>
-                                <li><a href="shop-single-thumb-only.html">Shop Single Version Two</a></li>
-                            </ul>
-                        </li>
+                        <li><a href="#" class="dropdown-toggle">Actualités</a></li>
+                        <li><a href="#" class="dropdown-toggle">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
-
-                <div class="attr-right">
-                    <!-- Start Atribute Navigation -->
-                    <div class="attr-nav">
-                        <ul>
-                            
-                            <li class="dropdown">
-                                <a href="#" class="dropdown-toggle" data-toggle="dropdown" >
-                                    <i class="far fa-shopping-cart"></i>
-                                    <span class="badge">3</span>
-                                </a>
-                                <ul class="dropdown-menu cart-list">
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="#" class="photo">
-                                                <img src="<?= SA_IMG_URL . 'products/1.png'; ?>" alt="Thumb">
-                                            </a>
-                                            <a href="#" class="remove-product">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <h6><a href="#">Delica omtantur </a></h6>
-                                            <p>2x - <span class="price">$99.99</span></p>
-                                        </div>
-                                    </li>
-                                    <li>
-                                        <div class="thumb">
-                                            <a href="#" class="photo">
-                                                <img src="<?= SA_IMG_URL . 'products/2.png'; ?>" alt="Thumb">
-                                            </a>
-                                            <a href="#" class="remove-product">
-                                                <i class="fas fa-times"></i>
-                                            </a>
-                                        </div>
-                                        <div class="info">
-                                            <h6><a href="#">Omnes ocurreret</a></h6>
-                                            <p>1x - <span class="price">$33.33</span></p>
-                                        </div>
-                                    </li>
-                                    <li class="total">
-                                        <span class="pull-right"><strong>Total</strong>: $0.00</span>
-                                        <a href="#" class="btn btn-default btn-cart">Cart</a>
-                                        <a href="#" class="btn btn-default btn-cart">Checkout</a>
-                                    </li>
-                                </ul>
-                            </li>
-                            <li class="button"><a href="#">Register</a></li>
-                        </ul>
-                    </div>
-                    <!-- End Atribute Navigation -->
-
-                </div>
-
                 <!-- Main Nav -->
             </div>   
             <!-- Overlay screen for menu -->
