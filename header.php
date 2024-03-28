@@ -138,7 +138,7 @@
                                 <li><a href="#">Projets futurs</a></li>
                             </ul>
                         </li>
-                        <li><a href="#">Actualités</a></li>
+                        <li><a href="http://localhost:81/synergie-agro/actualites/">Actualités</a></li>
                         <li><a href="http://localhost:81/synergie-agro/contact/">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->

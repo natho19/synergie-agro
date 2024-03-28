@@ -5,6 +5,8 @@
     $page_title = "";
     if (is_404()) {
         $page_title = "404";
+    } elseif (is_home()) {
+        $page_title = get_queried_object()->post_title;
     } else {
         $page_title = get_the_title();
     }
