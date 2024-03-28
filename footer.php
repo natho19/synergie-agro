@@ -1,6 +1,6 @@
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light" style="background-image: url('<?= SA_IMG_URL . 'shape/8.png'; ?>');">
+    <footer class="bg-dark text-light" style="background-image: url(<?= SA_IMG_URL . 'shape/8.png'; ?>);">
         <div class="container">
             <div class="f-items default-padding">
                 <div class="row">
