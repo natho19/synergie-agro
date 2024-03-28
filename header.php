@@ -12,7 +12,7 @@
     <title>Agrica - Organic Farm Agriculture Template</title>
 
     <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="assets/img/favicon.png" type="image/x-icon">
+    <link rel="shortcut icon" href="<?= SA_IMG_URL . 'favicon.png'; ?>" type="image/x-icon">
 
     <!-- ========== Start Stylesheet ========== -->
     <?php wp_head(); ?>
@@ -115,7 +115,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="index.html">
-                            <img src="assets/img/logo-mix.png" class="logo" alt="Logo">
+                            <img src="<?= SA_IMG_URL . 'logo-mix.png'; ?>" class="logo" alt="Logo">
                         </a>
                     </div>
                     <!-- End Header Navigation -->
@@ -124,7 +124,7 @@
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
 
-                    <img src="assets/img/logo.png" alt="Logo">
+                    <img src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>
                     </button>
@@ -199,7 +199,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#" class="photo">
-                                                <img src="assets/img/products/1.png" alt="Thumb">
+                                                <img src="<?= SA_IMG_URL . 'products/1.png'; ?>" alt="Thumb">
                                             </a>
                                             <a href="#" class="remove-product">
                                                 <i class="fas fa-times"></i>
@@ -213,7 +213,7 @@
                                     <li>
                                         <div class="thumb">
                                             <a href="#" class="photo">
-                                                <img src="assets/img/products/2.png" alt="Thumb">
+                                                <img src="<?= SA_IMG_URL . 'products/2.png'; ?>" alt="Thumb">
                                             </a>
                                             <a href="#" class="remove-product">
                                                 <i class="fas fa-times"></i>

@@ -1,14 +1,13 @@
     <!-- Start Footer 
     ============================================= -->
-    <footer class="bg-dark text-light" style="background-image: url(assets/img/shape/8.png);">
+    <footer class="bg-dark text-light" style="background-image: url('<?= SA_IMG_URL . 'shape/8.png'; ?>');">
         <div class="container">
             <div class="f-items default-padding">
                 <div class="row">
-                    
                     <!-- Single Itme -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
-                            <img class="logo" src="assets/img/logo-light.png" alt="Logo">
+                            <img class="logo" src="<?= SA_IMG_URL . 'logo-light.png'; ?>" alt="Logo">
                             <p>
                                 Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.
                             </p>
@@ -56,7 +55,7 @@
                                 <li>
                                     <div class="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb">
+                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
                                         </a>
                                     </div>
                                     <div class="info">
@@ -69,7 +68,7 @@
                                 <li>
                                     <div class="thumb">
                                         <a href="blog-single-with-sidebar.html">
-                                            <img src="assets/img/800x800.png" alt="Thumb">
+                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
                                         </a>
                                     </div>
                                     <div class="info">
@@ -120,7 +119,6 @@
                         </div>
                     </div>
                     <!-- Single Itme -->
-                    
                 </div>
             </div>
             <!-- Start Footer Bottom -->
@@ -134,7 +132,7 @@
             <!-- End Footer Bottom -->
         </div>
         <div class="shape-right-bottom">
-            <img src="assets/img/shape/7.png" alt="Image Not Found">
+            <img src="<?= SA_IMG_URL . 'shape/7.png'; ?>" alt="Image Not Found">
         </div>
     </footer>
     <!-- End Footer -->
