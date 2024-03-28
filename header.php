@@ -144,11 +144,10 @@
                 </div><!-- /.navbar-collapse -->
 
                 <div class="attr-right">
-                    <!-- Start Atribute Navigation -->
-                    <!-- Select des langues -->
+                    <!-- Start Atribute Navigation / A utiliser pour le Select des langues -->
                     <div class="attr-nav">
                         <ul>
-                            <li class="button"><a href="#">Register</a></li>
+                            <li class="button"><a href="#">ENG</a></li>
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
