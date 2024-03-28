@@ -128,9 +128,9 @@
                     </button>
 
                     <ul class="nav navbar-nav navbar-right" data-in="fadeInDown" data-out="fadeOutUp">
-                        <li><a href="#" class="dropdown-toggle active">Accueil</a></li>
-                        <li><a href="http://localhost:81/synergie-agro/a-propos/" class="dropdown-toggle">A propos</a></li>
-                        <li><a href="#" class="dropdown-toggle">Domaines d'intervention</a></li>
+                        <li><a href="#" class="active">Accueil</a></li>
+                        <li><a href="http://localhost:81/synergie-agro/a-propos/">A propos</a></li>
+                        <li><a href="http://localhost:81/synergie-agro/domaines-dintervention/">Domaines d'intervention</a></li>
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Réalisations</a>
                             <ul class="dropdown-menu">
@@ -138,8 +138,8 @@
                                 <li><a href="#">Projets futurs</a></li>
                             </ul>
                         </li>
-                        <li><a href="#" class="dropdown-toggle">Actualités</a></li>
-                        <li><a href="#" class="dropdown-toggle">Contact</a></li>
+                        <li><a href="#">Actualités</a></li>
+                        <li><a href="http://localhost:81/synergie-agro/contact/">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
 

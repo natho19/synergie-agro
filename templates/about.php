@@ -74,4 +74,54 @@
 </div>
 <!-- End Choose Us -->
 
+<!-- Start Brand
+============================================= -->
+<div class="brand-style-two-area text-center bg-gray default-padding">
+    <div class="container">
+        <div class="brand-style-two">
+            <div class="row">
+                <div class="col-lg-12">
+                    <div class="brand5col swiper">
+                        <!-- Additional required wrapper -->
+                        <div class="swiper-wrapper">
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/1.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/2.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/3.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/4.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/5.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                            <!-- Single Item -->
+                            <div class="swiper-slide">
+                                <img src="<?= SA_IMG_URL . 'brand/3.png'; ?>" alt="Thumb">
+                            </div>
+                            <!-- End Single Item -->
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <!-- End Brand -->
+        </div>
+    </div>
+</div>
+<!-- End Brand -->
+
 <?php get_footer(); ?>

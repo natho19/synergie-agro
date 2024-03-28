@@ -4309,10 +4309,11 @@ ul.top-feature li:nth-child(2) p {
 	position: relative;
 	overflow: hidden;
 	z-index: 1;
-	padding: 50px;
+	padding: 40px;
 	background: var(--white);
 	height: 100%;
 	border-radius: 30px;
+	margin: 10px;
 }
 
 .service-style-one-item .top {
@@ -4345,6 +4346,7 @@ ul.top-feature li:nth-child(2) p {
 }
 
 .service-style-one-item p {
+	font-size: 18px;
 	margin-bottom: 0;
 }
 
