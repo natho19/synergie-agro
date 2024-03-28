@@ -106,8 +106,6 @@
         <nav class="navbar mobile-sidenav inc-shape navbar-sticky navbar-default validnavs dark">
 
             <div class="container d-flex justify-content-between align-items-center">
-                
-                
                 <div class="navbar-brand-left">
                     <!-- Start Header Navigation -->
                     <div class="navbar-header">
@@ -144,6 +142,18 @@
                         <li><a href="#" class="dropdown-toggle">Contact</a></li>
                     </ul>
                 </div><!-- /.navbar-collapse -->
+
+                <div class="attr-right">
+                    <!-- Start Atribute Navigation -->
+                    <!-- Select des langues -->
+                    <div class="attr-nav">
+                        <ul>
+                            <li class="button"><a href="#">Register</a></li>
+                        </ul>
+                    </div>
+                    <!-- End Atribute Navigation -->
+
+                </div>
                 <!-- Main Nav -->
             </div>   
             <!-- Overlay screen for menu -->

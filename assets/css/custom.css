@@ -1,0 +1,11 @@
+.about-style-one-info {
+    margin-bottom: 2.5em;
+}
+
+.about-style-one-info:last-child {
+    margin-bottom: 0;
+}
+
+.about-style-one-info p {
+    margin-bottom: 0;
+}
