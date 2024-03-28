@@ -132,10 +132,11 @@
                         <li><a href="http://localhost:81/synergie-agro/a-propos/">A propos</a></li>
                         <li><a href="http://localhost:81/synergie-agro/domaines-dintervention/">Domaines d'intervention</a></li>
                         <li class="dropdown">
-                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Réalisations</a>
+                            <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projets</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Nos réalisations</a></li>
+                                <li><a href="#">Réalisations</a></li>
                                 <li><a href="#">Projets futurs</a></li>
+                                <li><a href="#">Tous nos projets</a></li>
                             </ul>
                         </li>
                         <li><a href="http://localhost:81/synergie-agro/actualites/">Actualités</a></li>
