@@ -6,7 +6,7 @@
 
 <!-- Start Services 
 ============================================= -->
-<div class="services-style-one-area bg-gray default-padding bottom-less">
+<div class="services-style-one-area bg-gray default-padding">
     <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape/9.png'; ?>);"></div>
     <div class="container">
         <div class="row">
