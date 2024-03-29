@@ -7,20 +7,14 @@
                     <!-- Single Itme -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
-                            <img class="logo" src="<?= SA_IMG_URL . 'logo-light.png'; ?>" alt="Logo">
-                            <p>
-                                Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.
-                            </p>
-                            <form action="#">
-                                <input type="email" placeholder="Your Email" class="form-control" name="email">
-                                <button type="submit"> Go</button>  
-                            </form>
+                            <img class="logo" src="<?= SA_IMG_URL . 'logo-sa.png'; ?>" alt="Logo">
+                            <p>Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.</p>
                         </div>
                     </div>
                     <!-- End Single Itme -->
 
                     <!-- Single Itme -->
-                    <div class="col-lg-2 col-md-6 item">
+                    <div class="col-lg-3 offset-lg-1 col-md-6 item">
                         <div class="footer-item link">
                             <h4 class="widget-title">Explore</h4>
                             <ul>
@@ -47,44 +41,9 @@
                     </div>
                     <!-- End Single Itme -->
 
-                    <!-- Single Itme -->
-                    <div class="col-lg-3 col-md-6 item">
-                        <div class="footer-item recent-post">
-                            <h4 class="widget-title">Recent Posts</h4>
-                            <ul>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
-                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Sep, 2023</span>
-                                        </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Meant widow equal an share least part. </a></h5>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="blog-single-with-sidebar.html">
-                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">18 Jul, 2023</span>
-                                        </div>
-                                        <h5><a href="blog-single-with-sidebar.html">Future Plan & Strategy for Consutruction </a></h5>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
-                    </div>
-                    <!-- End Single Itme -->
 
                     <!-- Single Itme -->
-                    <div class="col-lg-3 col-md-6 item">
+                    <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item contact">
                             <h4 class="widget-title">Contact Info</h4>
                             <ul>
@@ -125,7 +84,7 @@
             <div class="footer-bottom text-center">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">validthemes</a></p>
+                        <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">codehouse</a></p>
                     </div>
                 </div>
             </div>
@@ -136,10 +95,11 @@
         </div>
     </footer>
     <!-- End Footer -->
-    
+
     <!-- jQuery Frameworks
     ============================================= -->
     <?php wp_footer(); ?>
 
-</body>
-</html>
+    </body>
+
+    </html>

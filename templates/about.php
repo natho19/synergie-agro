@@ -46,12 +46,9 @@
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">
-                <h2 class="title">Healthy life with <br> fresh products</h2>
-                <p>
-                    Consume ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo ullam harum et fuga suscipit quibusdam sapiente. Corrupti ut consequatur magni minus! Iusto eos consectetur similique minus culpa odio temporibus.
-                </p>
+                <h2 class="title">Nos chaînes de production</h2>
+                <p>Consume ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo ullam harum et fuga suscipit quibusdam sapiente. Corrupti ut consequatur magni minus! Iusto eos consectetur similique minus culpa odio temporibus.</p>
                 <div class="list-grid">
-                    
                     <div class="achivement-content">
                         <div class="item">
                             <div class="progressbar">

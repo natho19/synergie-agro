@@ -26,20 +26,17 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
                                             <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
                                             <text>
-                                                <textPath href="#textPath">100% Organic Product</textPath>
+                                                <textPath href="#textPath">Produit 100% Bio</textPath>
                                             </text>
                                         </svg>
                                         <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h2><strong>Agriculture</strong> Farming Products</h2>
-                                    <p>
-                                        Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on
-                                        my jointure horrible margaret suitable.
-                                    </p>
+                                    <h2>Lorem Ipsum Dolor</h2>
+                                    <p>Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable.</p>
                                     <div class="button">
-                                        <a class="btn btn-theme btn-md radius animation" href="about-us.html">Discover More</a>
+                                        <a class="btn btn-theme btn-md radius animation" href="#">Lire plus</a>
                                     </div>
                                 </div>
                             </div>
@@ -65,20 +62,19 @@
                                         <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
                                             <path id="textPath2" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
                                             <text>
-                                                <textPath href="#textPath">100% Organic Product</textPath>
+                                                <textPath href="#textPath">Produit 100% Bio</textPath>
                                             </text>
                                         </svg>
                                         <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
                                     </div>
                                 </div>
                                 <div class="info">
-                                    <h2><strong>Homemade</strong> Organic Product</h2>
-                                    <p>
-                                        Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on
-                                        my jointure horrible margaret suitable.
-                                    </p>
-                                    <div class="button">
-                                        <a class="btn btn-theme btn-md radius animation" href="about-us.html">Discover More</a>
+                                    <div class="info">
+                                        <h2>Lorem Ipsum Dolor</h2>
+                                        <p>Dissuade ecstatic and properly saw entirely sir why laughter endeavor. In on my jointure horrible margaret suitable.</p>
+                                        <div class="button">
+                                            <a class="btn btn-theme btn-md radius animation" href="#">Lire plus</a>
+                                        </div>
                                     </div>
                                 </div>
                             </div>
@@ -117,10 +113,8 @@
                                 <img src="<?= SA_IMG_URL . 'icon/3.png'; ?>" alt="Image Not Found">
                             </div>
                             <div class="info">
-                                <h4>100% Guaranteed Organic Product</h4>
-                                <p>
-                                    Always parties but trying she shewing of moment.
-                                </p>
+                                <h4>Titre 1</h4>
+                                <p>Always parties but trying she shewing of moment.</p>
                             </div>
                         </li>
                         <li>
@@ -128,10 +122,8 @@
                                 <img src="<?= SA_IMG_URL . 'icon/2.png'; ?>" alt="Image Not Found">
                             </div>
                             <div class="info">
-                                <h4>Top-Quality Healthy Foods Production</h4>
-                                <p>
-                                    Majority have suffered alteration in some form by injected humor.
-                                </p>
+                                <h4>Titre 2</h4>
+                                <p>Majority have suffered alteration in some form by injected humor.</p>
                             </div>
                         </li>
                         <li>
@@ -139,10 +131,8 @@
                                 <img src="<?= SA_IMG_URL . 'icon/2.png'; ?>" alt="Image Not Found">
                             </div>
                             <div class="info">
-                                <h4>Top-Quality Healthy Foods Production</h4>
-                                <p>
-                                    Majority have suffered alteration in some form by injected humor.
-                                </p>
+                                <h4>Titre 3</h4>
+                                <p>Majority have suffered alteration in some form by injected humor.</p>
                             </div>
                         </li>
                         <li>
@@ -150,10 +140,8 @@
                                 <img src="<?= SA_IMG_URL . 'icon/3.png'; ?>" alt="Image Not Found">
                             </div>
                             <div class="info">
-                                <h4>100% Guaranteed Organic Product</h4>
-                                <p>
-                                    Always parties but trying she shewing of moment.
-                                </p>
+                                <h4>Titre 4</h4>
+                                <p>Always parties but trying she shewing of moment.</p>
                             </div>
                         </li>
                     </ul>
@@ -171,7 +159,7 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="site-heading text-center">
-                    <h5 class="sub-title">What we do</h5>
+                    <h5 class="sub-title">Caractéristiques</h5>
                     <h2 class="title">Currently we are <br> selling organic food</h2>
                 </div>
             </div>
@@ -286,7 +274,7 @@
             </div>
             <div class="col-xl-5 offset-xl-1 col-lg-6">
                 <div class="choose-us-style-two-content">
-                    <h4 class="sub-title">Why CHoose Us</h4>
+                    <h4 class="sub-title">Quelques chiffres</h4>
                     <h2 class="title">Growing crops and raising livestock. </h2>
                     <div class="choose-us-style-two-info">
                         <div class="content">
@@ -338,8 +326,8 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="site-heading text-center">
-                    <h5 class="sub-title">What we do</h5>
-                    <h2 class="title">Currently we are <br> selling organic food</h2>
+                    <h5 class="sub-title">Ce que nous faisons</h5>
+                    <h2 class="title">Nos domaines d'intervention</h2>
                 </div>
             </div>
         </div>
@@ -403,8 +391,8 @@
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="site-heading text-center">
-                    <h5 class="sub-title">Awesome Gallery</h5>
-                    <h2 class="title">Explore Projects</h2>
+                    <h5 class="sub-title">Projets</h5>
+                    <h2 class="title">Explorer nos projets</h2>
                 </div>
             </div>
         </div>
@@ -492,13 +480,13 @@
             <div class="col-xl-6 col-md-8">
                 <div class="product-speciality-info default-padding-bottom">
                     <div class="product-badge">
-                        <h1>100 <strong>Organic</strong></h1>
+                        <h1>100% <strong>Bio</strong></h1>
                     </div>
-                    <h2><strong>Fresh & Natural</strong> Produc in Our Store</h2>
+                    <h2>Nos produits</h2>
                     <p>
                         Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
                     </p>
-                    <a class="btn btn-dark btn-md radius animation" href="about-us.html">Ourchase Now</a>
+                    <a class="btn btn-dark btn-md radius animation" href="#">Nous contacter</a>
                 </div>
             </div>
         </div>
@@ -513,8 +501,8 @@
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
                 <div class="site-heading text-center">
-                    <h5 class="sub-title">Latest News</h5>
-                    <h2 class="title">Check out our blog posts </h2>
+                    <h5 class="sub-title">Actualités</h5>
+                    <h2 class="title">Découvrir nos articles</h2>
                 </div>
             </div>
         </div>

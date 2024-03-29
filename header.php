@@ -28,7 +28,7 @@
 
     <!-- Start Preloader 
     ============================================= -->
-    <div id="preloader">
+    <!-- <div id="preloader">
         <div id="agrica-preloader" class="agrica-preloader">
             <div class="animation-preloader">
                 <div class="spinner"></div>
@@ -50,7 +50,7 @@
                 </div>
             </div>
         </div>
-    </div>
+    </div> -->
     <!-- End Preloader -->
 
     <!-- Start Header Top 
@@ -61,10 +61,10 @@
                 <div class="col-lg-8">
                     <ul class="item-flex">
                         <li>
-                            <i class="fas fa-clock"></i> Opening Hours : Sunday- Friday, 08:00 am - 05:00pm
+                            <i class="fas fa-clock"></i> Lun à Sam 24h/24, Dim 06:00 à 13:00
                         </li>
                         <li>
-                            <a href="tel:+4733378901"><i class="fas fa-phone-alt"></i> +4733378901</a>
+                            <a href="tel:+22890233809"><i class="fas fa-phone-alt"></i> +228 90 23 38 09</a>
                         </li>
                     </ul>
                 </div>
@@ -97,7 +97,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="<?= esc_url(get_home_url()); ?>">
-                            <img src="<?= SA_IMG_URL . 'logo-mix.png'; ?>" class="logo" alt="Logo">
+                            <img src="<?= SA_IMG_URL . 'logo-sa.png'; ?>" class="logo" alt="Logo">
                         </a>
                     </div>
                     <!-- End Header Navigation -->

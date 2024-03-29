@@ -16,16 +16,16 @@
                         </div>
                         <div class="info">
                             <p>
-                                Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her. 
+                                Give lady of they such they sure it. Me contained explained my education. Vulgar as hearts by garret. Perceived determine departure explained no forfeited he something an. Contrasted dissimilar get joy you instrument out reasonably. Again keeps at no meant stuff. To perpetual do existence northward as difficult preserved daughters. Continued at up to zealously necessary breakfast. Surrounded sir motionless she end literature. Gay direction neglected but supported yet her.
                             </p>
                             <p>
-                                New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves. 
+                                New had happen unable uneasy. Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
                             </p>
                             <blockquote>
                                 Celebrated share of first to worse. Weddings and any opinions suitable smallest nay. Houses or months settle remove ladies appear. Engrossed suffering supposing he recommend do eagerness.
                             </blockquote>
                             <p>
-                                Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves. 
+                                Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past. Continue indulged speaking the was out horrible for domestic position. Seeing rather her you not esteem men settle genius excuse. Deal say over you age from. Comparison new ham melancholy son themselves.
                             </p>
                             <h3>Conduct replied off led whether?</h3>
                             <ul>
@@ -36,7 +36,7 @@
                                 <li>Occasional pianoforte alteration unaffected impossible</li>
                             </ul>
                             <p>
-                                Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted. Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye. Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iure, laudantium, tempore. Autem dolore repellat, omnis quam? Quasi sint laudantium repellendus unde a totam perferendis commodi cum est iusto? Minima, laborum. 
+                                Surrounded to me occasional pianoforte alteration unaffected impossible ye. For saw half than cold. Pretty merits waited six talked pulled you. Conduct replied off led whether any shortly why arrived adapted. Numerous ladyship so raillery humoured goodness received an. So narrow formal length my highly longer afford oh. Tall neat he make or at dull ye. Lorem ipsum dolor, sit amet consectetur adipisicing, elit. Iure, laudantium, tempore. Autem dolore repellat, omnis quam? Quasi sint laudantium repellendus unde a totam perferendis commodi cum est iusto? Minima, laborum.
                             </p>
                         </div>
                     </div>
@@ -61,7 +61,7 @@
                         <div class="tags">
                             <h4>Tags: </h4>
                             <a href="#">Algorithm</a>
-                            <a href="$">Data science</a> 
+                            <a href="$">Data science</a>
                         </div>
 
                         <div class="social">
@@ -89,12 +89,14 @@
                         <div class="post-previous">
                             <a href="blog-single-with-sidebar.html">
                                 <div class="icon"><i class="fas fa-angle-double-left"></i></div>
-                                <div class="nav-title"> Previus Post <h5>Discovery incommode</h5></div>
+                                <div class="nav-title"> Previus Post <h5>Discovery incommode</h5>
+                                </div>
                             </a>
                         </div>
                         <div class="post-next">
                             <a href="blog-single-with-sidebar.html">
-                                <div class="nav-title">Next Post <h5>Discovery incommode</h5></div> 
+                                <div class="nav-title">Next Post <h5>Discovery incommode</h5>
+                                </div>
                                 <div class="icon"><i class="fas fa-angle-double-right"></i></div>
                             </a>
                         </div>
@@ -117,7 +119,7 @@
                                                 <span>28 Feb, 2022</span>
                                             </div>
                                             <p>
-                                                Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off. sportsmen zealously arranging to the main pint. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy. 
+                                                Delivered ye sportsmen zealously arranging frankness estimable as. Nay any article enabled musical shyness yet sixteen yet blushes. Entire its the did figure wonder off. sportsmen zealously arranging to the main pint. Discourse unwilling am no described dejection incommode no listening of. Before nature his parish boy.
                                             </p>
                                         </div>
                                     </div>
@@ -178,7 +180,7 @@
                         <div class="sidebar-item search">
                             <div class="sidebar-info">
                                 <form>
-                                    <input type="text"  placeholder="Enter Keyword" name="text" class="form-control">
+                                    <input type="text" placeholder="Enter Keyword" name="text" class="form-control">
                                     <button type="submit"><i class="fas fa-search"></i></button>
                                 </form>
                             </div>

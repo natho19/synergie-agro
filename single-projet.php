@@ -8,9 +8,22 @@
     <div class="container">
         <div class="project-detail-content">
             <div class="row">
-                <div class="col-lg-8 offset-lg-2">
+                <div class="col-lg-4">
+                    <div class="single-widget quick-contact-widget text-light" style="background-image: url(<?= SA_IMG_URL . '800x800.png'; ?>);">
+                        <div class="content">
+                            <h3>Need Help?</h3>
+                            <p>
+                                Speak with a human to filling out a form? call corporate office and we will connect you with a team member help.
+                            </p>
+                            <h2>+228 90 23 38 09</h2>
+                            <h4><a href="contact@synergieagro.com">contact@synergieagro.com</a></h4>
+                            <a class="btn mt-30 circle btn-theme animation btn-md" href="contact-us.html">Contact Us</a>
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-8">
                     <div class="project-details-top">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '1500x900.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="item-grid-container">
                         <div class="single-grid">
