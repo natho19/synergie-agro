@@ -1,15 +1,19 @@
 <!-- Start Breadcrumb 
 ============================================= -->
-<?php 
-    $home_title = get_the_title(get_option('page_on_front'));
-    $page_title = "";
-    if (is_404()) {
-        $page_title = "404";
-    } elseif (is_home()) {
-        $page_title = get_queried_object()->post_title;
-    } else {
-        $page_title = get_the_title();
-    }
+<?php
+$home_title = get_the_title(get_option('page_on_front'));
+$page_title = "";
+if (is_404()) {
+    $page_title = "404";
+} elseif (is_home()) {
+    $page_title = get_queried_object()->post_title;
+} elseif (is_tax()) {
+    $page_title = get_queried_object()->name;
+} elseif (is_post_type_archive()) {
+    $page_title = post_type_archive_title('', false);
+} else {
+    $page_title = get_the_title();
+}
 ?>
 
 <div class="breadcrumb-area text-center shadow dark-hard bg-cover text-light" style="background-image: url(<?= SA_IMG_URL . '1900x400.png'; ?>);">

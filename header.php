@@ -134,9 +134,9 @@
                         <li class="dropdown">
                             <a href="#" class="dropdown-toggle" data-toggle="dropdown">Projets</a>
                             <ul class="dropdown-menu">
-                                <li><a href="#">Réalisations</a></li>
-                                <li><a href="#">Projets futurs</a></li>
-                                <li><a href="#">Tous nos projets</a></li>
+                                <li><a href="http://localhost:81/synergie-agro/statuts/realisations/">Réalisations</a></li>
+                                <li><a href="http://localhost:81/synergie-agro/statuts/projets-futurs/">Projets futurs</a></li>
+                                <li><a href="http://localhost:81/synergie-agro/projets/">Tous nos projets</a></li>
                             </ul>
                         </li>
                         <li><a href="http://localhost:81/synergie-agro/actualites/">Actualités</a></li>
@@ -155,7 +155,7 @@
 
                 </div>
                 <!-- Main Nav -->
-            </div>   
+            </div>
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
             <!-- End Overlay screen for menu -->
