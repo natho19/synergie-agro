@@ -5602,7 +5602,8 @@ ul.list-disc li {
 }
 
 .project-details-style-one .project-details-top img {
-	margin-bottom: 60px;
+	margin-bottom: 30px;
+	width: 100%;
 }
 
 .project-detail-content {

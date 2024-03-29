@@ -6,7 +6,7 @@
 ============================================= -->
 <div class="gallery-style-two-area default-padding">
     <div class="container">
-        <div class="row mb-5">
+        <div class="row mb-40">
             <div class="col-md-12 gallery-content">
                 <div class="magnific-mix-gallery gallery-masonary">
                     <div id="gallery-masonary" class="gallery-items colums-3">
