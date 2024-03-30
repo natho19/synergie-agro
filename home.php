@@ -12,7 +12,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">
@@ -27,7 +27,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">
@@ -42,7 +42,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">
@@ -57,7 +57,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">
@@ -72,7 +72,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">
@@ -87,7 +87,7 @@
                 <div class="col-xl-4 col-md-6 single-item">
                     <div class="blog-style-one">
                         <div class="thumb">
-                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                            <a href="http://localhost:81/synergie-agro/bonjour-tout-le-monde/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                             <div class="date"><strong>18</strong> <span>Apr, 2024</span></div>
                         </div>
                         <div class="info">

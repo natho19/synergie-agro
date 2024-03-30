@@ -12,7 +12,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '2440x1578.png'; ?>);">
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);">
                 </div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Image Not Found">
@@ -337,7 +337,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Etude Economique sur les Produits et les Marchés Porteurs de Croissance du Secteur Agricole</p>
@@ -350,7 +350,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Culture d'Ingrédients Végétaux Pharmaceutiques</p>
@@ -363,7 +363,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Promotion de l'Agriculture Biologique</p>
@@ -513,7 +513,7 @@
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="blog-style-one">
                     <div class="thumb">
-                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                         <div class="date"><strong>26</strong> <span>Aug, 2023</span></div>
                     </div>
                     <div class="info">
@@ -540,7 +540,7 @@
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="blog-style-one">
                     <div class="thumb">
-                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                         <div class="date"><strong>26</strong> <span>Aug, 2023</span></div>
                     </div>
                     <div class="info">
@@ -567,7 +567,7 @@
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="blog-style-one">
                     <div class="thumb">
-                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found"></a>
+                        <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
                         <div class="date"><strong>26</strong> <span>Aug, 2023</span></div>
                     </div>
                     <div class="info">

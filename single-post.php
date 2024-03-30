@@ -11,7 +11,7 @@
                 <div class="blog-content col-xl-8 col-lg-7 col-md-12 pr-35 pr-md-15 pl-md-15 pr-xs-15 pl-xs-15">
                     <div class="blog-style-two item">
                         <div class="thumb">
-                            <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '1500x700.png'; ?>" alt="Thumb"></a>
+                            <a href="blog-single-with-sidebar.html"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Thumb"></a>
                             <div class="date"><strong>18</strong> <span>April, 2022</span></div>
                         </div>
                         <div class="info">

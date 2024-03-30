@@ -14,7 +14,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Etude Economique sur les Produits et les Marchés Porteurs de Croissance du Secteur Agricole</p>
@@ -27,7 +27,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Culture d'Ingrédients Végétaux Pharmaceutiques</p>
@@ -40,7 +40,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Promotion de l'Agriculture Biologique</p>
@@ -53,7 +53,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Marketing Export</p>
@@ -67,7 +67,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Production des Semences Certifiées</p>
@@ -80,7 +80,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Appui Technique à la Certification Bio</p>
@@ -93,7 +93,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Montage de Partenariats Multiformes pour le Développement Agro Industriels</p>
@@ -106,7 +106,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '800x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="info">
                         <p>Transfert de Technologies</p>

@@ -13,7 +13,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Site de production de céréales et tubercules</a></h4>
                                 </div>
@@ -23,7 +23,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Complexe forage, château d’eau, système d’irrigation</a></h4>
                                 </div>
@@ -33,7 +33,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de cultures maraichers</a></h4>
                                 </div>
@@ -43,7 +43,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de production de pépinières multi variétés</a></h4>
                                 </div>
@@ -53,7 +53,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Aires de séchage</a></h4>
                                 </div>
@@ -63,7 +63,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Magasin de stockage</a></h4>
                                 </div>
@@ -73,7 +73,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Barrages</a></h4>
                                 </div>
@@ -83,7 +83,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Travaux de dessouchage au bulldozer</a></h4>
                                 </div>
@@ -93,7 +93,7 @@
                         <!-- Single Item -->
                         <div class="gallery-item">
                             <div class="gallery-style-one">
-                                <img src="<?= SA_IMG_URL . '800x900.png'; ?>" alt="Image not Found">
+                                <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
                                 <div class="overlay">
                                     <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Travaux de désoucheuse broyeuse</a></h4>
                                 </div>
@@ -102,7 +102,6 @@
                         <!-- End Single Item -->
                     </div>
                 </div>
-
             </div>
         </div>
         <!-- Pagination -->

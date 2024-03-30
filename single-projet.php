@@ -23,7 +23,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="project-details-top">
-                        <img src="<?= SA_IMG_URL . '1500x900.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image Not Found">
                     </div>
                     <div class="item-grid-container">
                         <div class="single-grid">
