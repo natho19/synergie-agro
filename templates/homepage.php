@@ -376,7 +376,7 @@
 
         <div class="row">
             <div class="text-center mt-40">
-                <a class="btn btn-dark btn-md radius animation" href="#">Tous les domaines</a>
+                <a class="btn btn-theme btn-md radius animation" href="#">Tous les domaines</a>
             </div>
         </div>
     </div>
@@ -486,7 +486,7 @@
                     <p>
                         Drawings can followed improved out sociable not. Earnestly so do instantly pretended. See general few civilly amiable pleased account carried. Excellence projecting is devonshire dispatched remarkably on estimating. Side in so life past.
                     </p>
-                    <a class="btn btn-dark btn-md radius animation" href="#">Nous contacter</a>
+                    <a class="btn btn-theme btn-md radius animation" href="#">Nous contacter</a>
                 </div>
             </div>
         </div>
