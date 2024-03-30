@@ -4592,10 +4592,10 @@ h2.mask-text.large {
 .quick-contact-widget {
 	padding: 60px 37px;
 	text-align: center;
-	background-size: cover;
-	background-position: center;
+	/* background-size: cover;
+	background-position: center; */
 	position: relative;
-	z-index: 1;
+	/* z-index: 1; */
 }
 
 .quick-contact-widget h2 {
@@ -4606,6 +4606,7 @@ h2.mask-text.large {
 }
 
 .quick-contact-widget h4 a {
+	font-size: 18px;
 	font-weight: 400;
 	border-bottom: 2px solid;
 }

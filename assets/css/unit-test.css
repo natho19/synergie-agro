@@ -1218,7 +1218,7 @@ a.button-regular:hover i::after {
 	height: 38px;
 	width: 38px;
 	line-height: 40px;
-	background: var(--dark);
+	background: var(--color-primary);
 	text-align: center;
 	color: #ffffff;
 	font-size: 14px;

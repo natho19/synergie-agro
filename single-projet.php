@@ -9,7 +9,7 @@
         <div class="project-detail-content">
             <div class="row">
                 <div class="col-lg-4">
-                    <div class="single-widget quick-contact-widget text-light" style="background-image: url(<?= SA_IMG_URL . '800x800.png'; ?>);">
+                    <div class="single-widget quick-contact-widget bg-dark text-light mb-50">
                         <div class="content">
                             <h3>Need Help?</h3>
                             <p>
