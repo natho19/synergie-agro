@@ -19,7 +19,7 @@
                     <div class="info">
                         <p>Etude Economique sur les Produits et les Marchés Porteurs de Croissance du Secteur Agricole</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -32,7 +32,7 @@
                     <div class="info">
                         <p>Culture d'Ingrédients Végétaux Pharmaceutiques</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -45,7 +45,7 @@
                     <div class="info">
                         <p>Promotion de l'Agriculture Biologique</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -58,7 +58,7 @@
                     <div class="info">
                         <p>Marketing Export</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -72,7 +72,7 @@
                     <div class="info">
                         <p>Production des Semences Certifiées</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -85,7 +85,7 @@
                     <div class="info">
                         <p>Appui Technique à la Certification Bio</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -98,7 +98,7 @@
                     <div class="info">
                         <p>Montage de Partenariats Multiformes pour le Développement Agro Industriels</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
@@ -111,7 +111,7 @@
                     <div class="info">
                         <p>Transfert de Technologies</p>
                     </div>
-                    <a href="#" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
             </div>
             <!-- End Single Item -->
