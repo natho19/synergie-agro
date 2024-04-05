@@ -7,7 +7,7 @@
                     <!-- Single Itme -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
-                            <img class="logo" src="<?= SA_IMG_URL . 'logo-sa.png'; ?>" alt="Logo">
+                            <img class="logo" src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
                             <p>Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.</p>
                         </div>
                     </div>

@@ -48,7 +48,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '2440x1578.png'; ?>);">
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);">
                 </div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Image Not Found">

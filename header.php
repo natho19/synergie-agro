@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="en">
+<html <?php language_attributes(); ?>>
 
 <head>
     <!-- ========== Meta Tags ========== -->
@@ -8,20 +8,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Agrica - Organic Farm Agriculture Template">
 
-    <!-- ========== Page Title ========== -->
-    <title>Agrica - Organic Farm Agriculture Template</title>
-
-    <!-- ========== Favicon Icon ========== -->
-    <link rel="shortcut icon" href="<?= SA_IMG_URL . 'favicon.png'; ?>" type="image/x-icon">
-
-    <!-- ========== Start Stylesheet ========== -->
+    <link rel="shortcut icon" href="<?= SA_IMG_URL . 'logo.png'; ?>" type="image/x-icon">
     <?php wp_head(); ?>
-    <!-- ========== End Stylesheet ========== -->
-
-    <!--[if lte IE 9]>
-        <p class="browserupgrade">You are using an <strong>outdated</strong> browser. Please <a href="https://browsehappy.com/">upgrade your browser</a> to improve your experience and security.</p>
-    <![endif]-->
-
 </head>
 
 <body>
@@ -97,7 +85,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="<?= esc_url(get_home_url()); ?>">
-                            <img src="<?= SA_IMG_URL . 'logo-sa.png'; ?>" class="logo" alt="Logo">
+                            <img src="<?= SA_IMG_URL . 'logo.png'; ?>" class="logo" alt="Logo">
                         </a>
                     </div>
                     <!-- End Header Navigation -->
