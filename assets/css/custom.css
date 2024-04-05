@@ -13,3 +13,12 @@
 .blog-area .post-title {
     font-size: 26px;
 }
+
+@media only screen and (max-width: 767px) {
+    .choose-us-style-two-info .fun-fact {
+        margin-top: inherit;
+        padding-top: inherit;
+        border-top: inherit;
+        margin-bottom: 40px;
+    }
+}
