@@ -588,7 +588,7 @@ p {
 	content: "";
 	height: 100%;
 	left: 0;
-	opacity: 0.4;
+	opacity: 0.5;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -809,7 +809,7 @@ p {
 	font-weight: 600;
 	font-size: 40px !important;
 	margin-top: -10px;
-	margin-bottom: 25px;
+	margin-bottom: 30px;
 }
 
 @media (max-width: 767px) {
@@ -4005,12 +4005,13 @@ a.btn-round-animation.dark {
 
 .banner-style-one .shape {
 	position: absolute;
-	left: 0;
+	right: 0;
 	top: 0;
 	z-index: 1;
 	height: 50%;
 	width: auto;
 	transition: all 0.55s ease-in-out;
+	transform: rotateY(180deg);
 }
 
 .banner-style-one .shape img {
@@ -4253,9 +4254,12 @@ ul.top-feature li p {
 	margin: 0;
 }
 
+ul.top-feature li h4 {
+	margin-bottom: 18px;
+}
+
 ul.top-feature li h4,
 ul.top-feature li p {
-	margin: 0;
 	color: var(--white);
 }
 
@@ -5831,7 +5835,7 @@ ul.list-simple.text-light li p {
 
 .choose-us-style-two-info .fun-fact .counter {
 	color: var(--color-primary);
-	font-size: 70px;
+	font-size: 60px;
 	font-weight: 600;
 }
 

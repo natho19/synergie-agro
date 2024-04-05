@@ -6,7 +6,7 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Agrica - Organic Farm Agriculture Template">
+    <meta name="description" content="Bienvenue chez Synergie Agro, votre partenaire de confiance pour des solutions technologiques innovantes dans le domaine de l'agro-industrie.">
 
     <link rel="shortcut icon" href="<?= SA_IMG_URL . 'logo.png'; ?>" type="image/x-icon">
     <?php wp_head(); ?>

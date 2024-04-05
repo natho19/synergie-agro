@@ -9,5 +9,6 @@ add_filter('use_block_editor_for_post', '__return_false');
 function sa_setup()
 {
     add_theme_support('title-tag');
+    add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'sa_setup');
