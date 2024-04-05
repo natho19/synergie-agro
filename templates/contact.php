@@ -67,38 +67,41 @@
                             </svg>
                         </span>
                     </h2>
-                    <p>
-                        Plan upon yet way get cold spot its week. Almost do am or limits hearts. Resolve parties but why she shewing.
-                    </p>
+                    <p>Pour toute demande d'information supplémentaire, de collaboration ou de partenariat, n'hésitez pas à prendre contact avec nous.</p>
                     <ul>
                         <li>
                             <div class="content">
-                                <h5 class="title">Hotline</h5>
-                                <a href="">+4733378901</a>
+                                <h5 class="title">Roaming</h5>
+                                <a href="tel:+22890233809">+228 90 23 38 09</a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h5 class="title">Téléphone</h5>
+                                <a href="tel:+22822210452">+228 22 21 04 52</a>
                             </div>
                         </li>
                         <li>
                             <div class="info">
                                 <h5 class="title">Siège administratif</h5>
-                                <p>55 Main Street, The Grand Avenue 2nd Block, <br> New York City</p>
+                                <p>Route de Kpalimé près CEET Akossombo 08 B.P 81809 Lomé-Togo N° RCCM : TG-LOM 2020 A3319 N°CFE : 05177PP2020/2020</p>
                             </div>
                         </li>
                         <li>
                             <div class="info">
                                 <h5 class="title">Siège technique</h5>
-                                <p>55 Main Street, The Grand Avenue 2nd Block, <br> New York City</p>
+                                <p>Agou Nyogbo près de l'orphelinat</p>
                             </div>
                         </li>
                         <li>
                             <div class="info">
-                                <h5 class="title">Official Email</h5>
-                                <a href="mailto:info@agrul.com.com">info@agrul.com</a>
+                                <h5 class="title">Email</h5>
+                                <a href="mailto:contact@synergieagro.com">contact@synergieagro.com</a>
                             </div>
                         </li>
                     </ul>
                 </div>
             </div>
-
         </div>
     </div>
 </div>
