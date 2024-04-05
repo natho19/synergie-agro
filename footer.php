@@ -8,7 +8,7 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
                             <img class="logo" src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
-                            <p>Happen active county. Winding morning ambition shyness evident to poor. Because elderly new to the point to main success.</p>
+                            <p>Bienvenue chez Synergie Agro, votre partenaire de confiance pour des solutions technologiques innovantes dans le domaine de l'agro-industrie.</p>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -16,25 +16,25 @@
                     <!-- Single Itme -->
                     <div class="col-lg-3 offset-lg-1 col-md-6 item">
                         <div class="footer-item link">
-                            <h4 class="widget-title">Explore</h4>
+                            <h4 class="widget-title">Liens utiles</h4>
                             <ul>
                                 <li>
-                                    <a href="about-us.html">About Us</a>
+                                    <a href="http://localhost:81/synergie-agro/a-propos/">A propos</a>
                                 </li>
                                 <li>
-                                    <a href="team.html">Meet Our Team</a>
+                                    <a href="http://localhost:81/synergie-agro/domaines-dintervention/">Domaines d'intervention</a>
                                 </li>
                                 <li>
-                                    <a href="blog-single-with-sidebar.html">News & Media</a>
+                                    <a href="http://localhost:81/synergie-agro/statuts/realisations/">Réalisations</a>
                                 </li>
                                 <li>
-                                    <a href="services.html">Services</a>
+                                    <a href="http://localhost:81/synergie-agro/statuts/projets-futurs/">Projets futurs</a>
                                 </li>
                                 <li>
-                                    <a href="contact-us.html">Contact Us</a>
+                                    <a href="http://localhost:81/synergie-agro/actualites/">Actualités</a>
                                 </li>
                                 <li>
-                                    <a href="team-details.html">Volunteers</a>
+                                    <a href="http://localhost:81/synergie-agro/contact/">Contact</a>
                                 </li>
                             </ul>
                         </div>
@@ -45,24 +45,33 @@
                     <!-- Single Itme -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item contact">
-                            <h4 class="widget-title">Contact Info</h4>
+                            <h4 class="widget-title">Contact</h4>
                             <ul>
                                 <li>
                                     <div class="icon">
-                                        <i class="fas fa-home"></i>
+                                        <i class="fal fa-building"></i>
                                     </div>
                                     <div class="content">
-                                        <strong>Address:</strong>
-                                        5919 Trussville Crossings Pkwy, Birmingham
+                                        <strong>Siège administratif</strong>
+                                        Route de Kpalimé près CEET Akossombo
                                     </div>
                                 </li>
                                 <li>
                                     <div class="icon">
-                                        <i class="fas fa-envelope"></i>
+                                        <i class="far fa-wrench"></i>
                                     </div>
                                     <div class="content">
-                                        <strong>Email:</strong>
-                                        <a href="mailto:info@validtheme.com">info@validtheme.com</a>
+                                        <strong>Siège technique</strong>
+                                        Agou Nyogbo près de l'Orphelinat
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-mail-bulk"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Boîte Postale</strong>
+                                        08 B.P 81809 Lomé-Togo
                                     </div>
                                 </li>
                                 <li>
@@ -70,8 +79,17 @@
                                         <i class="fas fa-phone"></i>
                                     </div>
                                     <div class="content">
-                                        <strong>Phone:</strong>
-                                        <a href="tel:2151234567">+123 34598768</a>
+                                        <strong>Téléphone</strong>
+                                        <a href="tel:22890233809">+228 90 23 38 09</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Email</strong>
+                                        <a href="mailto:contact@synergieagro.com">contact@synergieagro.com</a>
                                     </div>
                                 </li>
                             </ul>
@@ -84,14 +102,14 @@
             <div class="footer-bottom text-center">
                 <div class="row">
                     <div class="col-lg-12">
-                        <p>&copy; Copyright 2023. All Rights Reserved by <a href="#">codehouse</a></p>
+                        <p>&copy; Copyright <?= get_the_date('Y') ?>. Tous droits réservés Synergie Agro par <a href="#">Code House</a></p>
                     </div>
                 </div>
             </div>
             <!-- End Footer Bottom -->
         </div>
         <div class="shape-right-bottom">
-            <img src="<?= SA_IMG_URL . 'shape/7.png'; ?>" alt="Image Not Found">
+            <img src="<?= SA_IMG_URL . 'shape/7.png'; ?>" alt="Shape">
         </div>
     </footer>
     <!-- End Footer -->

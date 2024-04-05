@@ -7,15 +7,11 @@
 <!-- Start Contact Us 
     ============================================= -->
 <div class="contact-area contact-page overflow-hidden bg-gray default-padding">
-    <!-- <div class="sahpe-right-bottom">
-            <img src="<?= SA_IMG_URL . 'shape/16.png'; ?>" alt="Image Not Found">
-        </div> -->
     <div class="container">
         <div class="row align-center">
 
             <div class="col-tact-stye-one col-xl-7 col-lg-7">
                 <div class="contact-form-style-one mb-md-50">
-                    <!-- <img src="<?= SA_IMG_URL . 'illustration/10.png'; ?>" alt="Image Not Found"> -->
                     <h5 class="sub-title">Une question ?</h5>
                     <h2 class="heading">Nous contacter</h2>
                     <!-- action="assets/mail/contact.php" -->

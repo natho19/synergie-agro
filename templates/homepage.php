@@ -12,7 +12,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide.jpg'; ?>);"></div>
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);"></div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
                 </div>
@@ -20,17 +20,6 @@
                     <div class="row align-center">
                         <div class="col-xl-9">
                             <div class="content">
-                                <!-- <div class="badge">
-                                    <div class="curve-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
-                                            <path id="textPath" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                                            <text>
-                                                <textPath href="#textPath">Produit 100% Bio</textPath>
-                                            </text>
-                                        </svg>
-                                        <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div> -->
                                 <div class="info">
                                     <h2>Synergie Agro : Pionnier de l'Agro-Industrie Innovante</h2>
                                     <p>Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.</p>
@@ -47,7 +36,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide.jpg'; ?>);"></div>
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);"></div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
                 </div>
@@ -55,17 +44,6 @@
                     <div class="row align-center">
                         <div class="col-xl-9">
                             <div class="content">
-                                <!-- <div class="badge">
-                                    <div class="curve-text">
-                                        <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 150 150" version="1.1">
-                                            <path id="textPath2" d="M 0,75 a 75,75 0 1,1 0,1 z"></path>
-                                            <text>
-                                                <textPath href="#textPath">Produit 100% Bio</textPath>
-                                            </text>
-                                        </svg>
-                                        <a href="https://www.youtube.com/watch?v=ipUuoMCEbDQ" class="popup-youtube"><i class="fas fa-arrow-right"></i></a>
-                                    </div>
-                                </div> -->
                                 <div class="info">
                                     <div class="info">
                                         <h2>Innovation et Collaboration pour une Agriculture Durable</h2>
@@ -117,7 +95,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/25.png'; ?>" alt="Icon">
+                                <img src="<?= SA_IMG_URL . 'icon/3.png'; ?>" alt="Icon">
                             </div>
                             <div class="info">
                                 <h4>Système de transformation</h4>
@@ -150,90 +128,6 @@
     </div>
 </div>
 <!-- End About -->
-
-<!-- Team Bottom Info -->
-<!-- <div class="bottom-info bg-gray default-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="site-heading text-center">
-                    <h5 class="sub-title">Caractéristiques</h5>
-                    <h2 class="title">Currently we are <br> selling organic food</h2>
-                </div>
-            </div>
-        </div>
-        <div class="row">
-            <div class="col-lg-6">
-                <div class="team-single-list">
-                    <div class="team-list-item">
-                        <h4>Main Skills</h4>
-                        <ul>
-                            <li>
-                                <h5>Harvesting</h5>
-                                <p>
-                                    Harvesting is the process of collecting plants, animals, or fish
-                                </p>
-                            </li>
-                            <li>
-                                <h5>Farm operations</h5>
-                                <p>
-                                    it's important for farmers to have a strong understanding of the farming.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                    <div class="team-list-item">
-                        <h4>Expertise</h4>
-                        <ul>
-                            <li>
-                                <h5>Livestock </h5>
-                                <p>
-                                    Livestock Management and Innovation are still quite important.
-                                </p>
-                            </li>
-                            <li>
-                                <h5>Interpersonal </h5>
-                                <p>
-                                    Interpersonal skills also help farmers effectively interact with buyers.
-                                </p>
-                            </li>
-                        </ul>
-                    </div>
-                </div>
-            </div>
-            <div class="col-lg-6 pl-60 pl-md-15 pl-xs-15">
-                <div class="skill-items">
-                    <h3>Personal Skills</h3>
-                    <div class="progress-box">
-                        <h5>Cereals</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-width="88">
-                                <span>88%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h5>Fruit</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-width="95">
-                                <span>95%</span>
-                            </div>
-                        </div>
-                    </div>
-                    <div class="progress-box">
-                        <h5>Vegetables</h5>
-                        <div class="progress">
-                            <div class="progress-bar" role="progressbar" data-width="80">
-                                <span>80%</span>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-</div> -->
-<!-- End Team Single Area -->
 
 <!-- Start Choose Us 
 ============================================= -->
@@ -428,13 +322,12 @@
             <div class="gallery-style-one-carousel swiper">
                 <!-- Additional required wrapper -->
                 <div class="swiper-wrapper">
-
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
                             <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Site de production de céréales et tubercules</a></h4>
+                                <h4><a href="http://localhost:81/synergie-agro/projets/site-de-production-de-cereales-et-tubercules/">Site de production de céréales et tubercules</a></h4>
                             </div>
                         </div>
                     </div>
@@ -444,7 +337,7 @@
                         <div class="gallery-style-one">
                             <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Complexe forage, château d’eau, système d’irrigation</a></h4>
+                                <h4><a href="http://localhost:81/synergie-agro/projets/magasin-de-stockage/">Magasin de stockage</a></h4>
                             </div>
                         </div>
                     </div>
@@ -454,7 +347,7 @@
                         <div class="gallery-style-one">
                             <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de cultures maraichers</a></h4>
+                                <h4><a href="http://localhost:81/synergie-agro/projets/complexe-forage-chateau-deau-systeme-dirrigation/">Complexe forage, château d’eau, système d’irrigation</a></h4>
                             </div>
                         </div>
                     </div>
@@ -464,7 +357,7 @@
                         <div class="gallery-style-one">
                             <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de production de pépinières multi variétés</a></h4>
+                                <h4><a href="http://localhost:81/synergie-agro/projets/bassins-irrigues-de-cultures-maraichers/">Bassins irrigués de cultures maraichers</a></h4>
                             </div>
                         </div>
                     </div>
@@ -474,7 +367,17 @@
                         <div class="gallery-style-one">
                             <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Aires de séchage</a></h4>
+                                <h4><a href="http://localhost:81/synergie-agro/projets/bassins-irrigues-de-production-de-pepinieres-multi-varietes/">Bassins irrigués de production de pépinières multi variétés</a></h4>
+                            </div>
+                        </div>
+                    </div>
+                    <!-- End Single Item -->
+                    <!-- Single Item -->
+                    <div class="swiper-slide">
+                        <div class="gallery-style-one">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
+                            <div class="overlay">
+                                <h4><a href="http://localhost:81/synergie-agro/projets/aires-de-sechage/">Aires de séchage</a></h4>
                             </div>
                         </div>
                     </div>
