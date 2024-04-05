@@ -62,7 +62,7 @@
                     </ul>
                 </div>
                 <div class="mt-50">
-                    <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/domaines-dintervention/"><i class="fab fa-youtube"></i> Notre chaîne YouTube</a>
+                    <a class="btn btn-theme btn-md radius animation" href="#"><i class="fab fa-youtube"></i> Notre chaîne YouTube</a>
                 </div>
             </div>
         </div>
@@ -82,32 +82,32 @@
                         <div class="swiper-wrapper">
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/1.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/2.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/3.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/4.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/5.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                             <!-- Single Item -->
                             <div class="swiper-slide">
-                                <img src="<?= SA_IMG_URL . 'brand/3.png'; ?>" alt="Thumb">
+                                <img src="<?= SA_IMG_URL . '180x120.png'; ?>" alt="Thumb">
                             </div>
                             <!-- End Single Item -->
                         </div>

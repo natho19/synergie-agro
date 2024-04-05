@@ -607,7 +607,7 @@ p {
 	content: "";
 	height: 100%;
 	left: 0;
-	opacity: 0.5;
+	opacity: 0.6;
 	position: absolute;
 	top: 0;
 	width: 100%;
@@ -4016,6 +4016,7 @@ a.btn-round-animation.dark {
 
 .banner-style-one .shape img {
 	height: 100%;
+	opacity: .85;
 }
 
 .banner-area.banner-style-one .swiper-slide.swiper-slide-active .shape {

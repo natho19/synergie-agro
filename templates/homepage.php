@@ -12,7 +12,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);"></div>
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide1.jpg'; ?>);"></div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
                 </div>
@@ -21,7 +21,7 @@
                         <div class="col-xl-9">
                             <div class="content">
                                 <div class="info">
-                                    <h2>Synergie Agro : Pionnier de l'Agro-Industrie Innovante</h2>
+                                    <h2>Synergie Agro : Pionnier d'une Agro-Industrie Révolutionnaire</h2>
                                     <p>Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.</p>
                                     <div class="button">
                                         <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/a-propos/">Lire plus</a>
@@ -36,7 +36,7 @@
 
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . '1900x1200.png'; ?>);"></div>
+                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide2.jpg'; ?>);"></div>
                 <div class="shape">
                     <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
                 </div>

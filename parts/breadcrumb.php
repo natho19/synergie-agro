@@ -16,7 +16,7 @@ if (is_404()) {
 }
 ?>
 
-<div class="breadcrumb-area text-center shadow dark-hard bg-cover text-light" style="background-image: url(<?= SA_IMG_URL . '1900x400.png'; ?>);">
+<div class="breadcrumb-area text-center shadow dark-hard bg-cover text-light" style="background-image: url(<?= SA_IMG_URL . 'banner.jpg'; ?>);">
     <div class="container">
         <div class="row">
             <div class="col-lg-8 offset-lg-2">
