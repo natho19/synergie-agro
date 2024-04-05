@@ -11,16 +11,16 @@
         <div class="row align-center">
             <div class="col-xl-6 col-lg-5">
                 <div class="about-style-one-thumb">
-                    <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="Image Not Found">
+                    <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="800x1000">
                     <div class="animation-shape">
-                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Illustration">
                     </div>
                 </div>
             </div>
             <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
                 <div class="about-style-one-info">
                     <h2 class="title">Qui sommes-nous ?</h2>
-                    <p>SYNERGIE AGRO est une société qui s'est spécialisé dans la conception de solution technologiques innovantes pour le développement de toute la chaîne de valeur en agro-industrie.</p>
+                    <p>Synergie Agro est une société qui s'est spécialisée dans la conception de solution technologiques innovantes pour le développement de toute la chaîne de valeur en agro-industrie.</p>
                 </div>
                 <div class="about-style-one-info">
                     <h2 class="title">Notre vision</h2>
@@ -28,7 +28,7 @@
                 </div>
                 <div class="about-style-one-info">
                     <h2 class="title">Notre mission</h2>
-                    <p>La mission de SYNERGIE AGRO est d’intervenir sur toute la chaine de valeur c’est-à-dire, de la production, de la transformation et de la commercialisation.</p>
+                    <p>La mission de Synergie Agro est d’intervenir sur toute la chaine de valeur c’est-à-dire, de la production, de la transformation et de la commercialisation.</p>
                 </div>
             </div>
         </div>
@@ -40,30 +40,29 @@
 ============================================= -->
 <div class="choose-us-style-three-area default-padding bg-dark text-light">
     <div class="illustration-bottom">
-        <img src="<?= SA_IMG_URL . 'illustration/17.png'; ?>" alt="Image Not Found">
+        <img src="<?= SA_IMG_URL . 'illustration/17.png'; ?>" alt="Illustration">
     </div>
-    <div class="shape" style="background-image: url(<?= SA_IMG_URL . '800x800.png;' ?>);"></div>
+    <div class="shape" style="background-image: url(<?= SA_IMG_URL . '800x800.png;' ?>);">
+        <a href="https://www.youtube.com/watch?v=3JigXb9KXqI" class="popup-youtube video-play-button">
+            <i class="fas fa-play"></i>
+            <div class="effect"></div>
+        </a>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">
-                <h2 class="title">Nos chaînes de production</h2>
-                <p>Consume ipsum dolor sit amet consectetur adipisicing elit. Veritatis, illo ullam harum et fuga suscipit quibusdam sapiente. Corrupti ut consequatur magni minus! Iusto eos consectetur similique minus culpa odio temporibus.</p>
+                <h2 class="title">Synergie Agro en Vidéo</h2>
+                <p>Découvrez Synergie Agro à travers notre vidéo de présentation sur notre chaîne YouTube officielle. À travers des images captivantes et des témoignages inspirants, cette vidéo vous emmène dans un voyage passionnant par nos réalisations, nos projets futurs et notre engagement envers une agriculture durable.</p>
                 <div class="list-grid">
-                    <div class="achivement-content">
-                        <div class="item">
-                            <div class="progressbar">
-                                <div class="circle" data-percent="87">
-                                    <strong></strong>
-                                </div>
-                            </div>
-                            <h4>Organic Solutions</h4>
-                        </div>
-                    </div>
                     <ul class="list-item">
-                        <li>Biodynamic food</li>
-                        <li>Organic gardening</li>
-                        <li>Organic food certification</li>
+                        <li>Agriculture moderne, biologique et durable</li>
+                        <li>Innovation technologique</li>
+                        <li>Qualité des produits et services</li>
+                        <li>Collaboration avec les acteurs de l'agro-industrie</li>
                     </ul>
+                </div>
+                <div class="mt-50">
+                    <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/domaines-dintervention/"><i class="fab fa-youtube"></i> Notre chaîne YouTube</a>
                 </div>
             </div>
         </div>

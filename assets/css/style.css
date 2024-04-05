@@ -5839,12 +5839,14 @@ ul.list-simple.text-light li p {
 	font-weight: 600;
 }
 
-.choose-us-style-two-info .thumb {
+.choose-us-style-two-info .thumb,
+.choose-us-style-three-area .shape {
 	position: relative;
 	z-index: 1;
 }
 
-.choose-us-style-two-info .thumb .video-play-button {
+.choose-us-style-two-info .thumb .video-play-button,
+.choose-us-style-three-area .shape .video-play-button {
 	z-index: 999;
 	position: absolute;
 	left: 50%;
@@ -5852,24 +5854,28 @@ ul.list-simple.text-light li p {
 	transform: translate(-50%, -50%);
 }
 
-.choose-us-style-two-info .thumb .video-play-button i {
+.choose-us-style-two-info .thumb .video-play-button i,
+.choose-us-style-three-area .shape .video-play-button i {
 	font-size: 30px;
 	left: 0;
 }
 
-.choose-us-style-two-info .thumb .video-play-button .effect {
+.choose-us-style-two-info .thumb .video-play-button .effect,
+.choose-us-style-three-area .shape .video-play-button .effect {
 	background: var(--color-primary);
 	height: 150px;
 	width: 150px;
 }
 
-.choose-us-style-two-info .thumb .video-play-button .effect::after {
+.choose-us-style-two-info .thumb .video-play-button .effect::after,
+.choose-us-style-three-area .shape .video-play-button .effect::after {
 	background: var(--color-primary);
 	height: 100px;
 	width: 100px;
 }
 
-.choose-us-style-two-info .thumb .video-play-button i::before {
+.choose-us-style-two-info .thumb .video-play-button i::before,
+.choose-us-style-three-area .shape .video-play-button i::before {
 	position: relative;
 	left: 3px;
 }
@@ -5932,7 +5938,8 @@ ul.list-simple.text-light li p {
 
 .list-grid {
 	display: grid;
-	grid-template-columns: 1fr 1.5fr;
+	grid-template-columns: 1fr;
+	/* grid-template-columns: 1fr 1.5fr; */
 	grid-column-gap: 50px;
 	margin-top: 35px;
 	align-items: center;

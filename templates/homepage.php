@@ -97,9 +97,9 @@
         <div class="row align-center">
             <div class="col-xl-6 col-lg-5">
                 <div class="about-style-one-thumb">
-                    <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="Image Not Found">
+                    <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="800x1000">
                     <div class="animation-shape">
-                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Illustration">
                     </div>
                 </div>
             </div>
@@ -108,7 +108,7 @@
                     <ul class="top-feature">
                         <li>
                             <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/4.png'; ?>" alt="Image Not Found">
+                                <img src="<?= SA_IMG_URL . 'icon/4.png'; ?>" alt="Icon">
                             </div>
                             <div class="info">
                                 <h4>Système de production</h4>
@@ -117,7 +117,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/25.png'; ?>" alt="Image Not Found">
+                                <img src="<?= SA_IMG_URL . 'icon/25.png'; ?>" alt="Icon">
                             </div>
                             <div class="info">
                                 <h4>Système de transformation</h4>
@@ -126,7 +126,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/8.png'; ?>" alt="Image Not Found">
+                                <img src="<?= SA_IMG_URL . 'icon/8.png'; ?>" alt="Icon">
                             </div>
                             <div class="info">
                                 <h4>Système de Commercialisation</h4>
@@ -135,7 +135,7 @@
                         </li>
                         <li>
                             <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/1.png'; ?>" alt="Image Not Found">
+                                <img src="<?= SA_IMG_URL . 'icon/1.png'; ?>" alt="Icon">
                             </div>
                             <div class="info">
                                 <h4>Certification qualité</h4>
@@ -260,7 +260,7 @@
             <div class="col-xl-5 offset-xl-1 col-lg-6">
                 <div class="choose-us-style-two-content">
                     <h4 class="sub-title">Quelques chiffres</h4>
-                    <h2 class="title">Quelques chiffres clés de Synergie Agro</h2>
+                    <h2 class="title">Synergie Agro en chiffres</h2>
                     <div class="choose-us-style-two-info">
                         <div class="content">
                             <div class="fun-fact">
@@ -322,7 +322,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
                     </div>
                     <div class="info">
                         <p>Etude Economique sur les Produits et les Marchés Porteurs de Croissance du Secteur Agricole</p>
@@ -335,7 +335,7 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
                     </div>
                     <div class="info">
                         <p>Culture d'Ingrédients Végétaux Pharmaceutiques</p>
@@ -348,10 +348,50 @@
             <div class="col-lg-4 col-md-6 service-one-single">
                 <div class="service-style-one-item text-center">
                     <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
                     </div>
                     <div class="info">
                         <p>Promotion de l'Agriculture Biologique</p>
+                    </div>
+                    <a href="http://localhost:81/synergie-agro/domaines-dintervention/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- End Single Item -->
+            <!-- Single Item -->
+            <div class="col-lg-4 col-md-6 service-one-single">
+                <div class="service-style-one-item text-center">
+                    <div class="thumb">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
+                    </div>
+                    <div class="info">
+                        <p>Marketing Export
+                        <p>
+                    </div>
+                    <a href="http://localhost:81/synergie-agro/domaines-dintervention/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- End Single Item -->
+            <!-- Single Item -->
+            <div class="col-lg-4 col-md-6 service-one-single">
+                <div class="service-style-one-item text-center">
+                    <div class="thumb">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
+                    </div>
+                    <div class="info">
+                        <p>Production des Semences Certifiées</p>
+                    </div>
+                    <a href="http://localhost:81/synergie-agro/domaines-dintervention/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                </div>
+            </div>
+            <!-- End Single Item -->
+            <!-- Single Item -->
+            <div class="col-lg-4 col-md-6 service-one-single">
+                <div class="service-style-one-item text-center">
+                    <div class="thumb">
+                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
+                    </div>
+                    <div class="info">
+                        <p>Appui Technique à la Certification Bio</p>
                     </div>
                     <a href="http://localhost:81/synergie-agro/domaines-dintervention/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
                 </div>
@@ -392,7 +432,7 @@
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
                                 <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Site de production de céréales et tubercules</a></h4>
                             </div>
@@ -402,7 +442,7 @@
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
                                 <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Complexe forage, château d’eau, système d’irrigation</a></h4>
                             </div>
@@ -412,7 +452,7 @@
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
                                 <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de cultures maraichers</a></h4>
                             </div>
@@ -422,7 +462,7 @@
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
                                 <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Bassins irrigués de production de pépinières multi variétés</a></h4>
                             </div>
@@ -432,7 +472,7 @@
                     <!-- Single Item -->
                     <div class="swiper-slide">
                         <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Image not Found">
+                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
                             <div class="overlay">
                                 <h4><a href="http://localhost:81/synergie-agro/projets/projet-ipsum-3/">Aires de séchage</a></h4>
                             </div>
@@ -496,7 +536,7 @@
             <div class="col-xl-4 col-md-6 mb-30">
                 <div class="blog-style-one">
                     <div class="thumb">
-                        <a href="http://localhost:81/synergie-agro/caracteristiques-de-nos-vergers/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Image Not Found"></a>
+                        <a href="http://localhost:81/synergie-agro/caracteristiques-de-nos-vergers/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600"></a>
                         <div class="date"><strong>05</strong> <span>Avr, 2024</span></div>
                     </div>
                     <div class="info">
