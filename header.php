@@ -96,14 +96,13 @@
                         </ul>
                     </div>
                     <!-- End Atribute Navigation -->
-
                 </div>
                 <!-- Main Nav -->
             </div>
+
             <!-- Overlay screen for menu -->
             <div class="overlay-screen"></div>
             <!-- End Overlay screen for menu -->
-
         </nav>
         <!-- End Navigation -->
     </header>

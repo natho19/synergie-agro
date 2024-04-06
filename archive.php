@@ -45,6 +45,7 @@
             <!-- End Pagination -->
         </div>
     </div>
-    <!-- End Gallery -->
+</div>
+<!-- End Gallery -->
 
-    <?php get_footer(); ?>
+<?php get_footer(); ?>

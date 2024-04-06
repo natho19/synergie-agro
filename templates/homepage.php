@@ -2,14 +2,13 @@
 
 <?php get_header(); ?>
 
-<!-- Start Banner Area 
+<!-- Start Slide Area 
 ============================================= -->
 <div class="banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
     <!-- Slider main container -->
     <div class="banner-fade">
         <!-- Additional required wrapper -->
         <div class="swiper-wrapper">
-
             <!-- Single Item -->
             <div class="swiper-slide banner-style-one">
                 <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide1.jpg'; ?>);"></div>
@@ -66,7 +65,7 @@
         <div class="swiper-button-next"></div>
     </div>
 </div>
-<!-- End Banner -->
+<!-- End Slide -->
 
 <!-- Start About 
 ============================================= -->
@@ -201,7 +200,6 @@
 <div class="services-style-one-area bg-gray default-padding">
     <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape/9.png'; ?>);"></div>
     <div class="container">
-
         <div class="row">
             <div class="col-lg-6 offset-lg-3">
                 <div class="site-heading text-center">
@@ -305,7 +303,6 @@
 <!-- Start Gallery 
 ============================================= -->
 <div class="gallery-style-one-area default-padding">
-
     <div class="container">
         <div class="row">
             <div class="col-lg-6 offset-lg-3">

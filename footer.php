@@ -4,16 +4,16 @@
         <div class="container">
             <div class="f-items default-padding">
                 <div class="row">
-                    <!-- Single Itme -->
+                    <!-- Single Item -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
                             <img class="logo" src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
                             <p>Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.</p>
                         </div>
                     </div>
-                    <!-- End Single Itme -->
+                    <!-- End Single Item -->
 
-                    <!-- Single Itme -->
+                    <!-- Single Item -->
                     <div class="col-lg-3 offset-lg-1 col-md-6 item">
                         <div class="footer-item link">
                             <h4 class="widget-title">Liens utiles</h4>
@@ -39,10 +39,9 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- End Single Itme -->
+                    <!-- End Single Item -->
 
-
-                    <!-- Single Itme -->
+                    <!-- Single Item -->
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item contact">
                             <h4 class="widget-title">Contact</h4>
@@ -104,7 +103,7 @@
                             </ul>
                         </div>
                     </div>
-                    <!-- Single Itme -->
+                    <!-- Single Item -->
                 </div>
             </div>
             <!-- Start Footer Bottom -->

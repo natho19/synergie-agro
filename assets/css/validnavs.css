@@ -2545,7 +2545,7 @@ ul.simple-menu-list>li i {
 @media (max-width: 1023px) {
 	a.navbar-brand {
 		position: absolute;
-		left: 50%;
+		right: -25px;
 		transform: translate(-50%, -50%);
 		top: 50%;
 	}
@@ -3441,7 +3441,7 @@ nav.navbar.validnavs .navbar-collapse.collapse button {
 	border-radius: 50%;
 	color: var(--color-heading);
 	font-size: 16px;
-	top: 40px;
+	top: 50px;
 	padding: 0;
 }
 
@@ -3533,12 +3533,12 @@ nav.navbar.validnavs .navbar-collapse.collapse button i {
 @media only screen and (max-width: 1023px) {
 	nav.navbar.validnavs .navbar-collapse.collapse.show img {
 		display: inline-block;
-		height: 60px;
+		height: 80px;
 	}
 
 	nav.navbar.validnavs .navbar-collapse.collapse img {
 		display: inline-block;
-		height: 60px;
+		height: 80px;
 	}
 }
 
