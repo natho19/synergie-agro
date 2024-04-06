@@ -92,7 +92,7 @@
                         <li>
                             <div class="info">
                                 <h5 class="title">Email</h5>
-                                <a href="mailto:contact@synergieagro.com">contact@synergieagro.com</a>
+                                <a href="mailto:synergieagro2020@gmail.com">synergieagro2020@gmail.com</a>
                             </div>
                         </li>
                     </ul>

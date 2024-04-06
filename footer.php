@@ -8,7 +8,7 @@
                     <div class="col-lg-4 col-md-6 item">
                         <div class="footer-item about">
                             <img class="logo" src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
-                            <p>Bienvenue chez Synergie Agro, votre partenaire de confiance pour des solutions technologiques innovantes dans le domaine de l'agro-industrie.</p>
+                            <p>Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.</p>
                         </div>
                     </div>
                     <!-- End Single Itme -->
@@ -76,11 +76,20 @@
                                 </li>
                                 <li>
                                     <div class="icon">
+                                        <i class="far fa-mobile"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Roaming</strong>
+                                        <a href="tel:22890233809">+228 90 23 38 09</a>
+                                    </div>
+                                </li>
+                                <li>
+                                    <div class="icon">
                                         <i class="fas fa-phone"></i>
                                     </div>
                                     <div class="content">
                                         <strong>Téléphone</strong>
-                                        <a href="tel:22890233809">+228 90 23 38 09</a>
+                                        <a href="tel:22822210452">+228 22 21 04 52</a>
                                     </div>
                                 </li>
                                 <li>
@@ -89,7 +98,7 @@
                                     </div>
                                     <div class="content">
                                         <strong>Email</strong>
-                                        <a href="mailto:contact@synergieagro.com">contact@synergieagro.com</a>
+                                        <a href="mailto:synergieagro2020@gmail.com">synergieagro2020@gmail.com</a>
                                     </div>
                                 </li>
                             </ul>

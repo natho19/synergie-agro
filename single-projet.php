@@ -14,7 +14,7 @@
                             <h3>Besoin d'aide ?</h3>
                             <p>Notre équipe dévouée est là pour répondre à toutes vos questions, discuter de vos besoins spécifiques et explorer des opportunités de partenariat.</p>
                             <h2>+228 90 23 38 09</h2>
-                            <h4><a href="contact@synergieagro.com">contact@synergieagro.com</a></h4>
+                            <h4><a href="synergieagro2020@gmail.com">synergieagro2020@gmail.com</a></h4>
                             <a class="btn mt-30 circle btn-theme animation btn-md" href="http://localhost:81/synergie-agro/contact/">Nous contacter</a>
                         </div>
                     </div>

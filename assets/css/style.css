@@ -92,12 +92,13 @@ Sidebar heading:  22px 'Outfit', sans-serif
 
 @import url('https://fonts.googleapis.com/css2?family=Outfit:wght@100;200;300;400;500;600;700;800&display=swap');
 
-@import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap');
+/* @import url('https://fonts.googleapis.com/css2?family=Shadows+Into+Light+Two&display=swap'); */
 
 /* Varialbes */
 :root {
 	--font-default: 'Outfit', sans-serif;
-	--font-secondary: 'Shadows Into Light Two', cursive;
+	/* --font-secondary: 'Shadows Into Light Two', cursive; */
+	--font-secondary: 'Outfit', sans-serif;
 	--fontawesome: "Font Awesome 5 Pro";
 	--black: #000000;
 	--dark: #1f4e3d;
@@ -840,8 +841,8 @@ p {
 	z-index: 1;
 	margin-bottom: 20px;
 	font-family: var(--font-secondary);
-	font-size: 24px;
-	letter-spacing: 1px;
+	font-size: 22px;
+	/* letter-spacing: 1px; */
 }
 
 .text-center .sub-title {
@@ -3990,8 +3991,8 @@ a.btn-round-animation.dark {
 .banner-style-one .content h2 {
 	font-size: 60px;
 	font-family: var(--font-secondary);
-	font-size: 90px;
-	letter-spacing: 3px;
+	font-size: 70px;
+	/* letter-spacing: 3px; */
 	margin-bottom: 30px;
 }
 
@@ -5382,8 +5383,9 @@ ul.list-standard {
 .gallery-style-one .overlay h4 {
 	margin: 0;
 	font-family: var(--font-secondary);
-	letter-spacing: 1px;
-	font-size: 22px;
+	/* letter-spacing: 1px; */
+	font-size: 20px;
+	line-height: 1.4;
 }
 
 .gallery-style-one::after {

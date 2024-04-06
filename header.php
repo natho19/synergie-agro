@@ -6,40 +6,12 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Bienvenue chez Synergie Agro, votre partenaire de confiance pour des solutions technologiques innovantes dans le domaine de l'agro-industrie.">
-
+    <meta name="description" content="Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.">
     <link rel="shortcut icon" href="<?= SA_IMG_URL . 'logo.png'; ?>" type="image/x-icon">
     <?php wp_head(); ?>
 </head>
 
 <body>
-
-    <!-- Start Preloader 
-    ============================================= -->
-    <!-- <div id="preloader">
-        <div id="agrica-preloader" class="agrica-preloader">
-            <div class="animation-preloader">
-                <div class="spinner"></div>
-            </div>
-            <div class="loader">
-                <div class="row">
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-left">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                    <div class="col-3 loader-section section-right">
-                        <div class="bg"></div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div> -->
-    <!-- End Preloader -->
 
     <!-- Start Header Top 
     ============================================= -->
@@ -52,7 +24,7 @@
                             <i class="fas fa-clock"></i> Lun à Sam 24h/24, Dim 06:00 à 13:00
                         </li>
                         <li>
-                            <a href="tel:+22890233809"><i class="fas fa-phone-alt"></i> +228 90 23 38 09</a>
+                            <a href="tel:+22890233809"><i class="fas fa-phone-alt"></i> +228 90 23 38 09 / 22 21 04 52</a>
                         </li>
                     </ul>
                 </div>

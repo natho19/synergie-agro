@@ -18,7 +18,7 @@
                 </div>
                 <div class="container">
                     <div class="row align-center">
-                        <div class="col-xl-9">
+                        <div class="col-xl-10">
                             <div class="content">
                                 <div class="info">
                                     <h2>Synergie Agro : Pionnier d'une Agro-Industrie Révolutionnaire</h2>
@@ -42,7 +42,7 @@
                 </div>
                 <div class="container">
                     <div class="row align-center">
-                        <div class="col-xl-9">
+                        <div class="col-xl-10">
                             <div class="content">
                                 <div class="info">
                                     <div class="info">
@@ -90,7 +90,7 @@
                             </div>
                             <div class="info">
                                 <h4>Système de production</h4>
-                                <p>Nous œuvrons sur une production sur 3 volets : en régie sur 120 ha, par les entrepreneurs agricoles sur 100 ha et par les coopératives agricoles sur 100 ha,</p>
+                                <p>Nous oeuvrons sur une production sur 3 volets : en régie sur 120 ha, par les entrepreneurs agricoles sur 100 ha et par les coopératives agricoles sur 100 ha.</p>
                             </div>
                         </li>
                         <li>
@@ -139,15 +139,15 @@
                 <ul class="list-simple text-light">
                     <li>
                         <h4>Producteurs</h4>
-                        <p>Nous travaillons avec les producteurs (les Entrepreneurs agricoles/ les Coopératives agricoles) affilier à notre réseau et évoluant sur nos parcelles aménagées ou évoluant en freelance sur leur propre parcelle.</p>
+                        <p>Nous travaillons avec les producteurs (les Entrepreneurs agricoles/ les Coopératives agricoles) affiliés à notre réseau et évoluant sur nos parcelles aménagées ou évoluant en freelance sur leur propre parcelle.</p>
                     </li>
                     <li>
                         <h4>Transformateurs</h4>
-                        <p>Nous travaillons avec les transformateurs (société) avec qui nous faisons une sous-traitante pour la transformation de certains produits.</p>
+                        <p>Nous travaillons avec les transformateurs (Sociétés) avec qui nous faisons une sous-traitante pour la transformation de certains produits.</p>
                     </li>
                     <li>
                         <h4>Commerciaux</h4>
-                        <p>Nous travaillons avec les commerciaux (sociétés et autres) qui sont dans le marketing de l’agro-industrie.</p>
+                        <p>Nous travaillons avec les commerciaux (Sociétés et autres) qui sont dans le marketing de l’agro-industrie.</p>
                     </li>
                 </ul>
             </div>
