@@ -13,7 +13,7 @@
                 <div class="about-style-one-thumb">
                     <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="800x1000">
                     <div class="animation-shape">
-                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Illustration">
+                        <img src="<?= SA_IMG_URL . 'illustration-1.png'; ?>" alt="Illustration">
                     </div>
                 </div>
             </div>

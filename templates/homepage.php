@@ -4,128 +4,102 @@
 
 <!-- Start Slide Area 
 ============================================= -->
-<div class="banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
-    <!-- Slider main container -->
-    <div class="banner-fade">
-        <!-- Additional required wrapper -->
-        <div class="swiper-wrapper">
-            <!-- Single Item -->
-            <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide1.jpg'; ?>);"></div>
-                <div class="shape">
-                    <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
-                </div>
-                <div class="container">
-                    <div class="row align-center">
-                        <div class="col-xl-10">
-                            <div class="content">
-                                <div class="info">
-                                    <h2>Synergie Agro : Pionnier d'une Agro-Industrie Révolutionnaire</h2>
-                                    <p>Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.</p>
-                                    <div class="button">
-                                        <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/a-propos/">Lire plus</a>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-                </div>
-            </div>
-            <!-- End Single Item -->
+<?php if (have_rows('slides')) : ?>
+    <div class="banner-area navigation-circle text-light banner-style-one zoom-effect overflow-hidden">
+        <!-- Slider main container -->
+        <div class="banner-fade">
+            <!-- Additional required wrapper -->
+            <div class="swiper-wrapper">
+                <!-- Single Item -->
+                <?php while (have_rows('slides')) : the_row(); ?>
+                    <div class="swiper-slide banner-style-one">
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background') ? get_sub_field('background') : SA_IMG_URL . '1900x1200.png'); ?>);"></div>
 
-            <!-- Single Item -->
-            <div class="swiper-slide banner-style-one">
-                <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= SA_IMG_URL . 'slide2.jpg'; ?>);"></div>
-                <div class="shape">
-                    <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
-                </div>
-                <div class="container">
-                    <div class="row align-center">
-                        <div class="col-xl-10">
-                            <div class="content">
-                                <div class="info">
-                                    <div class="info">
-                                        <h2>Innovation et Collaboration pour une Agriculture Durable</h2>
-                                        <p>Nous croyons en l’innovation et en la collaboration pour relever les défis actuels de l’agriculture tels que la sécurité alimentaire, la préservation de l’environnement et l’adaptation aux changements climatiques.</p>
-                                        <div class="button">
-                                            <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/a-propos/">Lire plus</a>
+                        <div class="shape">
+                            <img src="<?= SA_IMG_URL . 'shape-2.png'; ?>" alt="Shape">
+                        </div>
+
+                        <div class="container">
+                            <div class="row align-center">
+                                <div class="col-xl-10">
+                                    <div class="content">
+                                        <div class="info">
+                                            <?php if (get_sub_field('title')) : ?>
+                                                <h2><?php the_sub_field('title'); ?></h2>
+                                            <?php endif; ?>
+
+                                            <?php if (get_sub_field('description')) : ?>
+                                                <p><?php the_sub_field('description'); ?></p>
+                                            <?php endif; ?>
+
+                                            <?php if (get_sub_field('link')) : ?>
+                                                <div class="button">
+                                                    <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_sub_field('link')['url']); ?>"><?= esc_html(get_sub_field('link')['title']); ?></a>
+                                                </div>
+                                            <?php endif; ?>
                                         </div>
                                     </div>
                                 </div>
                             </div>
                         </div>
                     </div>
-                </div>
+                <?php endwhile; ?>
+                <!-- End Single Item -->
             </div>
-            <!-- End Single Item -->
-        </div>
 
-        <!-- Navigation -->
-        <div class="swiper-button-prev"></div>
-        <div class="swiper-button-next"></div>
+            <!-- Navigation -->
+            <div class="swiper-button-prev"></div>
+            <div class="swiper-button-next"></div>
+        </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Slide -->
 
 <!-- Start About 
 ============================================= -->
-<div class="about-style-one-area default-padding overflow-hidden">
-    <div class="container">
-        <div class="row align-center">
-            <div class="col-xl-6 col-lg-5">
-                <div class="about-style-one-thumb">
-                    <img src="<?= SA_IMG_URL . '800x1000.png'; ?>" alt="800x1000">
-                    <div class="animation-shape">
-                        <img src="<?= SA_IMG_URL . 'illustration/1.png'; ?>" alt="Illustration">
+<?php if (have_rows('features')) : ?>
+    <div class="about-style-one-area default-padding overflow-hidden">
+        <div class="container">
+            <div class="row align-center">
+                <div class="col-xl-6 col-lg-5">
+                    <div class="about-style-one-thumb">
+                        <?php $features_image = get_field('features_image'); ?>
+                        <img src="<?= esc_url($features_image ? $features_image['url'] : SA_IMG_URL . '800x1000.png'); ?>" alt="<?= esc_attr($features_image ? $features_image['alt'] : '800x1000'); ?>">
+                        <div class="animation-shape">
+                            <img src="<?= SA_IMG_URL . 'illustration-1.png'; ?>" alt="Illustration">
+                        </div>
                     </div>
                 </div>
-            </div>
-            <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
-                <div class="about-style-one-info">
-                    <ul class="top-feature">
-                        <li>
-                            <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/4.png'; ?>" alt="Icon">
-                            </div>
-                            <div class="info">
-                                <h4>Système de production</h4>
-                                <p>Nous oeuvrons sur une production sur 3 volets : en régie sur 120 ha, par les entrepreneurs agricoles sur 100 ha et par les coopératives agricoles sur 100 ha.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/3.png'; ?>" alt="Icon">
-                            </div>
-                            <div class="info">
-                                <h4>Système de transformation</h4>
-                                <p>Nous achetons toute la production et nous les transformons en sous-traitante avec certains de nos partenaires industriels.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/8.png'; ?>" alt="Icon">
-                            </div>
-                            <div class="info">
-                                <h4>Système de Commercialisation</h4>
-                                <p>Nous disposons des partenaires commerciaux pour l’écoulement de nos produits sur le marché local et international.</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="icon">
-                                <img src="<?= SA_IMG_URL . 'icon/1.png'; ?>" alt="Icon">
-                            </div>
-                            <div class="info">
-                                <h4>Certification qualité</h4>
-                                <p>Nous mettons à votre disposition des produits de qualité suivant un processus de certification assuré par nos différents partenaires : ITRA, INH, CEE, ECOCERT...</p>
-                            </div>
-                        </li>
-                    </ul>
 
+                <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
+                    <div class="about-style-one-info">
+                        <ul class="top-feature">
+                            <?php while (have_rows('features')) : the_row(); ?>
+                                <li>
+                                    <?php $illustration = get_sub_field('illustration');
+                                    if ($illustration) : ?>
+                                        <div class="icon">
+                                            <img src="<?= esc_url($illustration['url']); ?>" alt="<?= esc_attr($illustration['alt']); ?>">
+                                        </div>
+                                    <?php endif; ?>
+
+                                    <div class="info">
+                                        <?php if (get_sub_field('title')) : ?>
+                                            <h4><?php the_sub_field('title'); ?></h4>
+                                        <?php endif; ?>
+                                        <?php if (get_sub_field('description')) : ?>
+                                            <p><?php the_sub_field('description'); ?></p>
+                                        <?php endif; ?>
+                                    </div>
+                                </li>
+                            <?php endwhile; ?>
+                        </ul>
+                    </div>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End About -->
 
 <!-- Start Choose Us 
@@ -133,63 +107,49 @@
 <div class="choose-us-style-two-area overflow-hidden default-padding">
     <div class="container">
         <div class="row">
-            <div class="col-xl-6 col-lg-6 pr-100 pr-md-15 pr-xs-15 pb-md-60 pb-xs-60">
-                <h2 class="title text-white">Nos partenariats multiformes</h2>
-                <ul class="list-simple text-light">
-                    <li>
-                        <h4>Producteurs</h4>
-                        <p>Nous travaillons avec les producteurs (les Entrepreneurs agricoles/ les Coopératives agricoles) affiliés à notre réseau et évoluant sur nos parcelles aménagées ou évoluant en freelance sur leur propre parcelle.</p>
-                    </li>
-                    <li>
-                        <h4>Transformateurs</h4>
-                        <p>Nous travaillons avec les transformateurs (Sociétés) avec qui nous faisons une sous-traitante pour la transformation de certains produits.</p>
-                    </li>
-                    <li>
-                        <h4>Commerciaux</h4>
-                        <p>Nous travaillons avec les commerciaux (Sociétés et autres) qui sont dans le marketing de l’agro-industrie.</p>
-                    </li>
-                </ul>
-            </div>
-            <div class="col-xl-5 offset-xl-1 col-lg-6">
-                <div class="choose-us-style-two-content">
-                    <h4 class="sub-title">Quelques chiffres</h4>
-                    <h2 class="title">Synergie Agro en chiffres</h2>
-                    <div class="choose-us-style-two-info">
-                        <div class="content">
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <!-- <div class="operator">+</div> -->
-                                    <div class="timer" data-to="10400" data-speed="2000">10400</div>
-                                </div>
-                                <span class="medium">Plants dans nos vergers</span>
+            <?php $partnerships = get_field('partnerships');
+            if ($partnerships) : ?>
+                <div class="col-xl-6 col-lg-6 pr-100 pr-md-15 pr-xs-15 pb-md-60 pb-xs-60">
+                    <?php if ($partnerships['title']) : ?>
+                        <h2 class="title text-white"><?= $partnerships['title']; ?></h2>
+                    <?php endif; ?>
+                    <?= $partnerships['content']; ?>
+                </div>
+            <?php endif; ?>
+
+            <?php $stats = get_field('stats');
+            if ($stats) : ?>
+                <div class="col-xl-5 offset-xl-1 col-lg-6">
+                    <div class="choose-us-style-two-content">
+                        <?php if ($stats['subtitle']) : ?>
+                            <h4 class="sub-title"><?= $stats['subtitle']; ?></h4>
+                        <?php endif; ?>
+
+                        <?php if ($stats['title']) : ?>
+                            <h2 class="title"><?= $stats['title']; ?></h2>
+                        <?php endif; ?>
+
+                        <?php $indicators = $stats['indicators'];
+                        if ($indicators) : ?>
+                            <div class="choose-us-style-two-info">
+                                <?php foreach ($indicators as $indicator) : ?>
+                                    <div class="fun-fact">
+                                        <?php if ($indicator['digit']) : ?>
+                                            <div class="counter">
+                                                <div class="timer" data-to="<?= $indicator['digit']; ?>" data-speed="2000"><?= $indicator['digit']; ?></div>
+                                            </div>
+                                        <?php endif; ?>
+
+                                        <?php if ($indicator['label']) : ?>
+                                            <span class="medium"><?= $indicator['label']; ?></span>
+                                        <?php endif; ?>
+                                    </div>
+                                <?php endforeach; ?>
                             </div>
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <!-- <div class="operator">+</div> -->
-                                    <div class="timer" data-to="400" data-speed="400">400</div>
-                                </div>
-                                <span class="medium">Hectares de terrains agricoles</span>
-                            </div>
-                        </div>
-                        <div class="content">
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <!-- <div class="operator">+</div> -->
-                                    <div class="timer" data-to="280000" data-speed="2000">280000</div>
-                                </div>
-                                <span class="medium">m<sup>3</sup> de bassins d'eau</span>
-                            </div>
-                            <div class="fun-fact">
-                                <div class="counter">
-                                    <!-- <div class="operator">+</div> -->
-                                    <div class="timer" data-to="120" data-speed="2000">120</div>
-                                </div>
-                                <span class="medium">tonnes d'espace de stockage</span>
-                            </div>
-                        </div>
+                        <?php endif; ?>
                     </div>
                 </div>
-            </div>
+            <?php endif; ?>
         </div>
     </div>
 </div>

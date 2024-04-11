@@ -4236,12 +4236,25 @@ ul.top-feature {
 
 ul.top-feature li {
 	display: block;
-	background: var(--color-primary);
 	padding: 50px;
 }
 
+ul.top-feature li:nth-child(1),
+ul.top-feature li:nth-child(4),
+ul.top-feature li:nth-child(5),
+ul.top-feature li:nth-child(8),
+ul.top-feature li:nth-child(9),
+ul.top-feature li:nth-child(11) {
+	background: var(--color-primary);
+
+}
+
 ul.top-feature li:nth-child(2),
-ul.top-feature li:nth-child(3) {
+ul.top-feature li:nth-child(3),
+ul.top-feature li:nth-child(6),
+ul.top-feature li:nth-child(7),
+ul.top-feature li:nth-child(10),
+ul.top-feature li:nth-child(12) {
 	background: var(--color-secondary);
 }
 
@@ -5822,14 +5835,15 @@ ul.list-simple.text-light li p {
 }
 
 .choose-us-style-two-info .fun-fact {
-	margin-top: 20px;
+	margin-top: 25px;
 	color: var(--color-heading);
-	border-top: 2px solid;
-	padding-top: 20px;
+	border-top: 3px solid;
+	padding-top: 25px;
 }
 
-.choose-us-style-two-info .fun-fact:first-child {
-	margin-top: -10px;
+.choose-us-style-two-info .fun-fact:nth-child(1),
+.choose-us-style-two-info .fun-fact:nth-child(2) {
+	margin-top: 0px;
 	padding-top: 0;
 	border: none;
 }
@@ -8402,11 +8416,12 @@ footer {
 		margin-top: 40px;
 	}
 
-	ul.top-feature li:nth-child(3) {
+	ul.top-feature li:nth-child(n) {
 		background: var(--color-primary);
+
 	}
 
-	ul.top-feature li:nth-child(4) {
+	ul.top-feature li:nth-child(2n) {
 		background: var(--color-secondary);
 	}
 
