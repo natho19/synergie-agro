@@ -7036,8 +7036,9 @@ img.loader {
 
 .product-badge h1 {
 	margin: 0;
-	font-size: 60px;
+	font-size: 50px;
 	color: var(--white);
+	text-transform: uppercase;
 }
 
 .product-badge h1 strong {

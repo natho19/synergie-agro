@@ -311,22 +311,35 @@
 
 <!-- Start Product Speciality 
 ============================================= -->
-<div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'shape/banner-1.jpg'; ?>);">
-    <div class="container">
-        <div class="row">
-            <div class="col-xl-6 col-md-8">
-                <div class="product-speciality-info default-padding-bottom">
-                    <div class="product-badge">
-                        <h1>100% <strong>Bio</strong></h1>
+<?php if (get_field('products_badge')) : ?>
+    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'banner-1.jpg'; ?>);">
+        <div class="container">
+            <div class="row">
+                <div class="col-xl-6 col-md-8">
+                    <div class="product-speciality-info default-padding-bottom">
+                        <?php if (get_field('products_badge')) : ?>
+                            <div class="product-badge">
+                                <h1><?php the_field('products_badge'); ?></h1>
+                            </div>
+                        <?php endif; ?>
+
+                        <?php if (get_field('products_title')) : ?>
+                            <h2><?php the_field('products_title'); ?></h2>
+                        <?php endif; ?>
+
+                        <?php if (get_field('products_description')) : ?>
+                            <p><?php the_field('products_description'); ?></p>
+                        <?php endif; ?>
+
+                        <?php if (get_field('products_link')) : ?>
+                            <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('products_link')['url']); ?>"><?= esc_html(get_field('products_link')['title']); ?></a>
+                        <?php endif; ?>
                     </div>
-                    <h2>Nos produits</h2>
-                    <p>Synergie Agro offre une gamme diversifiée de produits innovants destinés à soutenir une agriculture durable et à répondre aux besoins changeants du marché. Nos produits sont conçus avec un souci constant d'innovation et de qualité, visant à améliorer les rendements agricoles tout en préservant l'environnement.</p>
-                    <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/contact/">Nous contacter</a>
                 </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Speciality -->
 
 <!-- Start Blog 
