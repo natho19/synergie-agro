@@ -6,118 +6,37 @@
 
 <!-- Start Services 
 ============================================= -->
-<div class="services-style-one-area bg-gray default-padding">
-    <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape-9.png'; ?>);"></div>
-    <div class="container">
-        <div class="row">
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Etude Economique sur les Produits et les Marchés Porteurs de Croissance du Secteur Agricole</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Culture d'Ingrédients Végétaux Pharmaceutiques</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Promotion de l'Agriculture Biologique</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Marketing Export</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
+<?php if (have_rows('domains')) : ?>
+    <div class="services-style-one-area bg-gray default-padding">
+        <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape-9.png'; ?>);"></div>
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <?php while (have_rows('domains')) : the_row(); ?>
+                    <div class="col-lg-4 col-md-6 service-one-single">
+                        <div class="service-style-one-item text-center">
+                            <div class="thumb">
+                                <?php $domain_image = get_sub_field('image'); ?>
+                                <img src="<?= esc_url($domain_image ? $domain_image['url'] : SA_IMG_URL . '900x600.png'); ?>" alt="<?= esc_attr($domain_image ? $domain_image['alt'] : '900x600'); ?>">
+                            </div>
 
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
+                            <?php if (get_sub_field('description')) : ?>
+                                <div class="info">
+                                    <p><?php the_sub_field('description'); ?></p>
+                                </div>
+                            <?php endif; ?>
+
+                            <?php if (get_sub_field('link')) : ?>
+                                <a href="<?= esc_url(get_sub_field('link')); ?>" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
+                            <?php endif; ?>
+                        </div>
                     </div>
-                    <div class="info">
-                        <p>Production des Semences Certifiées</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
+                <?php endwhile; ?>
+                <!-- End Single Item -->
             </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Appui Technique à la Certification Bio</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Montage de Partenariats Multiformes pour le Développement Agro Industriels</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
-            <!-- Single Item -->
-            <div class="col-lg-4 col-md-6 service-one-single">
-                <div class="service-style-one-item text-center">
-                    <div class="thumb">
-                        <img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600">
-                    </div>
-                    <div class="info">
-                        <p>Transfert de Technologies</p>
-                    </div>
-                    <a href="http://localhost:81/synergie-agro/projets/" class="btn-angle"><i class="fas fa-arrow-right"></i></a>
-                </div>
-            </div>
-            <!-- End Single Item -->
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Services -->
 
 <?php get_footer(); ?>
