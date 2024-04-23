@@ -12,7 +12,9 @@
                     <div class="magnific-mix-gallery gallery-masonary">
                         <div id="gallery-masonary" class="gallery-items colums-3">
                             <?php while (have_posts()) : the_post(); ?>
-                                <?php get_template_part('parts/content', 'projet'); ?>
+                                <div class="gallery-item">
+                                    <?php get_template_part('parts/content', 'projet'); ?>
+                                </div>
                             <?php endwhile; ?>
                         </div>
                     </div>

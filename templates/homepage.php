@@ -214,99 +214,56 @@
 
 <!-- Start Gallery 
 ============================================= -->
-<div class="gallery-style-one-area default-padding">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-3">
-                <div class="site-heading text-center">
-                    <h5 class="sub-title">Projets</h5>
-                    <h2 class="title">Explorer nos projets</h2>
+<?php if (have_rows('projects')) : ?>
+    <div class="gallery-style-one-area default-padding">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-3">
+                    <div class="site-heading text-center">
+                        <?php if (get_field('projects_subtitle')) : ?>
+                            <h5 class="sub-title"><?php the_field('projects_subtitle'); ?></h5>
+                        <?php endif; ?>
+                        <?php if (get_field('projects_title')) : ?>
+                            <h2 class="title"><?php the_field('projects_title'); ?></h2>
+                        <?php endif; ?>
+                    </div>
                 </div>
             </div>
         </div>
-    </div>
 
-    <div class="container-fill">
-        <div class="row">
-            <div class="gallery-style-one-carousel swiper">
-                <!-- Additional required wrapper -->
-                <div class="swiper-wrapper">
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/site-de-production-de-cereales-et-tubercules/">Site de production de céréales et tubercules</a></h4>
-                            </div>
-                        </div>
+        <div class="container-fill">
+            <div class="row">
+                <div class="gallery-style-one-carousel swiper">
+                    <!-- Additional required wrapper -->
+                    <div class="swiper-wrapper">
+                        <!-- Single Item -->
+                        <?php while (have_rows('projects')) : the_row();
+                            $post = get_sub_field('project');
+                            if ($post) : ?>
+                                <div class="swiper-slide">
+                                    <?php get_template_part('parts/content', 'projet'); ?>
+                                </div>
+                        <?php endif;
+                            wp_reset_postdata();
+                        endwhile; ?>
+                        <!-- End Single Item -->
                     </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/magasin-de-stockage/">Magasin de stockage</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/complexe-forage-chateau-deau-systeme-dirrigation/">Complexe forage, château d’eau, système d’irrigation</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/bassins-irrigues-de-cultures-maraichers/">Bassins irrigués de cultures maraichers</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/bassins-irrigues-de-production-de-pepinieres-multi-varietes/">Bassins irrigués de production de pépinières multi variétés</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
-                    <!-- Single Item -->
-                    <div class="swiper-slide">
-                        <div class="gallery-style-one">
-                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                            <div class="overlay">
-                                <h4><a href="http://localhost:81/synergie-agro/projets/aires-de-sechage/">Aires de séchage</a></h4>
-                            </div>
-                        </div>
-                    </div>
-                    <!-- End Single Item -->
 
+                    <!-- Pagination -->
+                    <div class="swiper-pagination"></div>
                 </div>
-
-                <!-- Pagination -->
-                <div class="swiper-pagination"></div>
-
             </div>
-        </div>
 
-        <div class="row">
-            <div class="text-center mt-40">
-                <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/projets/">Tous les projets</a>
-            </div>
+            <?php if (get_field('projects_link')) : ?>
+                <div class="row">
+                    <div class="text-center mt-40">
+                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('projects_link')['url']); ?>"><?= esc_html(get_field('projects_link')['title']); ?></a>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Gallery  -->
 
 <!-- Start Product Speciality 
@@ -344,41 +301,46 @@
 
 <!-- Start Blog 
 ============================================= -->
-<div class="blog-area home-blog default-padding bottom-less">
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-8 offset-lg-2">
-                <div class="site-heading text-center">
-                    <h5 class="sub-title">Actualités</h5>
-                    <h2 class="title">Découvrir nos articles</h2>
-                </div>
-            </div>
-        </div>
-    </div>
-    <div class="container">
-        <div class="row">
-            <!-- Single Item -->
-            <div class="col-xl-4 col-md-6 mb-30">
-                <div class="blog-style-one">
-                    <div class="thumb">
-                        <a href="http://localhost:81/synergie-agro/caracteristiques-de-nos-vergers/"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="900x600"></a>
-                        <div class="date"><strong>05</strong> <span>Avr, 2024</span></div>
-                    </div>
-                    <div class="info">
-                        <h3 class="post-title"><a href="http://localhost:81/synergie-agro/caracteristiques-de-nos-vergers/">Caractéristiques de nos vergers</a></h3>
-                        <a href="http://localhost:81/synergie-agro/caracteristiques-de-nos-vergers/" class="button-regular">Lire plus <i class="fas fa-arrow-right"></i></a>
+<?php if (have_rows('news')) : ?>
+    <div class="blog-area home-blog default-padding bottom-less">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-8 offset-lg-2">
+                    <div class="site-heading text-center">
+                        <?php if (get_field('news_subtitle')) : ?>
+                            <h5 class="sub-title"><?php the_field('news_subtitle'); ?></h5>
+                        <?php endif; ?>
+                        <?php if (get_field('news_title')) : ?>
+                            <h2 class="title"><?php the_field('news_title'); ?></h2>
+                        <?php endif; ?>
                     </div>
                 </div>
             </div>
-            <!-- End Single Item -->
         </div>
-        <div class="row">
-            <div class="text-center mt-40">
-                <a class="btn btn-theme btn-md radius animation" href="http://localhost:81/synergie-agro/actualites/">Plus d'actualités</a>
+        <div class="container">
+            <div class="row">
+                <!-- Single Item -->
+                <?php while (have_rows('news')) : the_row();
+                    $post = get_sub_field('post');
+                    if ($post) : ?>
+                        <div class="col-xl-4 col-md-6 mb-30">
+                            <?php get_template_part('parts/content', 'post'); ?>
+                        </div>
+                <?php endif;
+                    wp_reset_postdata();
+                endwhile; ?>
+                <!-- End Single Item -->
             </div>
+            <?php if (get_field('news_link')) : ?>
+                <div class="row">
+                    <div class="text-center mt-40">
+                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('news_link')['url']); ?>"><?= esc_html(get_field('news_link')['title']); ?></a>
+                    </div>
+                </div>
+            <?php endif; ?>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Blog -->
 
 <?php get_footer(); ?>

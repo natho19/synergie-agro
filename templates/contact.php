@@ -63,7 +63,6 @@
                             </svg>
                         </span>
                     </h2>
-                    <p>Pour toute demande d'information supplémentaire, de collaboration ou de partenariat, n'hésitez pas à prendre contact avec nous.</p>
                     <ul>
                         <li>
                             <div class="content">

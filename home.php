@@ -10,7 +10,9 @@
             <div class="blog-item-box">
                 <div class="row">
                     <?php while (have_posts()) : the_post(); ?>
-                        <?php get_template_part('parts/content', 'post'); ?>
+                        <div class="col-xl-4 col-md-6 single-item">
+                            <?php get_template_part('parts/content', 'post'); ?>
+                        </div>
                     <?php endwhile; ?>
                 </div>
             </div>
