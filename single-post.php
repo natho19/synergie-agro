@@ -42,80 +42,15 @@
                     <!-- Post Tags Share -->
 
                     <!-- Start Post Pagination -->
-                    <div class="post-pagi-area">
-                        <div class="post-previous">
-                            <a href="#">
-                                <div class="icon"><i class="fas fa-angle-double-left"></i></div>
-                                <div class="nav-title">Précédent <h5>Lorem ipsum dolor</h5>
-                                </div>
-                            </a>
-                        </div>
-                        <div class="post-next">
-                            <a href="#">
-                                <div class="nav-title">Suivant <h5>Lorem ipsum dolor</h5>
-                                </div>
-                                <div class="icon"><i class="fas fa-angle-double-right"></i></div>
-                            </a>
-                        </div>
-                    </div>
+                    <?php if (function_exists('sa_posts_nav')) : ?>
+                        <?php sa_posts_nav(); ?>
+                    <?php endif; ?>
                     <!-- End Post Pagination -->
                 </div>
 
                 <!-- Start Sidebar -->
                 <div class="sidebar col-xl-4 col-lg-5 col-md-12 mt-md-100 mt-xs-50">
                     <aside>
-                        <div class="sidebar-item search">
-                            <div class="sidebar-info">
-                                <form>
-                                    <input type="text" placeholder="Rechercher..." name="text" class="form-control">
-                                    <button type="submit"><i class="fas fa-search"></i></button>
-                                </form>
-                            </div>
-                        </div>
-                        <div class="sidebar-item recent-post">
-                            <h4 class="title">Derniers articles</h4>
-                            <ul>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">12 Fev, 2020</span>
-                                        </div>
-                                        <a href="#">Lorem ipsum dolor</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">05 Jul, 2022</span>
-                                        </div>
-                                        <a href="#">Lorem ipsum dolor</a>
-                                    </div>
-                                </li>
-                                <li>
-                                    <div class="thumb">
-                                        <a href="#">
-                                            <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="Thumb">
-                                        </a>
-                                    </div>
-                                    <div class="info">
-                                        <div class="meta-title">
-                                            <span class="post-date">29 Sept, 2020</span>
-                                        </div>
-                                        <a href="#">Lorem ipsum dolor</a>
-                                    </div>
-                                </li>
-                            </ul>
-                        </div>
                         <div class="sidebar-item social-sidebar">
                             <h4 class="title">Nous suivre</h4>
                             <div class="sidebar-info">
@@ -128,6 +63,11 @@
                                     <li class="twitter">
                                         <a href="#">
                                             <i class="fab fa-twitter"></i>
+                                        </a>
+                                    </li>
+                                    <li class="youtube">
+                                        <a href="#">
+                                            <i class="fab fa-youtube"></i>
                                         </a>
                                     </li>
                                     <li class="linkedin">

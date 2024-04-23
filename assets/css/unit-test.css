@@ -768,6 +768,10 @@ button.btn:hover::after {
 	background: #0077B5;
 }
 
+.sidebar .sidebar-item.social-sidebar ul li.youtube a {
+	background: #FF0000;
+}
+
 .sidebar .sidebar-item.tags ul {
 	margin-top: -8px;
 }
@@ -1273,6 +1277,7 @@ a.button-regular:hover i::after {
 	text-transform: capitalize;
 	color: #666666;
 	display: flex;
+	align-items: center;
 	align-content: center;
 }
 
@@ -1357,6 +1362,20 @@ a.button-regular:hover i::after {
 .post-pagi-area>div:nth-child(2) a .icon {
 	margin-right: 0;
 	margin-left: 15px;
+}
+
+.post-pagi-area>.post-next {
+	text-align: right;
+	margin-left: auto;
+	margin-right: 0;
+}
+
+.post-pagi-area>.post-next a {
+	justify-content: right;
+}
+
+.post-pagi-area>.post-next a .icon {
+	margin-right: 0;
 }
 
 /* Comments */
@@ -1723,6 +1742,10 @@ a.button-regular:hover i::after {
 	}
 
 	.post-pagi-area>div:nth-child(2) a {
+		justify-content: center;
+	}
+
+	.post-pagi-area>.post-next a {
 		justify-content: center;
 	}
 
