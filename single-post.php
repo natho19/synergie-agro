@@ -11,8 +11,11 @@
                 <div class="blog-content col-xl-8 col-lg-7 col-md-12 pr-35 pr-md-15 pl-md-15 pr-xs-15 pl-xs-15">
                     <div class="blog-style-two item">
                         <div class="thumb">
-                            <a href="#"><img src="<?= SA_IMG_URL . '900x600.png'; ?>" alt="Thumb"></a>
-                            <div class="date"><strong><?= get_the_date('d'); ?></strong> <span><?= get_the_date('M, Y') ?></span></div>
+                            <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . '900x600.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
+                            <div class="date">
+                                <strong><?= get_the_date('d'); ?></strong>
+                                <span><?= get_the_date('M, Y') ?></span>
+                            </div>
                         </div>
                         <?php $content = get_post()->post_content;
                         if (!empty($content)) : ?>

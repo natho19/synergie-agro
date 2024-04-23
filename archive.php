@@ -12,16 +12,7 @@
                     <div class="magnific-mix-gallery gallery-masonary">
                         <div id="gallery-masonary" class="gallery-items colums-3">
                             <?php while (have_posts()) : the_post(); ?>
-                                <!-- Single Item -->
-                                <div class="gallery-item">
-                                    <div class="gallery-style-one">
-                                        <img src="<?= SA_IMG_URL . '800x800.png'; ?>" alt="800x800">
-                                        <div class="overlay">
-                                            <h4><a href="<?php the_permalink(); ?>"><?php the_title(); ?></a></h4>
-                                        </div>
-                                    </div>
-                                </div>
-                                <!-- End Single Item -->
+                                <?php get_template_part('parts/content', 'projet'); ?>
                             <?php endwhile; ?>
                         </div>
                     </div>
