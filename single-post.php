@@ -22,25 +22,6 @@
                         <?php endif; ?>
                     </div>
 
-                    <!-- Post Tags Share -->
-                    <div class="post-tags share">
-                        <div class="social">
-                            <h4>Partager sur :</h4>
-                            <ul>
-                                <li>
-                                    <a class="facebook" href="#" target="_blank"><i class="fab fa-facebook-f"></i></a>
-                                </li>
-                                <li>
-                                    <a class="twitter" href="#" target="_blank"><i class="fab fa-twitter"></i></a>
-                                </li>
-                                <li>
-                                    <a class="linkedin" href="#" target="_blank"><i class="fab fa-linkedin-in"></i></a>
-                                </li>
-                            </ul><!-- End Social Share -->
-                        </div>
-                    </div>
-                    <!-- Post Tags Share -->
-
                     <!-- Start Post Pagination -->
                     <?php if (function_exists('sa_posts_nav')) : ?>
                         <?php sa_posts_nav(); ?>
