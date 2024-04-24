@@ -7,14 +7,6 @@
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <meta name="description" content="Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.">
-
-    <link rel="shortcut icon" type="image/x-icon" href="<?= SA_IMG_URL . 'favicon/favicon.ico'; ?>">
-    <link rel="icon" type="image/png" sizes="512x512" href="<?= SA_IMG_URL . 'favicon/android-chrome-512x512.png'; ?>">
-    <link rel="icon" type="image/png" sizes="192x192" href="<?= SA_IMG_URL . 'favicon/android-chrome-192x192.png'; ?>">
-    <link rel="apple-touch-icon" sizes="180x180" href="<?= SA_IMG_URL . 'favicon/apple-touch-icon.png'; ?>">
-    <link rel="icon" type="image/png" sizes="32x32" href="<?= SA_IMG_URL . 'favicon/favicon-32x32.png'; ?>">
-    <link rel="icon" type="image/png" sizes="16x16" href="<?= SA_IMG_URL . 'favicon/favicon-16x16.png'; ?>">
-
     <?php wp_head(); ?>
 </head>
 

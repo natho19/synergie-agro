@@ -6614,6 +6614,7 @@ ul.list-item li::after {
 	padding: 15px 20px;
 	border: none;
 	background: #f8f8f8;
+	/* color: var(--color-paragraph); */
 	font-size: 14px;
 }
 

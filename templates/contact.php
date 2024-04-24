@@ -12,57 +12,29 @@
 
             <div class="col-tact-stye-one col-xl-7 col-lg-7">
                 <div class="contact-form-style-one mb-md-50">
-                    <h5 class="sub-title">Une question ?</h5>
-                    <h2 class="heading">Nous contacter</h2>
-                    <!-- action="assets/mail/contact.php" -->
-                    <form action="" method="POST" class="contact-form contact-form">
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <input class="form-control" id="name" name="name" placeholder="Nom *" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="email" name="email" placeholder="Email *" type="email">
-                                </div>
-                            </div>
-                            <div class="col-lg-6">
-                                <div class="form-group">
-                                    <input class="form-control" id="phone" name="phone" placeholder="Téléphone" type="text">
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <div class="form-group">
-                                    <textarea class="form-control" id="message" name="message" placeholder="Message *"></textarea>
-                                </div>
-                            </div>
-                        </div>
-                        <div class="row">
-                            <div class="col-lg-12">
-                                <button type="submit" name="submit" id="submit">
-                                    <i class="fa fa-paper-plane"></i> Envoyer
-                                </button>
-                            </div>
-                        </div>
-                    </form>
+                    <?php if (get_field('form_subtitle')) : ?>
+                        <h5 class="sub-title"><?php the_field('form_subtitle'); ?></h5>
+                    <?php endif; ?>
+                    <?php if (get_field('form_title')) : ?>
+                        <h2 class="heading"><?php the_field('form_title'); ?></h2>
+                    <?php endif; ?>
+                    <!-- Contact form -->
+                    <?= do_shortcode('[contact-form-7 id="fc5a2ef" title="Formulaire de contact" html_class="contact-form"]'); ?>
                 </div>
             </div>
 
             <div class="col-tact-stye-one col-xl-5 col-lg-5 pl-80 pl-md-15 pl-xs-15">
                 <div class="contact-style-one-info">
-                    <h2>
-                        <span>
-                            Informations de contact
-                            <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
-                                <path d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0" style="animation-play-state: running;"></path>
-                            </svg>
-                        </span>
-                    </h2>
+                    <?php if (get_field('contact_title')) : ?>
+                        <h2>
+                            <span>
+                                <?php the_field('contact_title'); ?>
+                                <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 500 150" preserveAspectRatio="none">
+                                    <path d="M14.4,111.6c0,0,202.9-33.7,471.2,0c0,0-194-8.9-397.3,24.7c0,0,141.9-5.9,309.2,0" style="animation-play-state: running;"></path>
+                                </svg>
+                            </span>
+                        </h2>
+                    <?php endif; ?>
                     <ul>
                         <li>
                             <div class="content">

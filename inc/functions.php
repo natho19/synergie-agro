@@ -5,6 +5,9 @@ define('SA_IMG_URL', get_template_directory_uri() . '/assets/img/', false);
 // Disable Gutenberg
 add_filter('use_block_editor_for_post', '__return_false');
 
+// Remove p tags to wpcf7
+add_filter('wpcf7_autop_or_not', '__return_false');
+
 // Add theme support
 function sa_setup()
 {
@@ -161,5 +164,4 @@ function sa_social_sharing($content)
         return $content;
     }
 };
-
 add_filter('the_content', 'sa_social_sharing');

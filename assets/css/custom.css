@@ -22,3 +22,47 @@
         margin-bottom: 40px;
     }
 }
+
+.wpcf7-form-control-wrap {
+    display: block;
+    margin-bottom: 10px;
+}
+
+.wpcf7-submit {
+    align-self: flex-start;
+    margin-top: 10px;
+}
+
+.wpcf7-spinner {
+    align-self: center;
+}
+
+.wpcf7-not-valid-tip {
+    line-height: 1.4;
+    font-size: 13.5px;
+    margin-bottom: 30px;
+}
+
+.wpcf7 form .wpcf7-response-output {
+    border: 1px solid #721c24;
+    border-radius: 5px;
+    padding: 20px;
+    margin: 25px 0 0 !important;
+    font-size: 15px;
+    line-height: 1.4;
+}
+
+.wpcf7 form.aborted .wpcf7-response-output,
+.wpcf7 form.failed .wpcf7-response-output,
+.wpcf7 form.invalid .wpcf7-response-output,
+.wpcf7 form.unaccepted .wpcf7-response-output {
+    color: #721c24;
+    background-color: #f8d7da;
+    border-color: #f5c6cb;
+}
+
+.wpcf7 form.sent .wpcf7-response-output {
+    color: #155724;
+    background-color: #d4edda;
+    border-color: #c3e6cb;
+}
