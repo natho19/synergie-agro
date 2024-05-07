@@ -50,39 +50,7 @@
                     <div class="footer-item contact">
                         <h4 class="widget-title">Contact</h4>
                         <ul>
-                            <?php if ($sa_options['head_office']) : ?>
-                                <li>
-                                    <div class="icon">
-                                        <i class="fal fa-building"></i>
-                                    </div>
-                                    <div class="content">
-                                        <strong>Siège administratif</strong>
-                                        <?= $sa_options['head_office']; ?>
-                                    </div>
-                                </li>
-                            <?php endif; ?>
-                            <?php if ($sa_options['technical_office']) : ?>
-                                <li>
-                                    <div class="icon">
-                                        <i class="far fa-wrench"></i>
-                                    </div>
-                                    <div class="content">
-                                        <strong>Siège technique</strong>
-                                        <?= $sa_options['technical_office']; ?>
-                                    </div>
-                                </li>
-                            <?php endif; ?>
-                            <?php if ($sa_options['mailbox']) : ?>
-                                <li>
-                                    <div class="icon">
-                                        <i class="far fa-mail-bulk"></i>
-                                    </div>
-                                    <div class="content">
-                                        <strong>Boîte Postale</strong>
-                                        <?= $sa_options['mailbox']; ?>
-                                    </div>
-                                </li>
-                            <?php endif; ?>
+
                             <?php if ($sa_options['roaming']) : ?>
                                 <li>
                                     <div class="icon">
@@ -113,6 +81,40 @@
                                     <div class="content">
                                         <strong>Email</strong>
                                         <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+
+                            <?php if ($sa_options['mailbox']) : ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-mail-bulk"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Boîte Postale</strong>
+                                        <?= $sa_options['mailbox']; ?>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['head_office']) : ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fal fa-building"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Siège administratif</strong>
+                                        <?= $sa_options['head_office']; ?>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['technical_office']) : ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-wrench"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Siège technique</strong>
+                                        <?= $sa_options['technical_office']; ?>
                                     </div>
                                 </li>
                             <?php endif; ?>

@@ -1,3 +1,5 @@
+<?php global $sa_options; ?>
+
 <?php /* Template Name: Contact */ ?>
 
 <?php get_header(); ?>
@@ -36,36 +38,54 @@
                         </h2>
                     <?php endif; ?>
                     <ul>
-                        <li>
-                            <div class="content">
-                                <h5 class="title">Roaming</h5>
-                                <a href="tel:+22890233809">+228 90 23 38 09</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="content">
-                                <h5 class="title">Téléphone</h5>
-                                <a href="tel:+22822210452">+228 22 21 04 52</a>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h5 class="title">Siège administratif</h5>
-                                <p>Route de Kpalimé près CEET Akossombo 08 B.P 81809 Lomé-Togo N° RCCM : TG-LOM 2020 A3319 N°CFE : 05177PP2020/2020</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h5 class="title">Siège technique</h5>
-                                <p>Agou Nyogbo près de l'orphelinat</p>
-                            </div>
-                        </li>
-                        <li>
-                            <div class="info">
-                                <h5 class="title">Email</h5>
-                                <a href="mailto:synergieagro2020@gmail.com">synergieagro2020@gmail.com</a>
-                            </div>
-                        </li>
+                        <?php if ($sa_options['roaming']) : ?>
+                            <li>
+                                <div class="content">
+                                    <h5 class="title">Roaming</h5>
+                                    <a href="tel:<?= $sa_options['roaming']; ?>"><?= $sa_options['roaming']; ?></a>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($sa_options['telephone']) : ?>
+                            <li>
+                                <div class="content">
+                                    <h5 class="title">Téléphone</h5>
+                                    <a href="tel:<?= $sa_options['telephone']; ?>"><?= $sa_options['telephone']; ?></a>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($sa_options['email']) : ?>
+                            <li>
+                                <div class="info">
+                                    <h5 class="title">Email</h5>
+                                    <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($sa_options['mailbox']) : ?>
+                            <li>
+                                <div class="info">
+                                    <h5 class="title">Boîte Postale</h5>
+                                    <p><?= $sa_options['mailbox']; ?></p>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($sa_options['head_office']) : ?>
+                            <li>
+                                <div class="info">
+                                    <h5 class="title">Siège administratif</h5>
+                                    <p><?= $sa_options['head_office']; ?></p>
+                                </div>
+                            </li>
+                        <?php endif; ?>
+                        <?php if ($sa_options['technical_office']) : ?>
+                            <li>
+                                <div class="info">
+                                    <h5 class="title">Siège administratif</h5>
+                                    <p><?= $sa_options['technical_office']; ?></p>
+                                </div>
+                            </li>
+                        <?php endif; ?>
                     </ul>
                 </div>
             </div>
