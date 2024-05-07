@@ -1,3 +1,5 @@
+<?php global $sa_options; ?>
+
 <!DOCTYPE html>
 <html <?php language_attributes(); ?>>
 
@@ -6,7 +8,6 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <meta name="description" content="Synergie Agro est une entreprise spécialisée dans la conception de solutions technologiques novatrices pour le développement de toute la chaîne de valeur en agro-industrie.">
     <?php wp_head(); ?>
 </head>
 
@@ -17,23 +18,23 @@
     <div class="top-bar-area top-bar-style-one bg-dark text-light">
         <div class="container">
             <div class="row align-center">
-                <div class="col-lg-8">
+                <div class="col-lg-6">
                     <ul class="item-flex">
                         <li>
-                            <i class="fas fa-clock"></i> Lun à Sam 24h/24, Dim 06:00 à 13:00
-                        </li>
-                        <li>
-                            <a href="tel:+22890233809"><i class="fas fa-phone-alt"></i> +228 90 23 38 09 / 22 21 04 52</a>
+                            <a href="tel:<?= $sa_options['roaming']; ?>">
+                                <i class="fas fa-phone-alt"></i>
+                                <?= $sa_options['roaming'] . ' / ' . $sa_options['telephone']; ?>
+                            </a>
                         </li>
                     </ul>
                 </div>
-                <div class="col-lg-4 text-end">
+                <div class="col-lg-6 text-end">
                     <div class="social">
                         <ul>
-                            <li><a href="#"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="#"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="#"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="#"><i class="fab fa-linkedin-in"></i></a></li>
+                            <li><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
+                            <li><a href="<?= esc_url($sa_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
+                            <li><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
+                            <li><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
                         </ul>
                     </div>
                 </div>
@@ -56,7 +57,7 @@
                             <i class="fa fa-bars"></i>
                         </button>
                         <a class="navbar-brand" href="<?= esc_url(get_home_url()); ?>">
-                            <img src="<?= SA_IMG_URL . 'logo.png'; ?>" class="logo" alt="Logo">
+                            <img src="<?= $sa_options['logo']['url']; ?>" class="logo" alt="Logo">
                         </a>
                     </div>
                     <!-- End Header Navigation -->
@@ -64,7 +65,7 @@
 
                 <!-- Collect the nav links, forms, and other content for toggling -->
                 <div class="collapse navbar-collapse" id="navbar-menu">
-                    <img src="<?= SA_IMG_URL . 'logo.png'; ?>" alt="Logo">
+                    <img src="<?= $sa_options['logo']['url']; ?>" alt="Logo">
 
                     <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#navbar-menu">
                         <i class="fa fa-times"></i>

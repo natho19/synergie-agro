@@ -1185,7 +1185,7 @@ a.button-regular:hover i::after {
 
 .post-tags.share {
 	display: flex;
-	margin-top: 50px;
+	margin-top: 30px;
 	float: left;
 	width: 100%;
 }

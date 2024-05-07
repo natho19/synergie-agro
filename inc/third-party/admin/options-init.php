@@ -6,12 +6,12 @@
  * https://github.com/reduxframework/redux-framework/blob/master/sample/sample-config.php
  */
 
-if ( ! class_exists( 'Redux' ) ) {
+if (!class_exists('Redux')) {
     return;
 }
 
 // This is your option name where all the Redux data is stored.
-$opt_name = "cultibaterre_options";
+$opt_name = "sa_options";
 
 /**
  * ---> SET ARGUMENTS
@@ -22,12 +22,12 @@ $opt_name = "cultibaterre_options";
 $theme = wp_get_theme(); // For use with some settings. Not necessary.
 
 $args = array(
-    'opt_name' => 'cultibaterre_options',
+    'opt_name' => 'sa_options',
     'dev_mode' => TRUE,
     'use_cdn' => TRUE,
     'display_name' => 'Options du site',
     'display_version' => 'v 1.0',
-    'page_slug' => 'cultibaterre_options',
+    'page_slug' => 'sa_options',
     'page_title' => 'Options du site',
     'update_notice' => TRUE,
     'admin_bar' => TRUE,
@@ -74,7 +74,7 @@ $args = array(
 // SOCIAL ICONS -> Setup custom links in the footer for quick links in your panel footer icons.
 
 
-Redux::setArgs( $opt_name, $args );
+Redux::setArgs($opt_name, $args);
 
 /*
 * ---> END ARGUMENTS
@@ -87,20 +87,20 @@ Redux::setArgs( $opt_name, $args );
 $tabs = array(
     array(
         'id'      => 'redux-help-tab-1',
-        'title'   => __( 'Theme Information 1', 'admin_folder' ),
-        'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
+        'title'   => __('Theme Information 1', 'admin_folder'),
+        'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'admin_folder')
     ),
     array(
         'id'      => 'redux-help-tab-2',
-        'title'   => __( 'Theme Information 2', 'admin_folder' ),
-        'content' => __( '<p>This is the tab content, HTML is allowed.</p>', 'admin_folder' )
+        'title'   => __('Theme Information 2', 'admin_folder'),
+        'content' => __('<p>This is the tab content, HTML is allowed.</p>', 'admin_folder')
     )
 );
-Redux::setHelpTab( $opt_name, $tabs );
+Redux::setHelpTab($opt_name, $tabs);
 
 // Set the help sidebar
-$content = __( '<p>This is the sidebar content, HTML is allowed.</p>', 'admin_folder' );
-Redux::setHelpSidebar( $opt_name, $content );
+$content = __('<p>This is the sidebar content, HTML is allowed.</p>', 'admin_folder');
+Redux::setHelpSidebar($opt_name, $content);
 
 
 /*
@@ -114,11 +114,16 @@ Redux::setHelpSidebar( $opt_name, $content );
 *
 */
 
-Redux::setSection( $opt_name, array(
-    'title' => 'Cultibaterre',
-    'id'    => 'cultibaterre',
+Redux::setSection($opt_name, array(
+    'title' => 'Synergie Agro',
+    'id'    => 'sa',
     'icon'       => 'el el-info-circle',
     'fields' => [
+        [
+            'id' => 'roaming',
+            'type' => 'text',
+            'title' => 'Roaming'
+        ],
         [
             'id' => 'telephone',
             'type' => 'text',
@@ -130,106 +135,43 @@ Redux::setSection( $opt_name, array(
             'title' => 'Email'
         ],
         [
-            'id' => 'address',
+            'id' => 'mailbox',
             'type' => 'text',
-            'title' => 'Adresse'
+            'title' => 'Boîte Postale'
         ],
         [
-            'id' => 'hours',
+            'id' => 'head_office',
             'type' => 'text',
-            'title' => 'Heures d\'ouverture'
+            'title' => 'Siège Administratif'
+        ],
+        [
+            'id' => 'technical_office',
+            'type' => 'text',
+            'title' => 'Siège Technique'
         ],
         [
             'id' => 'description',
-            'type' => 'text',
+            'type' => 'textarea',
             'title' => 'Description'
         ],
         [
-            'id' => 'call-to-action',
-            'type' => 'text',
-            'title' => 'Texte du Call to action'
+            'id' => 'need_help',
+            'type' => 'textarea',
+            'title' => 'Besoin d\'aide ?'
         ]
     ]
-) );
+));
 
-Redux::setSection( $opt_name, array(
-    'title' => 'Réseaux sociaux',
-    'id'    => 'social-medias',
-    'icon'       => 'el el-share',
-    'fields' => [
-        [
-            'id' => 'twitter',
-            'type' => 'text',
-            'title' => 'Lien Twitter'
-        ],
-        [
-            'id' => 'facebook',
-            'type' => 'text',
-            'title' => 'Lien Facebook'
-        ],
-        [
-            'id' => 'linkedin',
-            'type' => 'text',
-            'title' => 'Lien LinkedIn'
-        ],
-        [
-            'id' => 'instagram',
-            'type' => 'text',
-            'title' => 'Lien Instagram'
-        ],
-        [
-            'id' => 'youtube',
-            'type' => 'text',
-            'title' => 'Lien Youtube'
-        ]
-    ]
-) );
-
-Redux::setSection( $opt_name, array(
+Redux::setSection($opt_name, array(
     'title'      => 'Images du site',
     'id'         => 'images',
     'icon'       => 'el el-picture',
     'fields'     => [
         [
-            'id'      => 'logo-1',
+            'id'      => 'logo',
             'type'    => 'media',
             'url'     => true,
-            'title'   => 'Logo 1',
-            'preview' => true
-        ],
-        [
-            'id'      => 'logo-2',
-            'type'    => 'media',
-            'url'     => true,
-            'title'   => 'Logo 2',
-            'preview' => true
-        ],
-        [
-            'id'      => 'favicon-512',
-            'type'    => 'media',
-            'url'     => true,
-            'title'   => 'Favicon 512x512',
-            'preview' => true
-        ],
-        [
-            'id'      => 'favicon-180',
-            'type'    => 'media',
-            'url'     => true,
-            'title'   => 'Favicon 180x180',
-            'preview' => true
-        ],
-        [
-            'id'      => 'favicon-32',
-            'type'    => 'media',
-            'url'     => true,
-            'title'   => 'Favicon 32x32',
-            'preview' => true
-        ],
-        [
-            'id'      => 'favicon-16',
-            'type'    => 'media',
-            'url'     => true,
-            'title'   => 'Favicon 16x16',
+            'title'   => 'Logo',
             'preview' => true
         ],
         [
@@ -240,4 +182,32 @@ Redux::setSection( $opt_name, array(
             'preview' => true
         ]
     ]
-) );
+));
+
+Redux::setSection($opt_name, array(
+    'title' => 'Réseaux sociaux',
+    'id'    => 'social-medias',
+    'icon'       => 'el el-share',
+    'fields' => [
+        [
+            'id' => 'facebook',
+            'type' => 'text',
+            'title' => 'Lien Facebook'
+        ],
+        [
+            'id' => 'twitter',
+            'type' => 'text',
+            'title' => 'Lien Twitter'
+        ],
+        [
+            'id' => 'youtube',
+            'type' => 'text',
+            'title' => 'Lien Youtube'
+        ],
+        [
+            'id' => 'linkedin',
+            'type' => 'text',
+            'title' => 'Lien LinkedIn'
+        ],
+    ]
+));
