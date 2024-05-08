@@ -3989,7 +3989,6 @@ a.btn-round-animation.dark {
 .banner-style-one .content h2 {
 	font-size: 60px;
 	font-family: var(--font-secondary);
-	font-size: 70px;
 	/* letter-spacing: 3px; */
 	margin-bottom: 30px;
 }
@@ -7784,7 +7783,7 @@ footer {
 
 	/* Banner Style One */
 	.banner-style-one .content h2 {
-		font-size: 55px;
+		font-size: 50px;
 	}
 
 	.banner-style-one .curve-text svg {
