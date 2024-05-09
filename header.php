@@ -86,12 +86,20 @@
                         <li><a href="http://localhost:81/synergie-agro/actualites/">Actualités</a></li>
                         <li><a href="http://localhost:81/synergie-agro/contact/">Contact</a></li>
                     </ul>
+
+                    <div class="select-dropdown">
+                        <i class="fas fa-globe"></i>
+                        <select>
+                            <option value="fr" selected>FR</option>
+                            <option value="eng">EN</option>
+                        </select>
+                    </div>
                 </div><!-- /.navbar-collapse -->
 
                 <div class="attr-right">
                     <!-- Start Atribute Navigation / A utiliser pour le Select des langues -->
                     <div class="attr-nav">
-                        <div class="select-dropdown d-none d-lg-block">
+                        <div class="select-dropdown">
                             <i class="fas fa-globe"></i>
                             <select>
                                 <option value="fr" selected>FR</option>

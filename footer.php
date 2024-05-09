@@ -13,6 +13,13 @@
                         <?php if ($sa_options['description']) : ?>
                             <p><?= $sa_options['description']; ?></p>
                         <?php endif; ?>
+                        <div class="select-dropdown">
+                            <i class="fas fa-globe"></i>
+                            <select>
+                                <option value="fr" selected>FR</option>
+                                <option value="eng">EN</option>
+                            </select>
+                        </div>
                     </div>
                 </div>
                 <!-- End Single Item -->
