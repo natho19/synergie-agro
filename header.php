@@ -89,10 +89,7 @@
 
                     <div class="select-dropdown">
                         <i class="fas fa-globe"></i>
-                        <select>
-                            <option value="fr" selected>FR</option>
-                            <option value="eng">EN</option>
-                        </select>
+                        <?php pll_the_languages(['dropdown'  => 2]); ?>
                     </div>
                 </div><!-- /.navbar-collapse -->
 
@@ -101,10 +98,7 @@
                     <div class="attr-nav">
                         <div class="select-dropdown">
                             <i class="fas fa-globe"></i>
-                            <select>
-                                <option value="fr" selected>FR</option>
-                                <option value="eng">EN</option>
-                            </select>
+                            <?php pll_the_languages(['dropdown'  => 1]); ?>
                         </div>
                     </div>
                     <!-- End Atribute Navigation -->

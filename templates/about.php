@@ -30,7 +30,7 @@
 
 <!-- Start Choose Us 
 ============================================= -->
-<div class="choose-us-style-three-area default-padding bg-dark text-light">
+<div class="choose-us-style-three-area default-padding bg-theme-secondary text-light">
     <div class="illustration-bottom">
         <img src="<?= SA_IMG_URL . 'illustration-17.png'; ?>" alt="Illustration">
     </div>

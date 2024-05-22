@@ -15,10 +15,7 @@
                         <?php endif; ?>
                         <div class="select-dropdown">
                             <i class="fas fa-globe"></i>
-                            <select>
-                                <option value="fr" selected>FR</option>
-                                <option value="eng">EN</option>
-                            </select>
+                            <?php pll_the_languages(['dropdown'  => 3]); ?>
                         </div>
                     </div>
                 </div>
