@@ -22,6 +22,7 @@ function sa_setup()
     pll_register_string('custom_translate', 'Contenu Siège Administratif');
     pll_register_string('custom_translate', 'Titre Siège Technique');
     pll_register_string('custom_translate', 'Contenu Siège Technique');
+    pll_register_string('custom_translate', 'Projets');
 }
 add_action('after_setup_theme', 'sa_setup');
 
@@ -50,7 +51,9 @@ function sa_get_page_title()
             $page_title = get_queried_object()->name;
             break;
         case is_post_type_archive():
-            $page_title = post_type_archive_title('', false);
+            ob_start();
+            echo pll_e('Projets');
+            $page_title = ob_get_clean();
             break;
         default:
             $page_title = get_the_title();
