@@ -21,7 +21,11 @@
                         <h2 class="heading"><?php the_field('form_title'); ?></h2>
                     <?php endif; ?>
                     <!-- Contact form -->
-                    <?= do_shortcode('[contact-form-7 id="fc5a2ef" title="Formulaire de contact" html_class="contact-form"]'); ?>
+                    <?php if (pll_current_language() == 'fr') : ?>
+                        <?= do_shortcode('[contact-form-7 id="fc5a2ef" title="Formulaire de contact" html_class="contact-form"]'); ?>
+                    <?php elseif (pll_current_language() == 'en') : ?>
+                        <?= do_shortcode('[contact-form-7 id="9a77551" title="Contact form" html_class="contact-form"]'); ?>
+                    <?php endif; ?>
                 </div>
             </div>
 
@@ -38,54 +42,42 @@
                         </h2>
                     <?php endif; ?>
                     <ul>
-                        <?php if ($sa_options['roaming']) : ?>
-                            <li>
-                                <div class="content">
-                                    <h5 class="title">Roaming</h5>
-                                    <a href="tel:<?= $sa_options['roaming']; ?>"><?= $sa_options['roaming']; ?></a>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($sa_options['telephone']) : ?>
-                            <li>
-                                <div class="content">
-                                    <h5 class="title">Téléphone</h5>
-                                    <a href="tel:<?= $sa_options['telephone']; ?>"><?= $sa_options['telephone']; ?></a>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($sa_options['email']) : ?>
-                            <li>
-                                <div class="info">
-                                    <h5 class="title">Email</h5>
-                                    <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($sa_options['mailbox']) : ?>
-                            <li>
-                                <div class="info">
-                                    <h5 class="title">Boîte Postale</h5>
-                                    <p><?= $sa_options['mailbox']; ?></p>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($sa_options['head_office']) : ?>
-                            <li>
-                                <div class="info">
-                                    <h5 class="title">Siège administratif</h5>
-                                    <p><?= $sa_options['head_office']; ?></p>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if ($sa_options['technical_office']) : ?>
-                            <li>
-                                <div class="info">
-                                    <h5 class="title">Siège administratif</h5>
-                                    <p><?= $sa_options['technical_office']; ?></p>
-                                </div>
-                            </li>
-                        <?php endif; ?>
+                        <li>
+                            <div class="content">
+                                <h5 class="title">Roaming</h5>
+                                <a href="tel:<?= $sa_options['roaming']; ?>"><?= $sa_options['roaming']; ?></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="content">
+                                <h5 class="title"><?= pll_e('Téléphone'); ?></h5>
+                                <a href="tel:<?= $sa_options['telephone']; ?>"><?= $sa_options['telephone']; ?></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h5 class="title">Email</h5>
+                                <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h5 class="title"><?= pll_e('Titre Boîte Postale'); ?></h5>
+                                <p><?= pll_e('Contenu Boîte Postale'); ?></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h5 class="title"><?= pll_e('Titre Siège Administratif'); ?></h5>
+                                <p><?= pll_e('Contenu Siège Administratif'); ?></p>
+                            </div>
+                        </li>
+                        <li>
+                            <div class="info">
+                                <h5 class="title"><?= pll_e('Titre Siège Technique'); ?></h5>
+                                <p><?= pll_e('Contenu Siège Technique'); ?></p>
+                            </div>
+                        </li>
                     </ul>
                 </div>
             </div>

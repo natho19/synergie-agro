@@ -13,6 +13,15 @@ function sa_setup()
 {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
+
+    // Custom traduction
+    pll_register_string('custom_translate', 'Téléphone');
+    pll_register_string('custom_translate', 'Titre Boîte Postale');
+    pll_register_string('custom_translate', 'Contenu Boîte Postale');
+    pll_register_string('custom_translate', 'Titre Siège Administratif');
+    pll_register_string('custom_translate', 'Contenu Siège Administratif');
+    pll_register_string('custom_translate', 'Titre Siège Technique');
+    pll_register_string('custom_translate', 'Contenu Siège Technique');
 }
 add_action('after_setup_theme', 'sa_setup');
 
