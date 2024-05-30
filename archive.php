@@ -6,7 +6,7 @@
 ============================================= -->
 <div class="gallery-style-two-area default-padding">
     <div class="container">
-        <div class="row mb-40">
+        <div class="row">
             <?php if (have_posts()) : ?>
                 <div class="col-md-12 gallery-content">
                     <div class="magnific-mix-gallery gallery-masonary">
@@ -19,6 +19,8 @@
                         </div>
                     </div>
                 </div>
+            <?php else : ?>
+                <?php get_template_part('parts/content', 'none'); ?>
             <?php endif; ?>
 
             <!-- Pagination -->

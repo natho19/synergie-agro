@@ -16,6 +16,8 @@
                     <?php endwhile; ?>
                 </div>
             </div>
+        <?php else : ?>
+            <?php get_template_part('parts/content', 'none'); ?>
         <?php endif; ?>
 
         <!-- Pagination -->
