@@ -14,9 +14,9 @@
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
                     <h1>404</h1>
-                    <h2>Désolé, nous ne trouvons pas cette page !</h2>
-                    <p>La page que vous recherchez a été déplacée, supprimée, renommée ou n'a jamais existé.</p>
-                    <a class="btn mt-20 btn-md btn-theme" href="<?= esc_url(get_home_url()); ?>">Accueil</a>
+                    <h2><?= pll_e('Titre 404'); ?></h2>
+                    <p><?= pll_e('Description 404'); ?></p>
+                    <a class="btn mt-20 btn-md btn-theme" href="<?= esc_url(get_home_url()); ?>"><?= pll_current_language() == 'fr' ? 'Accueil' : 'Homepage' ?></a>
                 </div>
             </div>
         </div>

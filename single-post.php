@@ -38,7 +38,7 @@
                 <div class="sidebar col-xl-4 col-lg-5 col-md-12 mt-md-100 mt-xs-50">
                     <aside>
                         <div class="sidebar-item social-sidebar">
-                            <h4 class="title">Nous suivre</h4>
+                            <h4 class="title"><?= pll_e('Nous suivre'); ?></h4>
                             <div class="sidebar-info">
                                 <ul>
                                     <?php if ($sa_options['facebook']) : ?>

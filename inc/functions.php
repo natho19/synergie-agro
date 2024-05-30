@@ -23,6 +23,14 @@ function sa_setup()
     pll_register_string('custom_translate', 'Titre Siège Technique');
     pll_register_string('custom_translate', 'Contenu Siège Technique');
     pll_register_string('custom_translate', 'Projets');
+    pll_register_string('custom_translate', 'Besoin d\'aide');
+    pll_register_string('custom_translate', 'Contenu Besoin d\'aide');
+    pll_register_string('custom_translate', 'Nous suivre');
+    pll_register_string('custom_translate', 'Titre 404');
+    pll_register_string('custom_translate', 'Description 404');
+    pll_register_string('custom_translate', 'Oups !');
+    pll_register_string('custom_translate', 'Titre aucun contenu');
+    pll_register_string('custom_translate', 'Description aucun contenu');
 }
 add_action('after_setup_theme', 'sa_setup');
 

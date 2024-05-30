@@ -9,10 +9,10 @@
         <div class="error-box">
             <div class="row">
                 <div class="col-lg-8 offset-lg-2">
-                    <h1>Oups !</h1>
-                    <h2>Aucun contenu</h2>
-                    <p>Aucun contenu disponible pour le moment, veuillez retourner sur la page d'accueil.</p>
-                    <a class="btn mt-20 btn-md btn-theme" href="<?= esc_url(get_home_url()); ?>">Accueil</a>
+                    <h1><?= pll_e('Oups !'); ?></h1>
+                    <h2><?= pll_e('Titre aucun contenu'); ?></h2>
+                    <p><?= pll_e('Description aucun contenu'); ?></p>
+                    <a class="btn mt-20 btn-md btn-theme" href="<?= esc_url(get_home_url()); ?>"><?= pll_current_language() == 'fr' ? 'Accueil' : 'Homepage' ?></a>
                 </div>
             </div>
         </div>
