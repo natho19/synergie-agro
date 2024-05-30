@@ -209,5 +209,15 @@ Redux::setSection($opt_name, array(
             'type' => 'text',
             'title' => 'Lien LinkedIn'
         ],
+        [
+            'id' => 'instagram',
+            'type' => 'text',
+            'title' => 'Lien Instagram'
+        ],
+        [
+            'id' => 'tiktok',
+            'type' => 'text',
+            'title' => 'Lien TikTok'
+        ]
     ]
 ));

@@ -18,23 +18,39 @@
     <div class="top-bar-area top-bar-style-one bg-dark text-light">
         <div class="container">
             <div class="row align-center">
-                <div class="col-lg-6">
-                    <ul class="item-flex">
-                        <li>
-                            <a href="tel:<?= $sa_options['roaming']; ?>">
-                                <i class="fas fa-phone-alt"></i>
-                                <?= $sa_options['roaming'] . ' / ' . $sa_options['telephone']; ?>
-                            </a>
-                        </li>
-                    </ul>
-                </div>
+                <?php if ($sa_options['roaming']) : ?>
+                    <div class="col-lg-6">
+                        <ul class="item-flex">
+                            <li>
+                                <a href="tel:<?= linkNumber($sa_options['roaming']); ?>">
+                                    <i class="fas fa-phone-alt"></i>
+                                    <?= $sa_options['roaming']; ?>
+                                </a>
+                            </li>
+                        </ul>
+                    </div>
+                <?php endif; ?>
                 <div class="col-lg-6 text-end">
                     <div class="social">
                         <ul>
-                            <li><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
-                            <li><a href="<?= esc_url($sa_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
-                            <li><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
-                            <li><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                            <?php if ($sa_options['facebook']) : ?>
+                                <li><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['twitter']) : ?>
+                                <li><a href="<?= esc_url($sa_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['youtube']) : ?>
+                                <li><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['linkedin']) : ?>
+                                <li><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['instagram']) : ?>
+                                <li><a href="<?= esc_url($sa_options['instagram']); ?>"><i class="fab fa-instagram"></i></a></li>
+                            <?php endif; ?>
+                            <?php if ($sa_options['tiktok']) : ?>
+                                <li><a href="<?= esc_url($sa_options['tiktok']); ?>"><i class="fab fa-tiktok"></i></a></li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>

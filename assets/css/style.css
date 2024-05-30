@@ -7729,7 +7729,7 @@ footer {
 	.top-bar-area li {
 		justify-content: center;
 		border-right: 1px solid rgba(255, 255, 255, 0.3);
-		padding: 0 20px;
+		padding: 0 25px;
 		margin: 0;
 	}
 
@@ -7742,11 +7742,17 @@ footer {
 		margin-top: 10px;
 		border-top: 1px solid rgba(255, 255, 255, 0.3);
 		padding-top: 15px;
-		display: none;
+		/* display: none; */
+	}
+
+	.top-bar-area .text-end .social ul {
+		display: flex;
+		justify-content: center;
 	}
 
 	.top-bar-area .text-end .social li {
-		margin: 0 15px;
+		/* padding: 0 25px; */
+		margin-left: 0;
 	}
 
 	.top-bar-area {
@@ -7801,7 +7807,7 @@ footer {
 		font-size: 65px;
 	}
 
-
+	#
 	/* Banner Style Three */
 
 	.banner-style-two .content {

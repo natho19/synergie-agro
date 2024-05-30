@@ -1,3 +1,5 @@
+<?php global $sa_options; ?>
+
 <?php get_header(); ?>
 
 <?php get_template_part('parts/breadcrumb'); ?>
@@ -39,26 +41,24 @@
                             <h4 class="title">Nous suivre</h4>
                             <div class="sidebar-info">
                                 <ul>
-                                    <li class="facebook">
-                                        <a href="#">
-                                            <i class="fab fa-facebook-f"></i>
-                                        </a>
-                                    </li>
-                                    <li class="twitter">
-                                        <a href="#">
-                                            <i class="fab fa-twitter"></i>
-                                        </a>
-                                    </li>
-                                    <li class="youtube">
-                                        <a href="#">
-                                            <i class="fab fa-youtube"></i>
-                                        </a>
-                                    </li>
-                                    <li class="linkedin">
-                                        <a href="#">
-                                            <i class="fab fa-linkedin-in"></i>
-                                        </a>
-                                    </li>
+                                    <?php if ($sa_options['facebook']) : ?>
+                                        <li class="facebook"><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if ($sa_options['twitter']) : ?>
+                                        <li class="twitter"><a href="<?= esc_url($sa_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if ($sa_options['youtube']) : ?>
+                                        <li class="youtube"><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if ($sa_options['linkedin']) : ?>
+                                        <li class="linkedin"><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if ($sa_options['instagram']) : ?>
+                                        <li class="instagram"><a href="<?= esc_url($sa_options['instagram']); ?>"><i class="fab fa-instagram"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if ($sa_options['tiktok']) : ?>
+                                        <li class="tiktok"><a href="<?= esc_url($sa_options['tiktok']); ?>"><i class="fab fa-tiktok"></i></a></li>
+                                    <?php endif; ?>
                                 </ul>
                             </div>
                         </div>
