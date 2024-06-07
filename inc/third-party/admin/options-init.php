@@ -133,31 +133,6 @@ Redux::setSection($opt_name, array(
             'id' => 'email',
             'type' => 'text',
             'title' => 'Email'
-        ],
-        [
-            'id' => 'mailbox',
-            'type' => 'text',
-            'title' => 'Boîte Postale'
-        ],
-        [
-            'id' => 'head_office',
-            'type' => 'text',
-            'title' => 'Siège Administratif'
-        ],
-        [
-            'id' => 'technical_office',
-            'type' => 'text',
-            'title' => 'Siège Technique'
-        ],
-        [
-            'id' => 'description',
-            'type' => 'textarea',
-            'title' => 'Description'
-        ],
-        [
-            'id' => 'need_help',
-            'type' => 'textarea',
-            'title' => 'Besoin d\'aide ?'
         ]
     ]
 ));
