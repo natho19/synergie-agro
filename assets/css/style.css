@@ -1906,6 +1906,11 @@ p {
 	transform: translateY(-45%) skew(25deg) scale(0);
 }
 
+.bg-theme-secondary .btn.btn-theme::after {
+	background-color: var(--dark) !important;
+
+}
+
 .bg-dark .btn.btn-theme::after {
 	background-color: var(--color-secondary);
 }

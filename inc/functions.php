@@ -33,6 +33,7 @@ function sa_setup()
     pll_register_string('custom_translate', 'Titre aucun contenu');
     pll_register_string('custom_translate', 'Description aucun contenu');
     pll_register_string('custom_translate', 'Copyright');
+    pll_register_string('custom_translate', 'Notre chaîne YouTube');
 }
 add_action('after_setup_theme', 'sa_setup');
 

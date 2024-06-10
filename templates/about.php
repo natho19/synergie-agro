@@ -30,42 +30,44 @@
 
 <!-- Start Choose Us 
 ============================================= -->
-<div class="choose-us-style-three-area default-padding bg-theme-secondary text-light">
-    <div class="illustration-bottom">
-        <img src="<?= SA_IMG_URL . 'illustration-17.png'; ?>" alt="Illustration">
-    </div>
-    <?php $video_background = get_field('video_background'); ?>
-    <div class="shape" style="background-image: url(<?= esc_url($video_background ? $video_background : SA_IMG_URL . '800x800.png'); ?>);">
-        <?php if (get_field('video_url')) : ?>
-            <a href="<?= esc_attr(get_field('video_url')); ?>" class="popup-youtube video-play-button">
-                <i class="fas fa-play"></i>
-                <div class="effect"></div>
-            </a>
-        <?php endif; ?>
-    </div>
-    <div class="container">
-        <div class="row">
-            <div class="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">
-                <?php if (get_field('video_title')) : ?>
-                    <h2 class="title"><?php the_field('video_title'); ?></h2>
-                <?php endif; ?>
-                <?php if (get_field('video_description')) : ?>
-                    <p><?php the_field('video_description'); ?></p>
-                <?php endif; ?>
-                <?php if (get_field('video_bullet_points')) : ?>
-                    <div class="list-grid">
-                        <?php the_field('video_bullet_points'); ?>
-                    </div>
-                <?php endif; ?>
-                <?php if (get_field('video_youtube_channel_url')) : ?>
-                    <div class="mt-50">
-                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_attr(get_field('video_youtube_channel_url')); ?>"><i class="fab fa-youtube"></i> Notre chaîne YouTube</a>
-                    </div>
-                <?php endif; ?>
+<?php if (get_field('display_video')) : ?>
+    <div class="choose-us-style-three-area default-padding bg-theme-secondary text-light">
+        <div class="illustration-bottom">
+            <img src="<?= SA_IMG_URL . 'illustration-17.png'; ?>" alt="Illustration">
+        </div>
+        <?php $video_background = get_field('video_background'); ?>
+        <div class="shape" style="background-image: url(<?= esc_url($video_background ? $video_background : SA_IMG_URL . '800x800.png'); ?>);">
+            <?php if (get_field('video_url')) : ?>
+                <a href="<?= esc_attr(get_field('video_url')); ?>" class="popup-youtube video-play-button">
+                    <i class="fas fa-play"></i>
+                    <div class="effect"></div>
+                </a>
+            <?php endif; ?>
+        </div>
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-6 offset-lg-6 pl-60 pl-md-15 pl-xs-15">
+                    <?php if (get_field('video_title')) : ?>
+                        <h2 class="title"><?php the_field('video_title'); ?></h2>
+                    <?php endif; ?>
+                    <?php if (get_field('video_description')) : ?>
+                        <p><?php the_field('video_description'); ?></p>
+                    <?php endif; ?>
+                    <?php if (get_field('video_bullet_points')) : ?>
+                        <div class="list-grid">
+                            <?php the_field('video_bullet_points'); ?>
+                        </div>
+                    <?php endif; ?>
+                    <?php if (get_field('video_youtube_channel_url')) : ?>
+                        <div class="mt-50">
+                            <a class="btn btn-theme btn-md radius animation" href="<?= esc_attr(get_field('video_youtube_channel_url')); ?>"><i class="fab fa-youtube"></i> <?= pll_e('Notre chaîne YouTube') ?></a>
+                        </div>
+                    <?php endif; ?>
+                </div>
             </div>
         </div>
     </div>
-</div>
+<?php endif; ?>
 <!-- End Choose Us -->
 
 <!-- Start Brand
