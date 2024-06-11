@@ -1,6 +1,7 @@
 <?php
 
-function sa_load_scripts() {
+function sa_load_scripts()
+{
     // CSS
     wp_enqueue_style('main', get_template_directory_uri() . '/assets/css/main.css', [], null, 'all');
 
