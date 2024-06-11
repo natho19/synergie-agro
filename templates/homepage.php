@@ -16,7 +16,7 @@
                         <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background') ? get_sub_field('background') : SA_IMG_URL . '1900x1200.png'); ?>);"></div>
 
                         <div class="shape">
-                            <img src="<?= SA_IMG_URL . 'shape-2.png'; ?>" alt="Shape">
+                            <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
                         </div>
 
                         <div class="container">
@@ -159,7 +159,7 @@
 ============================================= -->
 <?php if (have_rows('domains')) : ?>
     <div class="services-style-one-area bg-gray default-padding">
-        <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape-9.png'; ?>);"></div>
+        <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape/9.png'; ?>);"></div>
 
         <div class="container">
             <div class="row">
@@ -252,7 +252,7 @@
 <!-- Start Product Speciality 
 ============================================= -->
 <?php if (get_field('products_badge')) : ?>
-    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'banner-1.jpg'; ?>);">
+    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'banner-products.jpg'; ?>);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-8">
