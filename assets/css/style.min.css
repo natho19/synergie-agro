@@ -3908,7 +3908,7 @@ a.btn-round-animation.dark {
     content: "";
     height: 80px;
     width: 80px;
-    background: url(../img/shape/4.png);
+    background: url(../img/shapes/4.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: right top;
@@ -4264,7 +4264,7 @@ ul.top-feature li p {
     content: "";
     height: 100px;
     width: 100%;
-    background: url(../img/shape/20.png);
+    background: url(../img/shapes/20.png);
     z-index: -1;
     background-size: cover;
     background-position: center top
@@ -4979,7 +4979,7 @@ ul.list-standard {
     content: "";
     height: 100%;
     width: 100%;
-    background: url(../img/shape/5.png);
+    background: url(../img/shapes/5.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: bottom left;
@@ -5173,7 +5173,7 @@ ul.list-standard {
     width: 100%;
     z-index: -1;
     opacity: .75;
-    background: url(../img/shape/14.png) left center/50% no-repeat;
+    background: url(../img/shapes/14.png) left center/50% no-repeat;
     background-position: left center
 }
 
@@ -5531,7 +5531,7 @@ ul.list-details li p {
     content: "";
     height: 100%;
     width: 50%;
-    background: url(../img/shape/12.png);
+    background: url(../img/shapes/12.png);
     background-size: contain;
     background-repeat: no-repeat;
     background-position: left bottom;
@@ -6231,7 +6231,7 @@ ul.list-item li::after {
     -webkit-text-fill-color: transparent;
     background-size: cover;
     background-position: center;
-    background-image: url(../img/shape/28.jpg);
+    background-image: url(../img/shapes/28.jpg);
     font-size: 250px
 }
 

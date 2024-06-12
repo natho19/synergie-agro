@@ -13,10 +13,10 @@
                 <!-- Single Item -->
                 <?php while (have_rows('slides')) : the_row(); ?>
                     <div class="swiper-slide banner-style-one">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background') ? get_sub_field('background') : SA_IMG_URL . '1900x1200.png'); ?>);"></div>
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background') ? get_sub_field('background') : SA_IMG_URL . 'placeholders/1900x1200.png'); ?>);"></div>
 
                         <div class="shape">
-                            <img src="<?= SA_IMG_URL . 'shape/2.png'; ?>" alt="Shape">
+                            <img src="<?= SA_IMG_URL . 'shapes/2.png'; ?>" alt="Shape">
                         </div>
 
                         <div class="container">
@@ -64,9 +64,9 @@
                 <div class="col-xl-6 col-lg-5">
                     <div class="about-style-one-thumb">
                         <?php $features_image = get_field('features_image'); ?>
-                        <img src="<?= esc_url($features_image ? $features_image['url'] : SA_IMG_URL . '800x1000.png'); ?>" alt="<?= esc_attr($features_image ? $features_image['alt'] : '800x1000'); ?>">
+                        <img src="<?= esc_url($features_image ? $features_image['url'] : SA_IMG_URL . 'placeholders/800x1000.png'); ?>" alt="<?= esc_attr($features_image ? $features_image['alt'] : '800x1000'); ?>">
                         <div class="animation-shape">
-                            <img src="<?= SA_IMG_URL . 'illustration-1.png'; ?>" alt="Illustration">
+                            <img src="<?= SA_IMG_URL . 'sources/illustration-1.png'; ?>" alt="Illustration">
                         </div>
                     </div>
                 </div>
@@ -159,7 +159,7 @@
 ============================================= -->
 <?php if (have_rows('domains')) : ?>
     <div class="services-style-one-area bg-gray default-padding">
-        <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shape/9.png'; ?>);"></div>
+        <div class="shape-right-top" style="background-image: url(<?= SA_IMG_URL . 'shapes/9.png'; ?>);"></div>
 
         <div class="container">
             <div class="row">
@@ -252,7 +252,7 @@
 <!-- Start Product Speciality 
 ============================================= -->
 <?php if (get_field('products_badge')) : ?>
-    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'banner-products.jpg'; ?>);">
+    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'sources/banner-products.jpg'; ?>);">
         <div class="container">
             <div class="row">
                 <div class="col-xl-6 col-md-8">

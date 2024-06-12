@@ -12,9 +12,9 @@
             <div class="col-xl-6 col-lg-5">
                 <div class="about-style-one-thumb">
                     <?php $about_image = get_field('about_image'); ?>
-                    <img src="<?= esc_url($about_image ? $about_image['url'] : SA_IMG_URL . '800x1000.png'); ?>" alt="<?= esc_attr($about_image ? $about_image['alt'] : '800x1000'); ?>">
+                    <img src="<?= esc_url($about_image ? $about_image['url'] : SA_IMG_URL . 'placeholders/800x1000.png'); ?>" alt="<?= esc_attr($about_image ? $about_image['alt'] : '800x1000'); ?>">
                     <div class="animation-shape">
-                        <img src="<?= SA_IMG_URL . 'illustration-1.png'; ?>" alt="Illustration">
+                        <img src="<?= SA_IMG_URL . 'sources/illustration-1.png'; ?>" alt="Illustration">
                     </div>
                 </div>
             </div>
@@ -33,10 +33,10 @@
 <?php if (get_field('display_video')) : ?>
     <div class="choose-us-style-three-area default-padding bg-theme-secondary text-light">
         <div class="illustration-bottom">
-            <img src="<?= SA_IMG_URL . 'illustration-17.png'; ?>" alt="Illustration">
+            <img src="<?= SA_IMG_URL . 'sources/illustration-17.png'; ?>" alt="Illustration">
         </div>
         <?php $video_background = get_field('video_background'); ?>
-        <div class="shape" style="background-image: url(<?= esc_url($video_background ? $video_background : SA_IMG_URL . '800x800.png'); ?>);">
+        <div class="shape" style="background-image: url(<?= esc_url($video_background ? $video_background : SA_IMG_URL . 'placeholders/800x800.png'); ?>);">
             <?php if (get_field('video_url')) : ?>
                 <a href="<?= esc_attr(get_field('video_url')); ?>" class="popup-youtube video-play-button">
                     <i class="fas fa-play"></i>

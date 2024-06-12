@@ -2,7 +2,7 @@
     <div class="service-style-one-item text-center">
         <div class="thumb">
             <?php $domain_image = get_sub_field('image'); ?>
-            <img src="<?= esc_url($domain_image ? $domain_image['url'] : SA_IMG_URL . '900x600.png'); ?>" alt="<?= esc_attr($domain_image ? $domain_image['alt'] : '900x600'); ?>">
+            <img src="<?= esc_url($domain_image ? $domain_image['url'] : SA_IMG_URL . 'placeholders/900x600.png'); ?>" alt="<?= esc_attr($domain_image ? $domain_image['alt'] : '900x600'); ?>">
         </div>
 
         <?php if (get_sub_field('description')) : ?>

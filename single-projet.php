@@ -31,7 +31,7 @@
                 </div>
                 <div class="col-lg-8">
                     <div class="project-details-top">
-                        <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . '800x800.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
+                        <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . 'placeholders/800x800.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
                     </div>
                     <div class="item-grid-container">
                         <div class="single-grid">

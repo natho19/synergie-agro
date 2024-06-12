@@ -2,7 +2,7 @@
 
 <!-- Start Footer 
     ============================================= -->
-<footer class="bg-dark text-light" style="background-image: url(<?= SA_IMG_URL . 'shape/8.png'; ?>);">
+<footer class="bg-dark text-light" style="background-image: url(<?= SA_IMG_URL . 'shapes/8.png'; ?>);">
     <div class="container">
         <div class="f-items default-padding">
             <div class="row">
@@ -105,7 +105,7 @@
         <!-- End Footer Bottom -->
     </div>
     <div class="shape-right-bottom">
-        <img src="<?= SA_IMG_URL . 'shape/7.png'; ?>" alt="Shape">
+        <img src="<?= SA_IMG_URL . 'shapes/7.png'; ?>" alt="Shape">
     </div>
 </footer>
 <!-- End Footer -->
