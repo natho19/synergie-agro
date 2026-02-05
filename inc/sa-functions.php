@@ -25,33 +25,6 @@ function sa_remove_post_type_support()
 }
 add_action('init', 'sa_remove_post_type_support');
 
-// Get page title
-// function sa_get_page_title()
-// {
-//     $bool = true;
-//     $page_title = "";
-
-//     switch ($bool) {
-//         case is_404():
-//             $page_title = "404";
-//             break;
-//         case is_home():
-//             $page_title = get_queried_object()->post_title;
-//             break;
-//         case is_tax():
-//             $page_title = get_queried_object()->name;
-//             break;
-//         case is_post_type_archive():
-//             ob_start();
-//             echo post_type_archive_title();
-//             $page_title = ob_get_clean();
-//             break;
-//         default:
-//             $page_title = get_the_title();
-//     }
-//     return $page_title;
-// }
-
 function sa_get_page_title() {
     if (is_404()) {
         return '404';
@@ -147,10 +120,10 @@ function sa_pagination($pages = '', $range = 2)
 }
 
 // Link format number
-function linkNumber($tel)
+function sa_link_number($phone_number)
 {
-    $linkedNumber = str_replace([' ', '+', '-'], '', $tel);
-    return $linkedNumber;
+    $link_number = preg_replace('/[^0-9+]/', '', $phone_number);
+    return $link_number;
 }
 
 // Register a new menu

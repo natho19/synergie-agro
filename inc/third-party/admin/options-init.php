@@ -120,6 +120,21 @@ Redux::setSection($opt_name, array(
     'icon'       => 'el el-info-circle',
     'fields' => [
         [
+            'id' => 'rccm',
+            'type' => 'text',
+            'title' => 'N° RCCM'
+        ],
+                [
+            'id' => 'cfe',
+            'type' => 'text',
+            'title' => 'N° CFE'
+        ],
+        [
+            'id' => 'roaming',
+            'type' => 'text',
+            'title' => 'Roaming'
+        ],
+        [
             'id' => 'telephone',
             'type' => 'text',
             'title' => 'Téléphone'
@@ -128,6 +143,21 @@ Redux::setSection($opt_name, array(
             'id' => 'email',
             'type' => 'text',
             'title' => 'Email'
+        ],
+                [
+            'id' => 'boite_postale',
+            'type' => 'text',
+            'title' => 'Boîte Postale'
+        ],
+                [
+            'id' => 'siege_administratif',
+            'type' => 'text',
+            'title' => 'Siège Administratif'
+        ],
+        [
+            'id' => 'siege_technique',
+            'type' => 'text',
+            'title' => 'Siège Technique'
         ]
     ]
 ));

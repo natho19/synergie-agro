@@ -2223,8 +2223,7 @@ a.btn-round-animation::before {
     z-index: -1
 }
 
-.cart-btn i,
-.item-flex li i {
+.cart-btn i {
     font-size: 20px;
     font-weight: 100
 }
@@ -2356,7 +2355,9 @@ ul.top-feature li p {
 }
 
 .item-flex li i {
-    margin-right: 10px;
+    font-size: 16px;
+    font-weight: 100;
+    margin-right: 3px;
     color: var(--color-primary)
 }
 
@@ -7375,4 +7376,8 @@ footer {
         height: 7em;
         width: 7em
     }
+}
+
+.top-bar-area li a:first-child {
+    margin-right: 15px;
 }

@@ -16,7 +16,7 @@
                             <h3>Besoin d'aide ?</h3>
                             <p>Contenu besoin d'aide</p>
                             <?php if ($sa_options['roaming']) : ?>
-                                <h2><a href="tel:<?= linkNumber($sa_options['roaming']); ?>"><?= $sa_options['roaming']; ?></a></h2>
+                                <h2><a href="tel:<?= sa_link_number($sa_options['roaming']); ?>"><?= $sa_options['roaming']; ?></a></h2>
                             <?php endif; ?>
                             <?php if ($sa_options['email']) : ?>
                                 <h4><a href="<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a></h4>

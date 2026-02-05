@@ -18,18 +18,24 @@
     <div class="top-bar-area top-bar-style-one bg-dark text-light">
         <div class="container">
             <div class="row align-center">
-                <?php if ($sa_options['telephone']) : ?>
-                    <div class="col-lg-6">
-                        <ul class="item-flex">
-                            <li>
-                                <a href="tel:<?= linkNumber($sa_options['telephone']); ?>">
+                <div class="col-lg-6">
+                    <ul class="item-flex">
+                        <li>
+                            <?php if (!empty($sa_options['roaming'])) : ?>
+                                <a href="tel:<?= sa_link_number($sa_options['roaming']); ?>">
+                                <i class="far fa-mobile"></i>
+                                <?= $sa_options['roaming']; ?> 
+                            </a>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['telephone'])) : ?>
+                                <a href="tel:<?= sa_link_number($sa_options['telephone']); ?>">
                                     <i class="fas fa-phone-alt"></i>
-                                    <?= $sa_options['telephone']; ?>
+                                    <?= $sa_options['telephone']; ?> 
                                 </a>
-                            </li>
-                        </ul>
-                    </div>
-                <?php endif; ?>
+                            <?php endif; ?>   
+                        </li>
+                    </ul>
+                </div>
                 <div class="col-lg-6 text-end">
                     <div class="social">
                         <ul>
