@@ -14,15 +14,13 @@
 
             <div class="col-tact-stye-one col-xl-7 col-lg-7">
                 <div class="contact-form-style-one mb-md-50">
-                    <h2 class="heading">Nous écrire</h2>
-                    <!-- Contact form -->
-                    <?= do_shortcode('[contact-form-7 id="fc5a2ef" title="Formulaire de contact" html_class="contact-form"]'); ?>
+                    <?= do_shortcode('[contact-form-7 id="938ffce" title="Formulaire de contact" html_class="contact-form"]'); ?>
                 </div>
             </div>
 
             <div class="col-tact-stye-one col-xl-5 col-lg-5 pl-80 pl-md-15 pl-xs-15">
                 <div class="contact-style-one-info">
-                    <h2>Informations de contact</h2>
+                    <h2>Contacts</h2>
                     <ul>
                         <?php if (!empty($sa_options['rccm'])): ?>
                             <li>

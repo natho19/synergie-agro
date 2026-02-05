@@ -662,11 +662,20 @@ ul.top-feature li p {
     font-size: 50px
 }
 
-.contact-style-one-info li a,
+
 .heading span,
 .team-single-area .right-info ul li a,
 .top-bar-area li a {
     font-weight: 400
+}
+
+.contact-style-one-info li a {
+    font-weight: 500;
+    color: var(--color-paragraph)
+}
+
+.contact-style-one-info li a:hover {
+    color: var(--color-secondary)
 }
 
 .project-details-thumb img,
@@ -5487,7 +5496,7 @@ ul.list-item li::after {
 }
 
 .contact-form-style-one {
-    padding: 80px 100px;
+    padding: 90px 100px;
     position: relative;
     background: var(--white)
 }
@@ -5508,7 +5517,7 @@ ul.list-item li::after {
 
 .contact-form-style-one input,
 .contact-form-style-one textarea {
-    margin-bottom: 15px;
+    margin-bottom: 20px;
     padding: 15px 20px;
     border: none;
     background: #f8f8f8;
