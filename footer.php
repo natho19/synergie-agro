@@ -2,7 +2,7 @@
 
 <!-- Start Footer 
     ============================================= -->
-<footer class="bg-dark text-light" style="background-image: url(<?= SA_IMG_URL . 'shapes/8.png'; ?>);">
+<footer class="bg-dark text-light">
     <div class="container">
         <div class="f-items default-padding">
             <div class="row">
@@ -12,10 +12,6 @@
                         <div class="footer-item about">
                             <img class="logo" src="<?= $sa_options['logo']['url']; ?>" alt="Logo">
                             <?php dynamic_sidebar('sidebar-area-1'); ?>
-                            <div class="select-dropdown">
-                                <i class="fas fa-globe"></i>
-                                <!-- pll_the_languages(['dropdown'  => 3]); -->
-                            </div>
                         </div>
                     </div>
                 <?php endif; ?>
@@ -32,62 +28,74 @@
                 <!-- Single Item -->
                 <div class="col-lg-4 col-md-6 item">
                     <div class="footer-item contact">
-                        <h4 class="widget-title">Contact</h4>
+                        <h4 class="widget-title">Contacts</h4>
                         <ul>
-                            <li>
-                                <div class="icon">
-                                    <i class="far fa-mobile"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Roaming</strong>
-                                    <a href="tel:<?= $sa_options['roaming']; ?>"><?= $sa_options['roaming']; ?></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-phone"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Téléphone</strong>
-                                    <a href="tel:<?= $sa_options['telephone']; ?>"><?= $sa_options['telephone']; ?></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fas fa-envelope"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Email</strong>
-                                    <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="far fa-mail-bulk"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Boîte Postale</strong>
-                                    Bô
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="fal fa-building"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Siège Administratif</strong>
-                                    123 Rue de l'Administration, 75000 Paris
-                                </div>
-                            </li>
-                            <li>
-                                <div class="icon">
-                                    <i class="far fa-wrench"></i>
-                                </div>
-                                <div class="content">
-                                    <strong>Siège Technique</strong>
-                                    456 Rue de la Technique, 75000 Paris
-                                </div>
-                            </li>
+                            <?php if (!empty($sa_options['roaming'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-mobile"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Roaming</strong>
+                                        <a href="tel:<?= sa_link_number($sa_options['roaming']); ?>"><?= $sa_options['roaming']; ?></a>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['telephone'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-phone"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Téléphone</strong>
+                                        <a href="tel:<?= sa_link_number($sa_options['telephone']); ?>"><?= $sa_options['telephone']; ?></a>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['email'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fas fa-envelope"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Email</strong>
+                                        <a href="mailto:<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['boite_postale'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-mail-bulk"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Boîte Postale</strong>
+                                        <p><?= $sa_options['boite_postale']; ?></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['siege_administratif'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="fal fa-building"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Siège Administratif</strong>
+                                        <p><?= $sa_options['siege_administratif']; ?></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
+                            <?php if (!empty($sa_options['siege_technique'])): ?>
+                                <li>
+                                    <div class="icon">
+                                        <i class="far fa-wrench"></i>
+                                    </div>
+                                    <div class="content">
+                                        <strong>Siège Technique</strong>
+                                        <p><?= $sa_options['siege_technique']; ?></p>
+                                    </div>
+                                </li>
+                            <?php endif; ?>
                         </ul>
                     </div>
                 </div>
@@ -98,7 +106,7 @@
         <div class="footer-bottom text-center">
             <div class="row">
                 <div class="col-lg-12">
-                    <p>&copy; Copyright <?= get_the_date('Y') ?>. Copyright <a href="#">Code House</a></p>
+                    <p>&copy; Copyright <?= get_the_date('Y') ?> Synergie Agro par <a href="#">Code House</a></p>
                 </div>
             </div>
         </div>

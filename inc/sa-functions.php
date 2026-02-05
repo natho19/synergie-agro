@@ -10,16 +10,14 @@ add_filter('use_widgets_block_editor', '__return_false');
 add_filter('wpcf7_autop_or_not', '__return_false');
 
 // Add theme support
-function sa_setup()
-{
+function sa_setup() {
     add_theme_support('title-tag');
     add_theme_support('post-thumbnails');
 }
 add_action('after_setup_theme', 'sa_setup');
 
 // Remove post type support
-function sa_remove_post_type_support()
-{
+function sa_remove_post_type_support() {
     remove_post_type_support('page', 'editor');
     remove_post_type_support('page', 'thumbnail');
 }
@@ -49,8 +47,7 @@ function sa_get_page_title() {
 
 
 // Posts nav
-function sa_posts_nav()
-{
+function sa_posts_nav() {
     $next_post = get_next_post();
     $prev_post = get_previous_post();
 
@@ -77,12 +74,11 @@ function sa_posts_nav()
                 </div>
             <?php endif; ?>
         </div>
-<?php endif;
+    <?php endif;
 }
 
 // Pagination
-function sa_pagination($pages = '', $range = 2)
-{
+function sa_pagination($pages = '', $range = 2) {
     $showitems = ($range * 2) + 1;
     global $paged;
 
@@ -120,8 +116,7 @@ function sa_pagination($pages = '', $range = 2)
 }
 
 // Link format number
-function sa_link_number($phone_number)
-{
+function sa_link_number($phone_number) {
     $link_number = preg_replace('/[^0-9+]/', '', $phone_number);
     return $link_number;
 }
@@ -140,8 +135,8 @@ function sa_register_sidebar()
         'id'            => 'sidebar-area-1',
         'name'          => __('Première zone', 'textdomain'),
         'description'   => __('Première zone du Footer', 'textdomain'),
-        'before_widget' => '',
-        'after_widget'  => '',
+        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'after_widget'  => '</div>',
         'before_title' => '',
         'after_title'  => ''
     ]);
@@ -150,10 +145,18 @@ function sa_register_sidebar()
         'id'            => 'sidebar-area-2',
         'name'          => __('Deuxième zone', 'textdomain'),
         'description'   => __('Deuxième zone du Footer', 'textdomain'),
-        'before_widget' => '<div class="footer-item link">',
+        'before_widget' => '<div id="%1$s" class="footer-item link widget %2$s">',
         'after_widget'  => '</div>',
         'before_title' => '<h4 class="widget-title">',
         'after_title'  => '</h4>'
     ]);
 }
 add_action('widgets_init', 'sa_register_sidebar');
+
+// Remove widget title for Description widget in first sidebar
+add_filter('widget_title', function($title, $instance, $id_base) {
+    if (is_active_sidebar('sidebar-area-1') && $title === 'Description') {
+        return '';
+    }
+    return $title;
+}, 10, 4);

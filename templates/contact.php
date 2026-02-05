@@ -22,22 +22,6 @@
                 <div class="contact-style-one-info">
                     <h2>Contacts</h2>
                     <ul>
-                        <?php if (!empty($sa_options['rccm'])): ?>
-                            <li>
-                                <div class="content">
-                                    <h5 class="title">N° RCCM</h5>
-                                    <p><?= $sa_options['rccm']; ?></p>
-                                </div>
-                            </li>
-                        <?php endif; ?>
-                        <?php if (!empty($sa_options['cfe'])): ?>
-                            <li>
-                                <div class="content">
-                                    <h5 class="title">N° CFE</h5>
-                                    <p><?= $sa_options['cfe']; ?></p>
-                                </div>
-                            </li>
-                        <?php endif; ?>
                         <?php if (!empty($sa_options['roaming'])): ?>
                             <li>
                                 <div class="content">

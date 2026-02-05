@@ -120,16 +120,6 @@ Redux::setSection($opt_name, array(
     'icon'       => 'el el-info-circle',
     'fields' => [
         [
-            'id' => 'rccm',
-            'type' => 'text',
-            'title' => 'N° RCCM'
-        ],
-                [
-            'id' => 'cfe',
-            'type' => 'text',
-            'title' => 'N° CFE'
-        ],
-        [
             'id' => 'roaming',
             'type' => 'text',
             'title' => 'Roaming'
