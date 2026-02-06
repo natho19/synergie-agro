@@ -1,10 +1,12 @@
 <?php get_header(); ?>
 
-<?php get_template_part('parts/breadcrumb'); ?>
+<?php if ($wp_query->found_posts > 0) : ?>
+    <?php get_template_part('parts/breadcrumb'); ?>
+<?php endif; ?>
 
 <!-- Start Blog 
 ============================================= -->
-<div class="blog-area blog-grid default-padding">
+<div class="blog-area blog-grid default-padding bg-gray">
     <div class="container">
         <?php if (have_posts()) : ?>
             <div class="blog-item-box">

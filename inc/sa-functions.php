@@ -155,7 +155,7 @@ add_action('widgets_init', 'sa_register_sidebar');
 
 // Remove widget title for Description widget in first sidebar
 add_filter('widget_title', function($title, $instance, $id_base) {
-    if (is_active_sidebar('sidebar-area-1') && $title === 'Description') {
+    if (is_active_sidebar('sidebar-area-1') && $id_base === 'text') {
         return '';
     }
     return $title;

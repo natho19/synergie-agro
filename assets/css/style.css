@@ -6191,20 +6191,22 @@ footer {
 }
 
 .error-box h1 {
-    font-size: 150px;
-    line-height: 110px;
-    font-weight: 800;
-    margin-bottom: 40px;
+    font-size: 100px;
+    /* line-height: 110px; */
+    font-weight: 700;
+    margin-bottom: 25px;
     text-shadow: 3px 3px silver
 }
 
 .error-box h2 {
-    font-weight: 700;
-    margin-bottom: 20px
+    font-size: 25px !important;
+    font-weight: 500;
+    margin-bottom: 40px
 }
 
 .error-box p {
-    padding: 0 10%
+    padding: 0 10%;
+    margin-bottom: 40px !important;
 }
 
 @media only screen and (min-width:992px) and (max-width:1199px) {

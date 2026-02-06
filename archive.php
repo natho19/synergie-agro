@@ -1,7 +1,5 @@
 <?php get_header(); ?>
 
-<?php get_template_part('parts/breadcrumb'); ?>
-
 <!-- Start Gallery 
 ============================================= -->
 <div class="gallery-style-two-area default-padding">
