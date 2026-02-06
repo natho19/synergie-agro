@@ -15,7 +15,7 @@
 
     <!-- Start Header Top 
     ============================================= -->
-    <div class="top-bar-area top-bar-style-one bg-dark text-light">
+    <div class="top-bar-area top-bar-style-one bg-theme text-light">
         <div class="container">
             <div class="row align-center">
                 <div class="col-lg-6">

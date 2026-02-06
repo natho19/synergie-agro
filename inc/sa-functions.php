@@ -135,10 +135,10 @@ function sa_register_sidebar()
         'id'            => 'sidebar-area-1',
         'name'          => __('Première zone', 'textdomain'),
         'description'   => __('Première zone du Footer', 'textdomain'),
-        'before_widget' => '<div id="%1$s" class="widget %2$s">',
+        'before_widget' => '<div id="%1$s" class="footer-item link widget %2$s">',
         'after_widget'  => '</div>',
-        'before_title' => '',
-        'after_title'  => ''
+        'before_title' => '<h4 class="widget-title">',
+        'after_title'  => '</h4>'
     ]);
     // Second zone
     register_sidebar([
@@ -154,9 +154,9 @@ function sa_register_sidebar()
 add_action('widgets_init', 'sa_register_sidebar');
 
 // Remove widget title for Description widget in first sidebar
-add_filter('widget_title', function($title, $instance, $id_base) {
-    if (is_active_sidebar('sidebar-area-1') && $id_base === 'text') {
-        return '';
-    }
-    return $title;
-}, 10, 4);
+// add_filter('widget_title', function($title, $instance, $id_base) {
+//     if (is_active_sidebar('sidebar-area-1') && $id_base === 'text') {
+//         return '';
+//     }
+//     return $title;
+// }, 10, 4);

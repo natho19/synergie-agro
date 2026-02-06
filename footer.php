@@ -2,17 +2,14 @@
 
 <!-- Start Footer 
     ============================================= -->
-<footer class="bg-dark text-light">
+<footer class="bg-theme text-light">
     <div class="container">
         <div class="f-items default-padding">
             <div class="row">
                 <!-- Single Item -->
                 <?php if (is_active_sidebar('sidebar-area-1')) : ?>
                     <div class="col-lg-4 col-md-6 item">
-                        <div class="footer-item about">
-                            <img class="logo" src="<?= $sa_options['logo']['url']; ?>" alt="Logo">
-                            <?php dynamic_sidebar('sidebar-area-1'); ?>
-                        </div>
+                        <?php dynamic_sidebar('sidebar-area-1'); ?>
                     </div>
                 <?php endif; ?>
                 <!-- End Single Item -->

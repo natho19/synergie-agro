@@ -1,8 +1,12 @@
 <?php get_header(); ?>
 
+<?php if ($wp_query->found_posts > 0) : ?>
+    <?php get_template_part('parts/breadcrumb'); ?>
+<?php endif; ?>
+
 <!-- Start Gallery 
 ============================================= -->
-<div class="gallery-style-two-area default-padding">
+<div class="gallery-style-two-area default-padding bg-gray">
     <div class="container">
         <div class="row">
             <?php if (have_posts()) : ?>
@@ -11,7 +15,7 @@
                         <div id="gallery-masonary" class="gallery-items colums-3">
                             <?php while (have_posts()) : the_post(); ?>
                                 <div class="gallery-item">
-                                    <?php get_template_part('parts/content', 'projet'); ?>
+                                    <?php get_template_part('parts/content', 'realisation'); ?>
                                 </div>
                             <?php endwhile; ?>
                         </div>

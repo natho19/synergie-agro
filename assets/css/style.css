@@ -113,8 +113,8 @@ button {
     --dark: #1f4e3d;
     --dark-secondary: #1F1E17;
     --white: #ffffff;
-    --color-secondary: #079ae7;
-    --color-primary: #58a806;
+    --color-secondary: #0E77C4;
+    --color-primary: #3F7F04;
     --color-heading: #04000b;
     --color-paragraph: #666666;
     --box-shadow-primary: -1px 3px 10px 0 rgba(0, 0, 0, 0.6);
@@ -2367,7 +2367,7 @@ ul.top-feature li p {
     font-size: 16px;
     font-weight: 100;
     margin-right: 3px;
-    color: var(--color-primary)
+    color: var(--white)
 }
 
 .top-bar-area .social li {
@@ -6072,7 +6072,7 @@ footer {
 
 .footer-item.link li a {
     font-weight: 500;
-    color: #dedede
+    color: #fff;
 }
 
 .footer-item.recent-post li img {
@@ -6168,11 +6168,11 @@ footer {
 
 .footer-item.contact li p {
     margin: 0;
-    color: #dedede
+    color: #fff;
 }
 
 .footer-item.contact li a {
-    color: #dedede;
+    color: #fff;
     font-weight: 500
 }
 
