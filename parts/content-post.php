@@ -2,7 +2,7 @@
 <div class="blog-style-one">
     <div class="thumb">
         <a href="<?php the_permalink(); ?>">
-            <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . 'placeholders/900x600.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
+            <img src="<?= has_post_thumbnail() ? esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')) : SA_IMG_URL . 'placeholders/900x600.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
         </a>
         <div class="date">
             <strong><?= get_the_date('d'); ?></strong>

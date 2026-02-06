@@ -39,16 +39,16 @@
                 <div class="col-lg-6 text-end">
                     <div class="social">
                         <ul>
-                            <?php if ($sa_options['youtube']) : ?>
+                            <?php if (!empty($sa_options['youtube'])) : ?>
                                 <li><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
                             <?php endif; ?>
-                            <?php if ($sa_options['tiktok']) : ?>
+                            <?php if (!empty($sa_options['tiktok'])) : ?>
                                 <li><a href="<?= esc_url($sa_options['tiktok']); ?>"><i class="fab fa-tiktok"></i></a></li>
                             <?php endif; ?>
-                            <?php if ($sa_options['facebook']) : ?>
+                            <?php if (!empty($sa_options['facebook'])) : ?>
                                 <li><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
                             <?php endif; ?>
-                            <?php if ($sa_options['linkedin']) : ?>
+                            <?php if (!empty($sa_options['linkedin'])) : ?>
                                 <li><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
                             <?php endif; ?>
                         </ul>

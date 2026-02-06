@@ -12,15 +12,17 @@
             <div class="row">
                 <div class="blog-content col-xl-8 col-lg-7 col-md-12 pr-35 pr-md-15 pl-md-15 pr-xs-15 pl-xs-15">
                     <div class="blog-style-two item">
-                        <div class="thumb">
-                            <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . 'placeholders/900x600.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
-                            <div class="date">
-                                <strong><?= get_the_date('d'); ?></strong>
-                                <span><?= get_the_date('M, Y') ?></span>
+                        <?php if (has_post_thumbnail()) : ?>
+                            <div class="thumb">
+                                <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')) ?>" alt="<?= esc_attr(get_the_title()); ?>">
+                                <div class="date">
+                                    <strong><?= get_the_date('d'); ?></strong>
+                                    <span><?= get_the_date('M, Y') ?></span>
+                                </div>
                             </div>
-                        </div>
-                        <?php $content = get_post()->post_content;
-                        if (!empty($content)) : ?>
+                        <?php endif; ?>
+                        <h2><?php the_title(); ?></h2>
+                        <?php $content = get_post()->post_content; if (!empty($content)) : ?>
                             <div class="info">
                                 <?php the_content(); ?>
                             </div>
@@ -41,23 +43,17 @@
                             <h4 class="title">Nous suivre</h4>
                             <div class="sidebar-info">
                                 <ul>
-                                    <?php if ($sa_options['facebook']) : ?>
-                                        <li class="facebook"><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if ($sa_options['twitter']) : ?>
-                                        <li class="twitter"><a href="<?= esc_url($sa_options['twitter']); ?>"><i class="fab fa-twitter"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if ($sa_options['youtube']) : ?>
+                                    <?php if (!empty($sa_options['youtube'])) : ?>
                                         <li class="youtube"><a href="<?= esc_url($sa_options['youtube']); ?>"><i class="fab fa-youtube"></i></a></li>
                                     <?php endif; ?>
-                                    <?php if ($sa_options['linkedin']) : ?>
-                                        <li class="linkedin"><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if ($sa_options['instagram']) : ?>
-                                        <li class="instagram"><a href="<?= esc_url($sa_options['instagram']); ?>"><i class="fab fa-instagram"></i></a></li>
-                                    <?php endif; ?>
-                                    <?php if ($sa_options['tiktok']) : ?>
+                                    <?php if (!empty($sa_options['tiktok'])) : ?>
                                         <li class="tiktok"><a href="<?= esc_url($sa_options['tiktok']); ?>"><i class="fab fa-tiktok"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($sa_options['facebook'])) : ?>
+                                        <li class="facebook"><a href="<?= esc_url($sa_options['facebook']); ?>"><i class="fab fa-facebook-f"></i></a></li>
+                                    <?php endif; ?>
+                                    <?php if (!empty($sa_options['linkedin'])) : ?>
+                                        <li class="linkedin"><a href="<?= esc_url($sa_options['linkedin']); ?>"><i class="fab fa-linkedin-in"></i></a></li>
                                     <?php endif; ?>
                                 </ul>
                             </div>
