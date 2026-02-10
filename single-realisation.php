@@ -34,20 +34,36 @@
                             <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')); ?>" alt="<?= esc_attr(get_the_title()); ?>">
                         </div>
                     <?php endif; ?>
-                    <div class="item-grid-container">
-                        <div class="single-grid">
-                            <div class="item-grid-colum">
-                                <div class="left-info">
-                                    <h3><?php the_title(); ?></h3>
-                                </div>
-                                <?php $content = get_post()->post_content; if (!empty($content)) : ?>
+
+                    <?php $content = get_post()->post_content; if (!empty($content)) : ?>
+                        <div class="item-grid-container">
+                            <div class="single-grid">
+                                <div class="item-grid-colum">
+                                    <div class="left-info">
+                                        <h3><?php the_title(); ?></h3>
+                                    </div>
                                     <div class="right-info">
                                         <?php the_content(); ?>
                                     </div>
-                                <?php endif; ?>
+                                </div>
                             </div>
                         </div>
-                    </div>
+                    <?php endif; ?>
+
+                    <?php $realization_images = get_field('realization_gallery'); if ($realization_images) : ?>
+                        <div class="project-static-gallery">
+                            <div class="row">
+                                <h4>Autres images</h4>
+                                <?php foreach ($realization_images as $image) : ?>
+                                    <div class="col-lg-6 col-md-6">
+                                        <a href="<?= esc_url($image['url']); ?>" class="item popup-gallery">
+                                            <img src="<?= esc_url($image['url']); ?>" alt="<?= esc_attr($image['alt']); ?>">
+                                        </a>
+                                    </div>
+                                <?php endforeach; ?>
+                            </div>
+                        </div>
+                    <?php endif; ?>
                 </div>
             </div>
         </div>

@@ -172,3 +172,12 @@
 .project-detail-content .item-grid-container p {
     margin-bottom: 20px !important;
 }
+
+.project-static-gallery {
+    margin-top: 35px;
+}
+
+.project-static-gallery h4 {
+    font-size: 20px;
+    margin-bottom: 0;
+}
