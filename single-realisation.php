@@ -14,9 +14,12 @@
                     <div class="single-widget quick-contact-widget bg-dark text-light mb-50">
                         <div class="content">
                             <h3>Besoin d'aide ?</h3>
-                            <p>Contenu besoin d'aide</p>
+                            <p>Contactez-nous par téléphone ou par email, nous vous répondrons dans les meilleurs délais.</p>
                             <?php if ($sa_options['roaming']) : ?>
                                 <h2><a href="tel:<?= sa_link_number($sa_options['roaming']); ?>"><?= $sa_options['roaming']; ?></a></h2>
+                            <?php endif; ?>
+                            <?php if ($sa_options['telephone']) : ?>
+                                <h2><a href="tel:<?= sa_link_number($sa_options['telephone']); ?>"><?= $sa_options['telephone']; ?></a></h2>
                             <?php endif; ?>
                             <?php if ($sa_options['email']) : ?>
                                 <h4><a href="<?= $sa_options['email']; ?>"><?= $sa_options['email']; ?></a></h4>
@@ -26,17 +29,18 @@
                     </div>
                 </div>
                 <div class="col-lg-8">
-                    <div class="project-details-top">
-                        <img src="<?= has_post_thumbnail() ? the_post_thumbnail_url('full') : SA_IMG_URL . 'placeholders/800x800.png'; ?>" alt="<?= esc_attr(get_the_title()); ?>">
-                    </div>
+                    <?php if (has_post_thumbnail()) : ?>
+                        <div class="project-details-top">
+                            <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')); ?>" alt="<?= esc_attr(get_the_title()); ?>">
+                        </div>
+                    <?php endif; ?>
                     <div class="item-grid-container">
                         <div class="single-grid">
                             <div class="item-grid-colum">
                                 <div class="left-info">
                                     <h3><?php the_title(); ?></h3>
                                 </div>
-                                <?php $content = get_post()->post_content;
-                                if (!empty($content)) : ?>
+                                <?php $content = get_post()->post_content; if (!empty($content)) : ?>
                                     <div class="right-info">
                                         <?php the_content(); ?>
                                     </div>

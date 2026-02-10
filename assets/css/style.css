@@ -3667,7 +3667,8 @@ ul.top-feature li h4 {
 
 .service-style-one-item p {
     font-size: 18px;
-    margin-bottom: 0
+    margin-bottom: 0;
+    color: var(--color-heading);
 }
 
 .services-style-one-area .row {
@@ -3874,10 +3875,10 @@ h2.mask-text.large {
 }
 
 .quick-contact-widget h2 {
-    font-size: 22px;
+    font-size: 20px;
     font-weight: 600;
     margin-bottom: 10px;
-    margin-top: 25px
+    /* margin-top: 25px */
 }
 
 .quick-contact-widget h4 a {

@@ -14,7 +14,7 @@
                     <div class="blog-style-two item">
                         <?php if (has_post_thumbnail()) : ?>
                             <div class="thumb">
-                                <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')) ?>" alt="<?= esc_attr(get_the_title()); ?>">
+                                <img src="<?= esc_url(get_the_post_thumbnail_url(get_the_ID(),'full')); ?>" alt="<?= esc_attr(get_the_title()); ?>">
                                 <div class="date">
                                     <strong><?= get_the_date('d'); ?></strong>
                                     <span><?= get_the_date('M, Y') ?></span>
