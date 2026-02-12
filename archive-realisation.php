@@ -15,7 +15,7 @@
                         <div id="gallery-masonary" class="gallery-items colums-3">
                             <?php while (have_posts()) : the_post(); ?>
                                 <div class="gallery-item">
-                                    <?php get_template_part('parts/content', 'realisation'); ?>
+                                    <?php get_template_part('parts/content', 'realization'); ?>
                                 </div>
                             <?php endwhile; ?>
                         </div>

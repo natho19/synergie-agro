@@ -894,7 +894,7 @@ ul.top-feature li p {
 
 .btn,
 button {
-    text-transform: capitalize;
+    text-transform: initial;
     letter-spacing: 0;
     background: #e7edf8;
     display: inline-block;

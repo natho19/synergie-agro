@@ -1,38 +1,18 @@
 {
     "key": "group_6627d6d5831f3",
-    "title": "Projets",
+    "title": "Nos réalisations",
     "fields": [
-        {
-            "key": "field_6627d6d5a64db",
-            "label": "Sous-titre",
-            "name": "projects_subtitle",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "33.33",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
         {
             "key": "field_6627d71da64dc",
             "label": "Titre",
-            "name": "projects_title",
+            "name": "realizations_title",
             "aria-label": "",
             "type": "text",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -45,14 +25,14 @@
         {
             "key": "field_6627d740a64dd",
             "label": "Lien",
-            "name": "projects_link",
+            "name": "realizations_link",
             "aria-label": "",
             "type": "link",
             "instructions": "",
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -60,8 +40,8 @@
         },
         {
             "key": "field_6627d77b071b5",
-            "label": "Projets",
-            "name": "projects",
+            "label": "Réalisations",
+            "name": "realizations",
             "aria-label": "",
             "type": "repeater",
             "instructions": "",
@@ -82,8 +62,8 @@
             "sub_fields": [
                 {
                     "key": "field_6627d790071b6",
-                    "label": "Projet",
-                    "name": "project",
+                    "label": "Réalisation",
+                    "name": "realization",
                     "aria-label": "",
                     "type": "post_object",
                     "instructions": "",
@@ -95,7 +75,7 @@
                         "id": ""
                     },
                     "post_type": [
-                        "projet"
+                        "realisation"
                     ],
                     "taxonomy": "",
                     "return_format": "object",
@@ -116,7 +96,7 @@
             }
         ]
     ],
-    "menu_order": 4,
+    "menu_order": 3,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -125,5 +105,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713887163
+    "modified": 1770913372
 }

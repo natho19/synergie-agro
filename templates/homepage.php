@@ -102,59 +102,6 @@
 <?php endif; ?>
 <!-- End About -->
 
-<!-- Start Choose Us 
-============================================= -->
-<div class="choose-us-style-two-area overflow-hidden default-padding">
-    <div class="container">
-        <div class="row">
-            <?php $partnerships = get_field('partnerships');
-            if ($partnerships) : ?>
-                <div class="col-xl-6 col-lg-6 pr-100 pr-md-15 pr-xs-15 pb-md-60 pb-xs-60">
-                    <?php if ($partnerships['title']) : ?>
-                        <h2 class="title text-white"><?= $partnerships['title']; ?></h2>
-                    <?php endif; ?>
-                    <?= $partnerships['content']; ?>
-                </div>
-            <?php endif; ?>
-
-            <?php $stats = get_field('stats');
-            if ($stats) : ?>
-                <div class="col-xl-5 offset-xl-1 col-lg-6">
-                    <div class="choose-us-style-two-content">
-                        <?php if ($stats['subtitle']) : ?>
-                            <h4 class="sub-title"><?= $stats['subtitle']; ?></h4>
-                        <?php endif; ?>
-
-                        <?php if ($stats['title']) : ?>
-                            <h2 class="title"><?= $stats['title']; ?></h2>
-                        <?php endif; ?>
-
-                        <?php $indicators = $stats['indicators'];
-                        if ($indicators) : ?>
-                            <div class="choose-us-style-two-info">
-                                <?php foreach ($indicators as $indicator) : ?>
-                                    <div class="fun-fact">
-                                        <?php if ($indicator['digit']) : ?>
-                                            <div class="counter">
-                                                <div class="timer" data-to="<?= $indicator['digit']; ?>" data-speed="2000"><?= $indicator['digit']; ?></div>
-                                            </div>
-                                        <?php endif; ?>
-
-                                        <?php if ($indicator['label']) : ?>
-                                            <span class="medium"><?= $indicator['label']; ?></span>
-                                        <?php endif; ?>
-                                    </div>
-                                <?php endforeach; ?>
-                            </div>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            <?php endif; ?>
-        </div>
-    </div>
-</div>
-<!-- End Choose Us -->
-
 <!-- Start Services 
 ============================================= -->
 <?php if (have_rows('domains')) : ?>
@@ -165,9 +112,6 @@
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <?php if (get_field('domains_subtitle')) : ?>
-                            <h5 class="sub-title"><?php the_field('domains_subtitle'); ?></h5>
-                        <?php endif; ?>
                         <?php if (get_field('domains_title')) : ?>
                             <h2 class="title"><?php the_field('domains_title'); ?></h2>
                         <?php endif; ?>
@@ -197,17 +141,14 @@
 
 <!-- Start Gallery 
 ============================================= -->
-<?php if (have_rows('projects')) : ?>
+<?php if (have_rows('realizations')) : ?>
     <div class="gallery-style-one-area default-padding">
         <div class="container">
             <div class="row">
                 <div class="col-lg-6 offset-lg-3">
                     <div class="site-heading text-center">
-                        <?php if (get_field('projects_subtitle')) : ?>
-                            <h5 class="sub-title"><?php the_field('projects_subtitle'); ?></h5>
-                        <?php endif; ?>
-                        <?php if (get_field('projects_title')) : ?>
-                            <h2 class="title"><?php the_field('projects_title'); ?></h2>
+                        <?php if (get_field('realizations_title')) : ?>
+                            <h2 class="title"><?php the_field('realizations_title'); ?></h2>
                         <?php endif; ?>
                     </div>
                 </div>
@@ -220,13 +161,13 @@
                     <!-- Additional required wrapper -->
                     <div class="swiper-wrapper">
                         <!-- Single Item -->
-                        <?php while (have_rows('projects')) : the_row();
-                            $post = get_sub_field('project');
+                        <?php while (have_rows('realizations')) : the_row();
+                            $post = get_sub_field('realization');
                             if ($post) : ?>
                                 <div class="swiper-slide">
-                                    <?php get_template_part('parts/content', 'projet'); ?>
+                                    <?php get_template_part('parts/content', 'realization'); ?>
                                 </div>
-                        <?php endif;
+                            <?php endif;
                             wp_reset_postdata();
                         endwhile; ?>
                         <!-- End Single Item -->
@@ -237,10 +178,10 @@
                 </div>
             </div>
 
-            <?php if (get_field('projects_link')) : ?>
+            <?php if (get_field('realizations_link')) : ?>
                 <div class="row">
                     <div class="text-center mt-40">
-                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('projects_link')['url']); ?>"><?= esc_html(get_field('projects_link')['title']); ?></a>
+                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('realizations_link')['url']); ?>"><?= esc_html(get_field('realizations_link')['title']); ?></a>
                     </div>
                 </div>
             <?php endif; ?>

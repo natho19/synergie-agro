@@ -1,27 +1,7 @@
 {
     "key": "group_661e8f65486f3",
-    "title": "Domaines d'intervention (Accueil)",
+    "title": "Nos domaines d'intervention",
     "fields": [
-        {
-            "key": "field_661e8f8ea907a",
-            "label": "Sous-titre",
-            "name": "domains_subtitle",
-            "aria-label": "",
-            "type": "text",
-            "instructions": "",
-            "required": 0,
-            "conditional_logic": 0,
-            "wrapper": {
-                "width": "33.33",
-                "class": "",
-                "id": ""
-            },
-            "default_value": "",
-            "maxlength": "",
-            "placeholder": "",
-            "prepend": "",
-            "append": ""
-        },
         {
             "key": "field_661e8fdd5a455",
             "label": "Titre",
@@ -32,7 +12,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -52,7 +32,7 @@
             "required": 0,
             "conditional_logic": 0,
             "wrapper": {
-                "width": "33.33",
+                "width": "50",
                 "class": "",
                 "id": ""
             },
@@ -126,23 +106,6 @@
                     "placeholder": "",
                     "new_lines": "",
                     "parent_repeater": "field_661e9001fd776"
-                },
-                {
-                    "key": "field_661e9054fd779",
-                    "label": "Lien",
-                    "name": "link",
-                    "aria-label": "",
-                    "type": "link",
-                    "instructions": "",
-                    "required": 0,
-                    "conditional_logic": 0,
-                    "wrapper": {
-                        "width": "",
-                        "class": "",
-                        "id": ""
-                    },
-                    "return_format": "url",
-                    "parent_repeater": "field_661e9001fd776"
                 }
             ]
         }
@@ -156,7 +119,7 @@
             }
         ]
     ],
-    "menu_order": 3,
+    "menu_order": 2,
     "position": "normal",
     "style": "default",
     "label_placement": "top",
@@ -165,5 +128,5 @@
     "active": true,
     "description": "",
     "show_in_rest": 0,
-    "modified": 1713351492
+    "modified": 1770913191
 }
