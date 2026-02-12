@@ -12,9 +12,13 @@
                 <div class="col-xl-6 col-lg-5">
                     <div class="about-style-one-thumb">
                         <img src="<?= esc_url($about_image['url']); ?>" alt="<?= esc_attr($about_image['alt']); ?>">
+                        <div class="animation-shape">
+                            <img src="<?= SA_IMG_URL . 'sources/illustration-1.png'; ?>" alt="Illustration">
+                        </div>
                     </div>
                 </div>
             <?php endif; ?>
+            
             <?php if (get_field('about_content')) : ?>
                 <div class="col-xl-5 offset-xl-1 col-lg-6 offset-lg-1">
                     <?php the_field('about_content'); ?>

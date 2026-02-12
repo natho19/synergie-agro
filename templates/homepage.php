@@ -13,7 +13,7 @@
                 <!-- Single Item -->
                 <?php while (have_rows('slides')) : the_row(); ?>
                     <div class="swiper-slide banner-style-one">
-                        <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background') ? get_sub_field('background') : SA_IMG_URL . 'placeholders/1900x1200.png'); ?>);"></div>
+                        <div class="banner-thumb bg-cover shadow dark" style="background: url(<?= esc_url(get_sub_field('background')); ?>);"></div>
 
                         <div class="shape">
                             <img src="<?= SA_IMG_URL . 'shapes/2.png'; ?>" alt="Shape">
@@ -64,7 +64,7 @@
                 <div class="col-xl-6 col-lg-5">
                     <div class="about-style-one-thumb">
                         <?php $features_image = get_field('features_image'); ?>
-                        <img src="<?= esc_url($features_image ? $features_image['url'] : SA_IMG_URL . 'placeholders/800x1000.png'); ?>" alt="<?= esc_attr($features_image ? $features_image['alt'] : '800x1000'); ?>">
+                        <img src="<?= esc_url($features_image['url']); ?>" alt="<?= esc_attr($features_image['alt']); ?>">
                         <div class="animation-shape">
                             <img src="<?= SA_IMG_URL . 'sources/illustration-1.png'; ?>" alt="Illustration">
                         </div>
@@ -76,8 +76,7 @@
                         <ul class="top-feature">
                             <?php while (have_rows('features')) : the_row(); ?>
                                 <li>
-                                    <?php $illustration = get_sub_field('illustration');
-                                    if ($illustration) : ?>
+                                    <?php $illustration = get_sub_field('illustration'); if ($illustration) : ?>
                                         <div class="icon">
                                             <img src="<?= esc_url($illustration['url']); ?>" alt="<?= esc_attr($illustration['alt']); ?>">
                                         </div>
@@ -189,82 +188,5 @@
     </div>
 <?php endif; ?>
 <!-- End Gallery  -->
-
-<!-- Start Product Speciality 
-============================================= -->
-<?php if (get_field('products_badge')) : ?>
-    <div class="product-speciality-arae bg-cover" style="background-image: url(<?= SA_IMG_URL . 'sources/banner-products.jpg'; ?>);">
-        <div class="container">
-            <div class="row">
-                <div class="col-xl-6 col-md-8">
-                    <div class="product-speciality-info default-padding-bottom">
-                        <?php if (get_field('products_badge')) : ?>
-                            <div class="product-badge">
-                                <h1><?php the_field('products_badge'); ?></h1>
-                            </div>
-                        <?php endif; ?>
-
-                        <?php if (get_field('products_title')) : ?>
-                            <h2><?php the_field('products_title'); ?></h2>
-                        <?php endif; ?>
-
-                        <?php if (get_field('products_description')) : ?>
-                            <p><?php the_field('products_description'); ?></p>
-                        <?php endif; ?>
-
-                        <?php if (get_field('products_link')) : ?>
-                            <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('products_link')['url']); ?>"><?= esc_html(get_field('products_link')['title']); ?></a>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </div>
-<?php endif; ?>
-<!-- End Speciality -->
-
-<!-- Start Blog 
-============================================= -->
-<?php if (have_rows('news')) : ?>
-    <div class="blog-area home-blog default-padding bottom-less">
-        <div class="container">
-            <div class="row">
-                <div class="col-lg-8 offset-lg-2">
-                    <div class="site-heading text-center">
-                        <?php if (get_field('news_subtitle')) : ?>
-                            <h5 class="sub-title"><?php the_field('news_subtitle'); ?></h5>
-                        <?php endif; ?>
-                        <?php if (get_field('news_title')) : ?>
-                            <h2 class="title"><?php the_field('news_title'); ?></h2>
-                        <?php endif; ?>
-                    </div>
-                </div>
-            </div>
-        </div>
-        <div class="container">
-            <div class="row">
-                <!-- Single Item -->
-                <?php while (have_rows('news')) : the_row();
-                    $post = get_sub_field('post');
-                    if ($post) : ?>
-                        <div class="col-xl-4 col-md-6 mb-30">
-                            <?php get_template_part('parts/content', 'post'); ?>
-                        </div>
-                <?php endif;
-                    wp_reset_postdata();
-                endwhile; ?>
-                <!-- End Single Item -->
-            </div>
-            <?php if (get_field('news_link')) : ?>
-                <div class="row">
-                    <div class="text-center mt-40">
-                        <a class="btn btn-theme btn-md radius animation" href="<?= esc_url(get_field('news_link')['url']); ?>"><?= esc_html(get_field('news_link')['title']); ?></a>
-                    </div>
-                </div>
-            <?php endif; ?>
-        </div>
-    </div>
-<?php endif; ?>
-<!-- End Blog -->
 
 <?php get_footer(); ?>
